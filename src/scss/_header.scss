@@ -1,0 +1,30 @@
+.lg-gh {
+    position: absolute;
+    height: 5rem;
+    padding: 1rem 8%;
+    z-index: 300;
+
+    .lg-gh__main {
+        align-items: center;
+        justify-content: space-between;
+
+        .lg-gh__brand {
+            margin: 0;
+            height: 1.8rem;
+
+
+
+        }
+
+        .btn.lg-gh-btn,
+        .btn.lg-gh-btn:hover,
+        .btn.lg-gh-btn:focus,
+        .btn.lg-gh-btn:active {
+            border-radius: 2rem;
+            height: 3rem;
+            width: 10rem;
+            background-color: white;
+        }
+
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,700&display=swap');
+
+
+
+.montserrat-b {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+
+.montserrat-sb {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+.montserrat-r {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.lato-r {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.text-gray {
+    color: $grey;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none !important;
+}

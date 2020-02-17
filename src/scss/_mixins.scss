@@ -1,0 +1,56 @@
+// @mixin forma($color: #000, $alto: 100px) {
+//   background-color: $color;
+//   height: $alto;
+// }
+
+// $colores: (#aaa, #ddd, #000);
+// @for $i from 1 through length($colores) {
+//   #rec#{$i} {
+//     @include forma(nth($colores, $i));
+//   }
+// }
+// @each $i in $colores {
+//     $i:index($colores: , $value: );
+//   #rec#{$i} {
+//     @include forma($color, $i));
+//   }
+
+// #rec1{
+//     @include forma(red);
+// }
+
+// #rec1{
+//     @include forma(null,null);
+// }
+// #rec1{
+//     @include forma(nth($colores,2),100px);
+// }
+
+
+@mixin background-hero($color, $urlimg, $backSize, $backX, $backY) {
+
+    background-color: $color;
+    ;
+    width: 60%;
+    padding: 0 6% 0% 8%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url($urlimg);
+    background-repeat: no-repeat;
+    background-size: $backSize;
+    background-position-x: $backX;
+    background-position-y: $backY;
+    background-blend-mode: color-dodge;
+    border-radius: 0 0 0 5rem;
+}
+
+
+
+@mixin footer($height, $color, $colortop:$white) {
+    height: height;
+    align-items: center;
+    padding: 0 6% 0% 6%;
+    background-color: $color;
+    border-top: .2rem solid $colortop;
+}

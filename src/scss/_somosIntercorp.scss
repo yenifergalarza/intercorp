@@ -1,0 +1,114 @@
+.lq-body-wrapper {
+    height: 100vh;
+    max-width: none;
+    padding: 0;
+
+    .lq-body {
+        height: 100%;
+        margin: 0;
+
+        .container-text-homeColor.container-text__secondPage {
+            @include background-hero($blue3, "../assets/fondo-somos-intercorp.png", 88%, center, 80%);
+
+
+            .groupTitle {
+                hr {
+                    border-top: .3rem solid $pink;
+                }
+            }
+
+            .row {
+                z-index: 300;
+                width: 117%;
+                margin-left: auto;
+                height: 46%;
+
+                .col-md-3 {
+                    padding: 0 .6rem;
+
+                    .card {
+                        height: 100%;
+                        color: $blue1;
+
+                        .card-body {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            padding: 1rem;
+
+                            .card-img-top {
+                                width: 82%;
+                                align-self: center;
+                            }
+
+                            h3.card-title {
+                                font-size: 1.4rem;
+                            }
+
+                        }
+                    }
+
+
+                }
+
+                .col-md-3:first-child {
+                    .card {
+                        border-radius: 2rem 0 0 0;
+
+                    }
+                }
+
+                .col-md-3:last-child {
+                    .card {
+                        border-radius: 0 0 2rem 0;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
+
+footer.foo-somos {
+    height: 6rem;
+    align-items: center;
+    padding: 0 8% 0% 8%;
+    @include footer(6rem, null);
+}
+
+
+@media (max-width: $breakpoint-9) {
+    footer.foo-somos {
+        @include footer(5rem, $blue3, $white);
+    }
+
+
+
+
+
+
+
+
+
+
+    .lq-body-wrapper {
+        .lq-body {
+            .container-text-homeColor.container-text__secondPage {
+                border-radius: 0;
+
+                .row {
+                    width: initial;
+                }
+
+                .groupTitle {
+                    hr {
+                        border-top: .3rem solid $pink;
+                    }
+                }
+            }
+        }
+    }
+}
