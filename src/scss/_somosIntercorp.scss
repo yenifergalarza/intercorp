@@ -8,7 +8,7 @@
         margin: 0;
 
         .container-text-homeColor.container-text__secondPage {
-            @include background-hero($blue3, "../assets/fondo-somos-intercorp.png", 88%, center, 80%);
+            @include background-hero($blue3, "../assets/fondo-somos-intercorp.png", 88%, center, 5rem);
 
 
             .groupTitle {
@@ -38,7 +38,7 @@
                             padding: 1rem;
 
                             .card-img-top {
-                                width: 82%;
+                                width: 7.5rem;
                                 align-self: center;
                             }
 
@@ -85,28 +85,64 @@ footer.foo-somos {
         @include footer(5rem, $blue3, $white);
     }
 
-
-
-
-
-
-
-
-
-
     .lq-body-wrapper {
         .lq-body {
             .container-text-homeColor.container-text__secondPage {
                 border-radius: 0;
+                padding: 0px 6% 0% 6%;
+
+
 
                 .row {
                     width: initial;
+                    margin-bottom: 5rem;
                 }
 
                 .groupTitle {
                     hr {
                         border-top: .3rem solid $pink;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+
+
+    .lq-body-wrapper {
+        .lq-body {
+            .container-text-homeColor.container-text__secondPage {
+
+                padding: 0px 6% 0% 6%;
+
+                .row {
+                    margin-bottom: 3rem;
+
+                    .col-sm-6 {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 2rem;
+
+                        .card {
+                            width: 77%;
+                        }
+                    }
+                }
+
+                .groupTitle {
+                    padding: 6rem 13% 0% 0%;
+
+                    hr {}
                 }
             }
         }
