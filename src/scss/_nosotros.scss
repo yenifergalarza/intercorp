@@ -1,0 +1,224 @@
+.third-article-3 {
+
+
+    .roundBorder {
+        @include btn($white);
+    }
+}
+
+
+.second-article-3 {
+    .roundBorder {
+        margin: 0 8% 0% 8%;
+    }
+
+}
+
+.first-article-3 {
+    margin: 0 8% 0% 8%;
+
+
+}
+
+.first-article-3,
+.second-article-3 {
+    .roundBorder {
+        @include btn($white);
+        border: .1rem solid $grey;
+        border-radius: 2rem;
+        height: 3.5rem;
+
+        width: 18rem;
+        text-align: center;
+        padding: 1rem;
+
+    }
+}
+
+.hero-container .roundBorder {
+    @include btn($pink);
+    padding: 2.1rem;
+}
+
+.lq-body {
+
+    .container-text-homeColor.container-text__ThirdPage {
+        @include background-hero($blue1, "../assets/fondo-enterate.png", 83%, -1rem, 6rem);
+        background-blend-mode: initial;
+
+        .groupTitle {
+            padding: 0% 16% 0% 0%;
+
+
+            .title {
+
+
+
+
+                font-size: 4.5rem;
+
+                padding: 0% 16% 0% 0%;
+
+
+
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+
+footer.bg-dark {
+    border-top: 0px;
+}
+
+.row-pride {
+    position: absolute;
+    right: inherit;
+    z-index: 500;
+    transform: translateX(-50%);
+    left: 50%;
+
+    .row {
+        position: relative;
+        top: -4rem;
+
+        //mixin faltacrear
+        .row-pride__img-1,
+        .row-pride__img-2,
+        .row-pride__img-3 {
+            .groupTitle {
+
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 1rem;
+                height: 100%;
+                justify-content: flex-end;
+            }
+        }
+
+        .row-pride__img-1 {
+            background-image: url("../assets/12.jpg");
+            height: 23rem;
+            background-size: cover;
+            object-fit: contain;
+
+        }
+
+        .row-pride__img-2 {
+            background-image: url("../assets/Bitmap-3.png");
+            height: 23rem;
+            background-size: cover;
+            object-fit: contain;
+        }
+
+        .row-pride__img-3 {
+            background-image: url("../assets/14.jpg");
+            height: 23rem;
+            background-size: cover;
+            object-fit: contain;
+        }
+
+    }
+}
+
+.margin-page {
+    margin: 0 8% 0% 8%;
+}
+
+.move-background {
+    position: relative;
+    top: 2.57rem;
+    transform: translateX(-50%);
+    width: 82.1rem;
+    right: -36.5rem;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.vh40 {
+    height: 40vh;
+}
+
+.second-article-3.background-pink {
+    height: 34rem;
+    border-radius: 0 4rem 0 0;
+
+
+    .carousel-pink {
+        transform: translateX(13%);
+
+        .carousel-inner {
+
+            height: 29rem;
+        }
+
+        .carousel-control-prev {
+            left: -9rem;
+        }
+
+        .carousel-control-next {
+            right: -9rem;
+        }
+
+        .carousel-indicators-pink {
+            bottom: -4rem;
+
+            li {
+                height: .4rem;
+                border-radius: .2rem;
+                border: none;
+                background-color: $blue4;
+            }
+
+            .active {
+                background-color: $pink;
+            }
+        }
+    }
+
+
+}
+
+.lead_position {
+    position: relative;
+    z-index: 3000;
+}
+
+
+.pride-blue__container {
+    width: 93%;
+    position: relative;
+    right: -7%;
+    border-radius: 10rem 0 0 0;
+    background-image: url(../assets/fondo-somos-intercorp.png);
+    background-repeat: no-repeat;
+    background-position-x: 49rem;
+    background-size: 45%;
+    background-position-y: 3rem;
+    height: 65vh;
+}
+
+@media (max-width:768px) {
+
+
+    .lq-body {
+
+        .container-text-homeColor.container-text__ThirdPage {
+            @include background-hero($blue1, "../assets/fondo-enterate.png", 83%, -1rem, 6rem);
+            padding: 5rem 6% 0% 8%;
+
+            .groupTitle .title {
+                font-size: 3.5rem;
+                padding: 0% 16% 0% 0%;
+            }
+
+        }
+    }
+}

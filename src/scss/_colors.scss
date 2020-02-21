@@ -9,3 +9,60 @@ $pink: #ca005d;
 $blue1: #052cb9;
 $green:#08be50;
 $yellow :#ffc101;
+$black2:#454545;
+$blue4:#b9d0ee;
+$white2:#f6f6f6;
+
+.color_black2 {
+    color: $black2 !important;
+}
+
+.b_blue0 {
+    background-color: $blue;
+}
+
+.b_blue1 {
+    background-color: $blue1;
+}
+
+.b_blue4 {
+    background-color: $blue4 !important;
+}
+
+.b_pink {
+    background-color: $pink;
+}
+
+footer.bg-dark {
+    background-color: #000000 !important;
+
+    hr.border-top-white {
+
+        border-top: 1px solid rgba(255, 255, 255, 0.21);
+    }
+}
+
+
+.footer__logo {
+    justify-content: end;
+    justify-content: flex-end;
+}
+
+.color-darkish-blue {
+    color: $blue2
+}
+
+.container_pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+}
+
+.text-black {
+    color: #454545 !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
