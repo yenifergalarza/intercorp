@@ -70,3 +70,13 @@ footer.bg-dark {
 .pt-6 {
     padding-top: 6rem !important;
 }
+
+.darkImage {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.darkImage:hover,
+.darkImage:active {
+    background-color: rgba(0, 0, 0, 0.0);
+}
