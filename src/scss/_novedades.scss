@@ -8,12 +8,20 @@
 
             .bg-white {
                 border-radius: 2.5rem 0 0 0;
-                width: 84.1%;
+                width: 85.6%;
             }
 
             .groupTitle__contentWhite {
+                h2 {
+                    font-size: 1.5rem !important;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+
                 z-index: 100;
-                padding: 5rem 1.2% 0% 11% !important;
+                padding: 5rem 1.2% 0% 1% !important;
                 justify-content: flex-end;
                 flex-direction: column;
 
