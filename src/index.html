@@ -9,63 +9,67 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+
 </head>
 
 <body>
-    <main>
-        <header class="lg-gh w100">
-            <div class="lg-gh__main h100 d-flex ">
+    <header class="header_lg">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="./assets/logo-intercorp-blanco.png" class="logo_header" alt="">
 
-                <figure class="lg-gh__brand">
-                    <img src="assets/logo-intercorp-blanco.png" alt="Intercorp logo" srcset="" class="h100" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </header>
 
-                </figure>
-                <button class="btn lg-gh-btn btn-light montserrat-sb">
-                    Contáctanos
-                </button>
-            </div>
-        </header>
-        <section class="lq-body-wrapper container">
-            <article class="lq-body d-flex row">
-                <div
-                    class="container-text-homeColor container-text-homeColor1 col-12 col-md-12  col-lg-8  w100 h100 d-flex">
-                    <div class="groupTitle w100 ">
-                        <h1 class="title text-white montserrat-b">
-                            Bienvenid@ a Somos Intercorp
-                        </h1>
-                        <hr>
-                        <p class="subtitle text-white montserrat-r">
-                            ¡Que bueno verte de nuevo! <br>
-                            Ingresa con tu documento de identidad a la plataforma
-
-                        </p>
-                    </div>
-                    <div class="input-group   w100">
-                        <i class="fa fa-address-card form-control-icon"></i>
-                        <input type="text" class="form-control" placeholder="Documento de identidad"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <a href="somosIntercorp.html" class="input-group-text" id="basic-addon2"><span
-                                    class="w100 text-white montserrat-sb">Ingresar</span></a>
-                        </div>
-                    </div>
-
+    <main class="" role="main">
+        <div class="hero_Double one_page">
+            <div class="d-flex">
+                <div class="first-hero__Text  hero-first">
 
                 </div>
-                <figure class="col-12 col-md-12 col-lg-4 ">
-                    <img class="w100 h100" src="assets/Bitmap.png" alt="Interbank" srcset="" />
 
-                </figure>
+                <div class="second-hero__image br-hero_img">
 
-            </article>
-        </section>
-        <footer class="d-flex">
-            <p class="text-gray"> 2020 Somos Intercorp. Todos los derechos reservados.</p>
-        </footer>
+                </div>
+            </div>
+
+            <div class="hero-content container">
+                <h1 class="montserrat-b title_hero text-white">
+                    Bienvenid@ a <br>
+                    Somos Intercorp
+                </h1>
+                <hr class="hero_hr-blue ">
+
+                <p class="montserrat-r subTitle_hero  text-white">
+                    ¡Que bueno verte de nuevo! <br>
+                    Ingresa con tu documento de identidad a la plataforma
+                </p>
+
+                <form class="group_Input border-shadow">
+                    <i class="fa fa-address-card hero-icon-input"></i>
+                    <input type="number" name="" id="documentId" class="hero-input"
+                        placeholder="Documento de identidad">
+                    <!-- <input type="submit" id="btn_send" value="Ingresa" class="hero-input_btn  text-white" /> -->`
+                    <a href="./somosIntercorp.html" id="btn_send" class="hero-input_btn  text-white montserrat-sb"
+                        style="
+                    padding: 1.4rem 0;
+                ">Ingresa</a>
+                </form>
+            </div>
+        </div>
     </main>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <footer class="footer_lg container">
+        <p class="montserrat-r">
+            2020 Somos Intercorp. Todos los derechos reservados .
+        </p>
+    </footer>
+
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

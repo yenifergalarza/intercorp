@@ -9,6 +9,14 @@
 
 }
 
+.color-darkish-blue {
+    color: $blue2
+}
+
+.text-black {
+    color: #454545 !important;
+}
+
 
 .montserrat-sb {
     font-family: 'Montserrat', sans-serif;
@@ -30,8 +38,42 @@
     color: $grey;
 }
 
+
+
 a,
 a:hover,
 a:active {
     text-decoration: none !important;
+}
+
+
+.fz-5 {
+    font-size: 5rem !important;
+}
+
+
+.subTitle_hero_white-container {
+    font-size: 1.625rem;
+}
+
+.subTitle-child_hero_white-container {
+    font-size: 0.875rem;
+}
+
+
+.fsz-3_75 {
+    font-size: 3.75rem;
+}
+
+
+.font-sz-1_1 {
+    font-size: 1.125rem;
+}
+
+.fsz-3_1 {
+    font-size: 3.125rem;
+}
+
+.fsz-1_5 {
+    font-size: 1.5rem;
 }

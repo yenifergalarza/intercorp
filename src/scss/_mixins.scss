@@ -30,12 +30,10 @@
 @mixin background-hero($color, $urlimg, $backSize, $backX, $backY) {
 
     background-color: $color;
-    ;
-    width: 60%;
-    padding: 0 6% 0% 8%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+
+
     background-image: url($urlimg);
     background-repeat: no-repeat;
     background-size: $backSize;
@@ -47,10 +45,140 @@
 
 
 
+
+
+
+
 @mixin footer($height, $color, $colortop:$white) {
     height: height;
     align-items: center;
     padding: 0 6% 0% 6%;
     background-color: $color;
     border-top: .2rem solid $colortop;
+}
+
+
+@mixin btn($color) {
+    border-radius: 2rem;
+
+    height: 4.15rem;
+    z-index: 200;
+
+    background-color: $color;
+    border: none;
+}
+
+@mixin hr-tiny-color($color) {
+    border-top: 0.3rem solid $color;
+    width: 3.3rem;
+    border-radius: 2rem;
+    margin-left: 0;
+}
+
+
+.hero_hr-blue {
+
+    @include hr-tiny-color($blue3);
+
+
+}
+
+.hr-tiny-pink {
+    @include hr-tiny-color($pink);
+}
+
+.hr-tiny-green {
+    @include hr-tiny-color($green);
+}
+
+.hr-tiny-blue {
+    @include hr-tiny-color($blue3);
+}
+
+.hr-tiny-yellow {
+    @include hr-tiny-color($yellow);
+}
+
+.border-shadow {
+
+    -webkit-box-shadow: -2px 5px 46px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: -2px 5px 46px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0rem 0.2rem 0.4rem 0.12rem rgba(0, 0, 0, 0.20);
+}
+
+
+
+
+.hr-tiny-line {
+    width: 3.3rem;
+    border-radius: 2rem;
+    margin-left: 0;
+}
+
+
+.background-pink {
+    background-color: $pink;
+}
+
+.background-blue3 {
+    background-color: $blue3;
+}
+
+.background-green {
+    background-color: $green;
+}
+
+.vh40 {
+    height: 40vh;
+}
+
+.vh80 {
+    height: 80vh;
+}
+
+
+
+
+.card-img-height {
+    object-fit: cover;
+    height: 15rem;
+}
+
+
+
+@media (max-width:767px) {
+    .lq-body-wrapper {
+        .lq-body {
+            .container-text__SixthPage {
+                .groupTitle {
+                    .title {
+                        font-size: 3.5rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .fsz-3_1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url();
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-next-icon {
+    background-image: url();
+    width: 20px;
+    height: 20px;
+}
+
+
+.hero-white_text {
+    width: 49.3% !important;
+    border-radius: 3rem 0 0 0;
 }
