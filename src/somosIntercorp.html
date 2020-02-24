@@ -1,113 +1,97 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+<html lang="en">
 
-  <body>
-    <main>
-      <header class="lg-gh w100">
-        <div class="lg-gh__main h100 d-flex ">
-          <figure class="lg-gh__brand">
-            <img
-              src="assets/logo-intercorp-blanco.png"
-              alt="Intercorp logo"
-              srcset=""
-              class="h100"
-            />
-          </figure>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+  <header class="header_lg">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="./assets/logo-intercorp-blanco.png" class="logo_header" alt="">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+        aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="" role="main">
+    <div class="hero_Double hero-secondPage">
+      <div class="d-flex">
+        <div class="first-hero__Text  hero-we">
+
         </div>
-      </header>
-      <section class="lq-body-wrapper container">
-        <article class="lq-body d-flex row">
-          <div
-            class="container-text-homeColor container-text__secondPage col-12 col-md-12  col-lg-8  w100 h100 d-flex"
-          >
-            <div class="groupTitle w100 ">
-              <h1 class="title text-white montserrat-b">
-                Somos Intercorp
-              </h1>
-              <hr />
-              <p class="subtitle text-white montserrat-r">
-                Conoce más de los servicios que ofrecemos <br />
-                a nuestros colaboradores
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <img
-                      class="card-img-top"
-                      src="assets/icon_entrenate.png"
-                      alt="Entrénate icon"
-                    />
-                    <h3 class="card-title montserrat-b">Entrénate</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <img
-                      class="card-img-top"
-                      src="assets/icon-beneficiate.png"
-                      alt="Beneficiate icono"
-                    />
-                    <h3 class="card-title montserrat-b">Beneficiate</h3>
-                  </div>
-                </div>
-              </div>
-              <a href="./enterate.html" class="col-md-3 col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <img
-                      class="card-img-top"
-                      src="assets/icon_enterate.png"
-                      alt="Entérate"
-                    />
-                    <h3 class="card-title montserrat-b">Entérate</h3>
-                  </div>
-                </div>
-              </a>
-              <div class="col-md-3 col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <img
-                      class="card-img-top"
-                      src="assets/icon_crece.png"
-                      alt="Crece"
-                    />
-                    <h3 class="card-title montserrat-b">Crece</h3>
-                  </div>
-                </div>
+
+        <div class="second-hero__image br-hero_img">
+
+        </div>
+      </div>
+
+      <div class="hero-content container">
+        <h1 class="montserrat-b title_hero text-white">
+          Somos Intercorp
+        </h1>
+        <hr class="hr-tiny-pink ">
+
+        <p class="montserrat-r subTitle_hero  text-white">
+          Conoce más de los servicios que ofrecemos
+          a<br>
+          nuestra familia de colaboradores
+        </p>
+
+        <div class=" row-we-inter d-flex">
+          <div class="four_cards">
+            <div class="card border-shadow ">
+              <div class="card-body">
+                <img class="card-img-top" src="assets/icon_entrenate.png" alt="Entrénate icon" />
+                <h3 class="card-title montserrat-b f_blue1">Entrénate</h3>
               </div>
             </div>
           </div>
-          <figure class="col-12 col-md-12 col-lg-4  ">
-            <img
-              class="w100 h100"
-              src="assets/Bitmap-1.png"
-              alt="Interbank"
-              srcset=""
-            />
-          </figure>
-        </article>
-      </section>
-      <footer class="d-flex foo-somos">
-        <p class="text-gray">
-          2020 Somos Intercorp. Todos los derechos reservados.
-        </p>
-      </footer>
-    </main>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-  </body>
+          <div class="four_cards">
+            <div class="card border-shadow ">
+              <div class="card-body">
+                <img class="card-img-top" src="assets/icon-beneficiate.png" alt="Beneficiate icono" />
+                <h3 class="card-title montserrat-b f_blue1 fsz-1_5">Beneficiate</h3>
+              </div>
+            </div>
+          </div>
+          <a href="./enterate.html" class="four_cards">
+            <div class="card border-shadow ">
+              <div class="card-body">
+                <img class="card-img-top" src="assets/icon_enterate.png" alt="Entérate" />
+                <h3 class="card-title montserrat-b f_blue1 fsz-1_5">Entérate</h3>
+              </div>
+            </div>
+          </a>
+          <div class="four_cards">
+            <div class="card border-shadow ">
+              <div class="card-body">
+                <img class="card-img-top" src="assets/icon_crece.png" alt="Crece" />
+                <h3 class="card-title montserrat-b f_blue1 fsz-1_5">Crece</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer_lg container">
+    <p class="montserrat-r">
+      2020 Somos Intercorp. Todos los derechos reservados .
+    </p>
+  </footer>
+</body>
+
 </html>

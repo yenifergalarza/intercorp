@@ -7,30 +7,19 @@
 }
 
 
-.second-article-3 {
-    .roundBorder {
-        margin: 0 8% 0% 8%;
-    }
-
-}
-
-.first-article-3 {
-    margin: 0 8% 0% 8%;
-
-
-}
-
 .first-article-3,
 .second-article-3 {
     .roundBorder {
         @include btn($white);
-        border: .1rem solid $grey;
+        border: 0.0625rem solid $grey;
         border-radius: 2rem;
         height: 3.5rem;
-
-        width: 18rem;
+        color: $black;
         text-align: center;
-        padding: 1rem;
+        width: 19.1875rem;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
     }
 }
@@ -82,8 +71,23 @@ footer.bg-dark {
     z-index: 500;
     transform: translateX(-50%);
     left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .row {
+
+
+        .col-12.groupTitle {
+            a.container_pill {
+                width: 16.3125rem;
+                text-align: center;
+                color: #000000;
+                padding-top: 1.4625rem;
+                padding-bottom: 1.4625rem;
+            }
+        }
+
         position: relative;
         top: -4rem;
 
@@ -103,27 +107,34 @@ footer.bg-dark {
 
         .row-pride__img-1 {
             background-image: url("../assets/12.jpg");
-            height: 23rem;
+            height: 25.3125rem;
             background-size: cover;
             object-fit: contain;
+            width: 21.875rem;
 
         }
 
         .row-pride__img-2 {
             background-image: url("../assets/Bitmap-3.png");
-            height: 23rem;
+            height: 25.3125rem;
             background-size: cover;
             object-fit: contain;
+            width: 21.875rem;
         }
 
         .row-pride__img-3 {
             background-image: url("../assets/14.jpg");
-            height: 23rem;
+            height: 25.3125rem;
             background-size: cover;
             object-fit: contain;
+            width: 21.875rem;
         }
 
     }
+
+
+
+
 }
 
 .margin-page {
@@ -147,16 +158,17 @@ footer.bg-dark {
 }
 
 .second-article-3.background-pink {
-    height: 34rem;
+    height: 37.5rem;
     border-radius: 0 4rem 0 0;
 
 
     .carousel-pink {
-        transform: translateX(13%);
+        margin: 0 auto;
 
         .carousel-inner {
-
-            height: 29rem;
+            height: 28.9375rem;
+            width: 57.5rem;
+            margin: auto;
         }
 
         .carousel-control-prev {
@@ -191,7 +203,6 @@ footer.bg-dark {
     z-index: 3000;
 }
 
-
 .pride-blue__container {
     width: 93%;
     position: relative;
@@ -202,10 +213,11 @@ footer.bg-dark {
     background-position-x: 40rem;
     background-size: 48%;
     background-position-y: 3rem;
-    height: 69vh;
+    height: 33.4375rem;
 }
 
-@media (max-width:768px) {
+
+@media (max-width:991px) {
 
 
     .lq-body {

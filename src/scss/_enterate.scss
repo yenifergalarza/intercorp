@@ -1,0 +1,52 @@
+.hero_findOut {
+    height: 110vh;
+
+    .d-flex {
+        .hero-first {
+            @include background-hero($blue1, "../assets/fondo-enterate.png", 72%, 2rem, 6rem);
+
+        }
+    }
+
+    .hero-content {
+
+
+        .group_Input {
+            margin-top: 3.125rem;
+            height: 4.375rem;
+            width: 10rem;
+
+            .hero-input_btn {
+
+                background-color: $pink;
+                border-radius: 2.1875rem;
+                padding: 1.6875rem 3.0625rem;
+                border: none;
+                font-size: 1rem;
+
+            }
+        }
+    }
+}
+
+
+.pride_triplets_shadow {
+    -webkit-box-shadow: 4px 9px 23px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 9px 23px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 9px 23px -3px rgba(0, 0, 0, 0.75);
+}
+
+.pill-p-center {
+    width: 8.4375rem;
+    text-align: center;
+}
+
+.carousel-inner {
+    video {
+        border-radius: 3rem 0;
+    }
+
+    video[poster] {
+        object-fit: cover;
+    }
+}

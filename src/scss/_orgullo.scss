@@ -1,25 +1,5 @@
 .lq-body-wrapper {
     .lq-body {
-        .container-text-homeColor.container-text__FifthPage {
-            @include background-hero($blue3, "../assets/fondo-enterate.png", 83%, -1rem, 6rem);
-
-            .bg-white {
-                border-radius: 2.5rem 0 0 0;
-                width: 85.7%;
-            }
-
-            .groupTitle__contentWhite {
-                z-index: 100;
-                padding: 5rem 1.2% 0% 1% !important;
-                justify-content: flex-end;
-                flex-direction: column;
-
-                .title {
-                    font-size: 5.2rem;
-                }
-
-            }
-        }
 
         .lq__second {
             border-radius: 6rem 0rem 6rem 0rem;
@@ -88,5 +68,20 @@
                 border-radius: 6rem 0rem 6rem 0rem;
             }
         }
+    }
+}
+
+
+
+
+.hero_pride_double {
+    height: 100vh;
+
+    .hero-pride {
+        @include background-hero($blue3, "../assets/fondo-enterate.png", 83%, -1rem, 6rem);
+    }
+
+    .second-hero__image {
+        background-image: url("../assets/Bitmap-16.png");
     }
 }

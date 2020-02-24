@@ -1,150 +1,60 @@
-.lq-body-wrapper {
-    height: 100vh;
-    max-width: none;
-    padding: 0;
+.row-we-inter {
+    width: 70%;
+    padding-top: 3.25rem;
 
-    .lq-body {
-        height: 100%;
-        margin: 0;
+    .four_cards {
+        padding-right: 1.25rem;
 
-        .container-text-homeColor.container-text__secondPage {
-            @include background-hero($blue3, "../assets/fondo-somos-intercorp.png", 88%, center, 5rem);
+        .card {
+            width: 11.875rem;
+            height: 18.9375rem;
 
+            .card-body {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
 
-            .groupTitle {
-                hr {
-                    border-top: .3rem solid $pink;
-                }
-            }
-
-            .row {
-                z-index: 300;
-                width: 117%;
-                margin-left: auto;
-                height: 46%;
-
-                .col-md-3 {
-                    padding: 0 .6rem;
-
-                    .card {
-                        height: 100%;
-                        color: $blue1;
-
-                        .card-body {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            text-align: center;
-                            padding: 1rem;
-
-                            .card-img-top {
-                                width: 7.5rem;
-                                align-self: center;
-                            }
-
-                            h3.card-title {
-                                font-size: 1.4rem;
-                            }
-
-                        }
-                    }
-
-
-                }
-
-                .col-md-3:first-child {
-                    .card {
-                        border-radius: 2rem 0 0 0;
-
-                    }
-                }
-
-                .col-md-3:last-child {
-                    .card {
-                        border-radius: 0 0 2rem 0;
-                    }
-                }
-
-            }
-
-        }
-    }
-
-}
-
-footer.foo-somos {
-    height: 6rem;
-    align-items: center;
-    padding: 0 8% 0% 8%;
-    @include footer(6rem, null);
-}
-
-
-@media (max-width: $breakpoint-9) {
-    footer.foo-somos {
-        @include footer(5rem, $blue3, $white);
-    }
-
-    .lq-body-wrapper {
-        .lq-body {
-            .container-text-homeColor.container-text__secondPage {
-                border-radius: 0;
-                padding: 0px 6% 0% 6%;
-
-
-
-                .row {
-                    width: initial;
-                    margin-bottom: 5rem;
-                }
-
-                .groupTitle {
-                    hr {
-                        border-top: .3rem solid $pink;
-                    }
+                .card-img-top {
+                    height: 40%;
+                    width: auto;
                 }
             }
         }
     }
 }
 
+.four_cards:first-child {
+    .card {
+        border-radius: 2rem 0 0 0;
 
-
-
-
-
-
-
-@media (max-width: 767px) {
-
-
-
-    .lq-body-wrapper {
-        .lq-body {
-            .container-text-homeColor.container-text__secondPage {
-
-                padding: 0px 6% 0% 6%;
-
-                .row {
-                    margin-bottom: 3rem;
-
-                    .col-sm-6 {
-                        display: flex;
-                        justify-content: center;
-                        margin-bottom: 2rem;
-
-                        .card {
-                            width: 77%;
-                        }
-                    }
-                }
-
-                .groupTitle {
-                    padding: 6rem 13% 0% 0%;
-
-                    hr {}
-                }
-            }
-        }
     }
 }
+
+.four_cards:last-child {
+    .card {
+        border-radius: 0 0 2rem 0;
+    }
+}
+
+
+.hero-secondPage.hero_Double {
+    .hero-content {
+        top: -85vh;
+    }
+}
+
+.hero-we {
+    @include background-hero($blue3, "../assets/fondo-somos-intercorp.png", 72%, 10%, 6.5rem);
+}
+
+@media (max-width: $breakpoint-9) {}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {}

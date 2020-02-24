@@ -12,6 +12,8 @@ $yellow :#ffc101;
 $black2:#454545;
 $blue4:#b9d0ee;
 $white2:#f6f6f6;
+$white3:#f8f8f8;
+$grey2:#909094;
 
 .color_black2 {
     color: $black2 !important;
@@ -23,6 +25,10 @@ $white2:#f6f6f6;
 
 .b_blue1 {
     background-color: $blue1;
+}
+
+.b_blue3 {
+    background-color: $cerulean;
 }
 
 .b_blue4 {
@@ -42,15 +48,15 @@ footer.bg-dark {
     }
 }
 
+.f_blue1 {
+    color: $blue1;
+}
 
 .footer__logo {
     justify-content: end;
     justify-content: flex-end;
 }
 
-.color-darkish-blue {
-    color: $blue2
-}
 
 .container_pill {
     padding-right: .6em;
@@ -59,9 +65,6 @@ footer.bg-dark {
     padding: 0.5rem 1rem;
 }
 
-.text-black {
-    color: #454545 !important;
-}
 
 .w-80 {
     width: 80% !important;
