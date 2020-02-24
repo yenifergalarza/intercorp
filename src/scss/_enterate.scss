@@ -6,6 +6,10 @@
             @include background-hero($blue1, "../assets/fondo-enterate.png", 72%, 2rem, 6rem);
 
         }
+
+        .hero-enterate {
+            background-image: url(../assets/Bitmap-2.png);
+        }
     }
 
     .hero-content {
