@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/nosotros.css" />
+
 </head>
 
 <body>
@@ -85,7 +85,8 @@
                     <hr class="hero_hr-blue ">
                 </div>
                 <div class="w-50 container-video">
-                    <video class="d-block" src="assets/Entrevista LFC.mp4" controls="" poster="assets/Bitmap-4.png">
+                    <video class="d-block" src="assets/Entrevista LFC.mp4" controls="" poster="assets/Bitmap-4.png"
+                        id="mainVideo">
                     </video>
                 </div>
 
@@ -103,12 +104,13 @@
                     <hr class="hr-tiny-green mx-auto hr-tiny-line  mb-5">
                 </div>
                 <article class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/lgtbi.webp" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista LFC.mp4" id="video1" class="card-img-top card-img-height"
+                                controls="" poster="assets/Bitmap-14.png"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de mejores empresas<br> para
-                                    talento LGTBIQ+</h5>
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Luis Felipe<br> Castellanos -
+                                    Interbank</h5>
                                 <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
                                     elit
                                     ultrices
@@ -116,44 +118,47 @@
 
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span1"></span>
                                     </div>
-                                    <a href="./orgullodetalle2.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
+                                    <div class="color-darkish-blue video-icon" id="video1Btn">
+
+                                        <img src="./assets/play-circle-regular.svg" alt="" srcset="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/ranking.webp" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista Rafael Dasso.mp4" id="video2"
+                                class="card-img-top card-img-height" controls="" poster="assets/Bitmap-13.png"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de las 20 marcas más
-                                    <br>valoradas del Perú</h5>
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Rafael Dasso -
+                                    <br>InRetail Pharma</h5>
                                 <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
                                     elit
                                     ultrices
                                 </p>
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span2"></span>
                                     </div>
-                                    <a href="./orgullodetalle3.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
+                                    <div class="color-darkish-blue video-icon" id="video2Btn">
+
+                                        <img src="./assets/play-circle-regular.svg" alt="" srcset="">
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card  border-shadow mt-4 ">
-                            <img src="assets/Bitmap-8.png" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista-fernandoZavala.mp4" id="video3"
+                                class="card-img-top card-img-height" controls="" poster="assets/Bitmap-15.png"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Inauguramos Real Plaza <br> Puruchuco
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Fernando Zavala <br>
+                                    Intercorp
                                 </h5>
                                 <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
                                     elit
@@ -161,24 +166,24 @@
                                 </p>
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span3"></span>
                                     </div>
-                                    <a href="./novedadesDetalle5.html"
-                                        class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
+                                    <div class="color-darkish-blue video-icon" id="video3Btn">
+
+                                        <img src="./assets/play-circle-regular.svg" alt="" srcset="">
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/page-1.jpg" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista Rafael Dasso.mp4" class="card-img-top card-img-height"
+                                controls poster="assets/Bitmap-13.png" id="video4"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de mejores empresas<br> para
-                                    talento LGTBIQ+</h5>
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Rafael Dasso <br>inRetail
+                                    Pharma</h5>
                                 <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
                                     elit
                                     ultrices
@@ -186,63 +191,18 @@
 
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span4"></span>
                                     </div>
-                                    <a href="./orgullodetalle2.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/ranking.webp" alt="" class="card-img-top card-img-height">
-                            <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de las 20 marcas más
-                                    <br>valoradas del Perú</h5>
-                                <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
-                                    elit
-                                    ultrices
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
-                                    </div>
-                                    <a href="./orgullodetalle3.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
+                                    <div class="color-darkish-blue video-icon" id="video4Btn">
 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card  border-shadow mt-4 ">
-                            <img src="assets/Bitmap-8.png" alt="" class="card-img-top card-img-height">
-                            <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Inauguramos Real Plaza <br> Puruchuco
-                                </h5>
-                                <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
-                                    elit
-                                    ultrices
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2 ">4:15</spam>
+                                        <img src="./assets/play-circle-regular.svg" alt="" srcset="">
                                     </div>
-                                    <a href="./novedadesDetalle5.html" class="  container_pill bg-white
-                                        color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
+
+
                 </article>
             </section>
 
@@ -309,6 +269,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="./js/video.js"></script>
 </body>
 
 </html>
