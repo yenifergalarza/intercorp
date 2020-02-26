@@ -82,7 +82,7 @@ button.navbar-toggler {
 }
 
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .header_lg {
         .container {
             .navbar-brand {
@@ -211,7 +211,51 @@ button.navbar-toggler {
         }
     }
 
+    .hero_leads {
+        .hero-content {
+            top: -77vh;
+            flex-direction: column;
 
+            .w-50 {
+                width: 100% !important;
+            }
+
+            .container-video {
+                position: inherit;
+                right: 0%;
+                top: 0;
+                width: 100% !important;
+
+                video.d-block {
+                    width: 60%;
+                    height: auto;
+                    position: relative;
+                    right: 0rem;
+
+                    margin: 1.5em auto;
+
+                }
+            }
+
+
+        }
+    }
+
+    video.card-img-height {
+        height: 45rem;
+    }
+
+    .fz-5 {
+        font-size: 2em !important;
+    }
+
+    .hero_leads .d-flex .hero-first {
+
+        background-repeat: repeat;
+        background-size: 84%;
+        background-position-x: center;
+        background-repeat: repeat;
+    }
 }
 
 
@@ -446,6 +490,7 @@ button.navbar-toggler {
                 background-position-x: center;
                 background-position-y: center;
                 background-size: 171%;
+                background-repeat: repeat;
             }
         }
 
@@ -475,28 +520,49 @@ button.navbar-toggler {
 
     .after__hero {
         width: 100%;
+        position: initial;
+        transform: translateX(0%);
+        left: 0%;
 
-        position: absolute;
-        transform: translateX(-50%);
-        left: 50%;
-        top: calc(96vh - 4em);
-        overflow-x: scroll;
+
 
         .scroll-mobile {
-            flex-wrap: nowrap;
 
-            width: 233rem;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            flex-wrap: nowrap;
+            width: 98%;
+            margin-top: 7rem !important;
+            margin-left: 1rem;
+            box-shadow: none;
+            margin-right: 2rem !important;
+
+
+
 
             .triplets_container {
                 align-items: center;
                 flex-direction: column;
-                width: 81rem;
-                padding: 2rem 0 2rem 0;
+                width: 82rem;
+                padding: 3rem 2rem;
+                border-radius: 11rem 0rem;
+                box-shadow: .5rem .5rem 2.3rem -1rem;
+                background: #fbfbfb;
+                margin: 2rem 2rem 2rem 2rem;
+
+
 
                 .triplets_container--img {
                     width: 71rem;
                     height: 23rem;
+                    display: flex;
+                    justify-content: center;
 
+                    .triplets--img {
+                        object-fit: cover;
+                        width: 77%;
+                        height: 91%;
+                    }
 
                 }
 
@@ -516,7 +582,9 @@ button.navbar-toggler {
 
         .last_news {
             .row {
-                .col-md-4 {
+
+                .col-md-4,
+                .col-md-6 {
                     padding-bottom: .8em;
 
                     .card {
@@ -550,6 +618,7 @@ button.navbar-toggler {
                 background-size: 163%;
                 background-position-x: center;
                 background-position-y: 67%;
+                background-repeat: repeat;
             }
         }
 
@@ -574,10 +643,84 @@ button.navbar-toggler {
         }
     }
 
+
+    //lideres
+
+    video.card-img-height {
+        height: 47rem;
+    }
+
     .hero_leads {
         .hero-content {}
     }
 
+
+    .lead_news {
+        .row {
+            .card {
+                .p-3 {
+                    padding: 3rem !important;
+
+                    .d-flex {
+                        .video-icon {
+                            img {
+                                width: 8.5rem;
+                            }
+                        }
+
+                    }
+
+
+                    .card-text {
+                        font-size: .6em;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .card-text {
+        margin: 2rem 0 5rem 0;
+
+    }
+
+
+    .hero_leads .hero-content .container-video video.d-block {
+
+        margin: 2.5em auto;
+    }
+
+    .hero_leads {
+
+
+        .d-flex {
+            .hero-first {
+                background-repeat: repeat;
+                background-size: 114%;
+
+
+                background-repeat: repeat;
+            }
+        }
+
+        .hero-content {
+
+
+
+            .container-video {
+
+
+                video.d-block {
+                    width: 100%;
+
+
+                }
+            }
+
+
+        }
+    }
 }
 
 @media(max-height:400px) {
