@@ -14,6 +14,12 @@ html {
     width: 11.5rem;
 }
 
+.btn-register {
+    margin-top: 1.875rem;
+    width: 8.75rem;
+    height: 3.125rem;
+}
+
 .hero_Double {
 
     position: relative;
@@ -60,6 +66,7 @@ html {
             position: relative;
             margin-top: 3.125rem;
             border-radius: 3.18rem;
+            display: flex;
 
             .hero-input {
                 height: 4.375rem;
@@ -71,9 +78,11 @@ html {
 
             .hero-icon-input {
                 position: absolute;
-                top: 1.7rem;
+
                 left: 1.6rem;
                 font-size: 1.2rem;
+
+                align-self: center;
 
             }
 
