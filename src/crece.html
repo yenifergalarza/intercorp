@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/crece.css">
 </head>
 
 <body class="growthWhite">
@@ -24,62 +26,158 @@
                     <!-- sidebar -->
                     <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top p-0">
                         <a href="#"
-                            class="navbar-brand text-black d-block mx-auto text-center py-3 mb-4 bottom-border b_blue1 nav-logo">CodeAndCreate</a>
-                        <div class="select-box">
-                            <div class="options-container">
-                                <div class="option"> <input type="radio" class="radio" id="automobiles"
-                                        name="category" /> <label for="automobiles">Automobiles</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="film" name="category" />
-                                    <label for="film">Film & Animation</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="science" name="category" />
-                                    <label for="science">Science & Technology</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="art" name="category" />
-                                    <label for="art">Art</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="music" name="category" />
-                                    <label for="music">Music</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="travel" name="category" />
-                                    <label for="travel">Travel & Events</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="sports" name="category" />
-                                    <label for="sports">Sports</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="news" name="category" />
-                                    <label for="news">News & Politics</label> </div>
-                                <div class="option"> <input type="radio" class="radio" id="tutorials" name="category" />
-                                    <label for="tutorials">Tutorials</label> </div>
+                            class="w-100 navbar-brand text-black d-block mx-auto text-sm-center text-md-left py-3 mb-4 bottom-border b_blue1 nav-logo">
+                            <img src="./assets/logo-intercorp-blanco.png" class="w-50" alt="" srcset="">
+                        </a>
+
+                        <form class="w-90">
+                            <p class="montserrat-sb">
+                                Buscar
+                            </p>
+                            <div class="d-flex flex-column align-items-end w-90">
+                                <input type="text" class=" w-100 form-control search-input"
+                                    placeholder="Palabra o puesto clave">
+                                <button type="button"
+                                    class="mt-3 w-50 border-0 container_pill background-pink montserrat-sb text-white ">Buscar</button>
                             </div>
-                            <div class="selected"> Select Video Category </div>
-                        </div>
+                        </form>
+                        <form class="w-90 mt-4">
+                            <p class="montserrat-sb">Filtrar por </p>
+                            <div class="select-box ">
+                                <div class="options-container">
+                                    <div class="option"> <input type="radio" class="radio" id="empresa1"
+                                            name="empresa" />
+                                        <label for="empresa1">empresa1</label> </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="empresa2" name="empresa" />
+                                        <label for="empresa2">Empresa 2</label> </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="empresa3" name="empresa" />
+                                        <label for="empresa3">empresa 3</label> </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="empresa4" name="empresa" />
+                                        <label for="empresa4">empresa 4</label> </div>
+
+                                </div>
+                                <div class="selected"> Selecciona la empresa </div>
+                            </div>
+
+
+                            <div class="select-box">
+                                <div class="options-container oc2">
+                                    <div class="option o2"> <input type="radio" class="radio" id="area1" name="area" />
+                                        <label for="area1">area 1</label> </div>
+                                    <div class="option o2">
+                                        <input type="radio" class="radio" id="area2" name="area" />
+                                        <label for="area2">area 2</label> </div>
+                                    <div class="option o2">
+                                        <input type="radio" class="radio" id="area3" name="area" />
+                                        <label for="area3">area 3</label> </div>
+                                    <div class="option o2">
+                                        <input type="radio" class="radio" id="area4" name="area" />
+                                        <label for="area4">area4 4</label> </div>
+
+                                </div>
+                                <div class="selected s2"> Selecciona el area </div>
+                            </div>
 
 
 
+
+                            <div class="select-box">
+                                <div class="options-container oc3">
+                                    <div class="option o3"> <input type="radio" class="radio" id="exp1" name="area" />
+                                        <label for="exp1">exp1 1</label> </div>
+                                    <div class="option o3">
+                                        <input type="radio" class="radio" id="exp2" name="area" />
+                                        <label for="exp2">exp2 2</label> </div>
+                                    <div class="option o3">
+                                        <input type="radio" class="radio" id="exp3" name="area" />
+                                        <label for="exp3">area 3</label> </div>
+                                    <div class="option o3">
+                                        <input type="radio" class="radio" id="exp4" name="area" />
+                                        <label for="exp4">exp4 4</label> </div>
+
+                                </div>
+                                <div class="selected s3">Experiencia minima </div>
+                            </div>
+
+
+                            <div class="select-box">
+                                <div class="options-container oc3">
+                                    <div class="option o4"> <input type="radio" class="radio" id="fp1" name="area" />
+                                        <label for="fp1">exp1 1</label> </div>
+                                    <div class="option o4">
+                                        <input type="radio" class="radio" id="fp2" name="area" />
+                                        <label for="fp2">exp2 2</label> </div>
+                                    <div class="option o4">
+                                        <input type="radio" class="radio" id="fp3" name="area" />
+                                        <label for="fp3">area 3</label> </div>
+                                    <div class="option o4">
+                                        <input type="radio" class="radio" id="fp4" name="area" />
+                                        <label for="fp4">exp4 4</label> </div>
+
+                                </div>
+                                <div class="selected s4">fecha de publicacion</div>
+                            </div>
+                        </form>
                     </div>
                     <!-- end of sidebar -->
 
                     <!-- top-nav -->
-                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto  fixed-top py-2 pb-3 top-navbar ">
-                        <div class="row align-items-center">
-                            <div class="col-md-4">
-                                <h4 class="text-uppercase mb-0">Dashboard</h4>
-                            </div>
-                            <div class="col-md-5">
-                                <form>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control search-input" placeholder="Search...">
-                                        <button type="button" class="btn btn-white search-button"><i
-                                                class="fas fa-search text-danger"></i></button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-md-3">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i
-                                                class="fas fa-comments text-muted fa-lg"></i></a></li>
-                                    <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i
-                                                class="fas fa-bell text-muted fa-lg"></i></a></li>
-                                    <li class="nav-item ml-md-auto"><a href="#" class="nav-link" data-toggle="modal"
-                                            data-target="#sign-out"><i
-                                                class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
-                                </ul>
-                            </div>
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto  fixed-top  pt-1 pb-2 top-navbar ">
+                        <div class="d-flex container  justify-content-end">
+
+                            <nav class="navbar  p-0">
+                                <div class="">
+                                    <ul class="navbar-nav ml-auto nav-border_b ">
+                                        <li class="nav-item active-blue ">
+                                            <a class="nav-link montserrat-b" href="./somosIntercorp.html">Inicio</a>
+                                        </li>
+                                        <li class="nav-item active-blue">
+                                            <a class="nav-link montserrat-b" href="#">Entrénate</a>
+                                        </li>
+                                        <li class="nav-item active-blue">
+                                            <a class="nav-link montserrat-b" href="#">Beneficiate</a>
+                                        </li>
+                                        <li class="nav-item dropdown active-blue">
+                                            <a href="./enterate.html" class="nav-link  montserrat-b dropdown-toggle"
+                                                id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Entérate <i class="fa fa-chevron-down"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                                <div class="d-flex">
+                                                    <a class="dropdown-item montserrat-r"
+                                                        href="./novedades.html">Novedades</a>
+                                                    <a class="dropdown-item montserrat-r" href="./lideres.html">Líderes
+                                                        Intercorp</a>
+                                                    <a class="dropdown-item montserrat-r"
+                                                        href="./orgullo.html">#Orgullo</a>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown active active-blue">
+                                            <a class="nav-link  montserrat-b dropdown-toggle" id="dropdown02"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Crece
+                                                <i class="fa fa-chevron-down"></i></a>
+                                        </li>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                            <div class="d-flex">
+                                                <a class="dropdown-item montserrat-r" href="# ">pag 1</a>
+                                                <a class="dropdown-item montserrat-r" href="# ">pag 2
+                                                    Intercorp</a>
+                                                <a class="dropdown-item montserrat-r" href="# ">pag 3</a>
+                                            </div>
+
+                                        </div>
+                                    </ul>
+
+                                </div>
+                            </nav>
+
+
+
                         </div>
                     </div>
                     <!-- end of top-nav -->
@@ -87,7 +185,229 @@
             </div>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                <div class="row align-items-center d-flex flex-column justify-content-center">
+                    <div class="col-10 mt-5 mb-4 mb-xl-0 ">
+                        <p class=" mt-4 text-sm-center text-md-left mb-3 montserrat-sb">ofertas laborales</p>
+                        <table class="table  bg-light text-center">
 
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/promart-icon.png" alt="" class="img-table " srcset="">
+                                            <div class="text-col pl-3 text-sm-center text-md-left">
+                                                <p class="color-darkish-blue m-0 montserrat-sb"> Product Manager</p>
+                                                <span class="muted montserrat-r">Promart</span>
+                                            </div>
+
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Experiencia </p>
+                                            <span class="muted montserrat-r">X años</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Publicado el </p>
+                                            <span class="muted montserrat-r">Vence</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Modalidad </p>
+                                            <span class="muted montserrat-r">Full Time</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Vence el </p>
+                                            <span class="muted montserrat-r">00/00/0000</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="./creceDetalle.html"
+                                            class="container_pill bg-white color-darkish-blue   roundBorder  montserrat-sb ">Ver
+                                            más</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/promart-icon.png" alt="" class="img-table " srcset="">
+                                            <div class="text-col pl-3 text-sm-center text-md-left">
+                                                <p class="color-darkish-blue m-0 montserrat-sb"> Product Manager</p>
+                                                <span class="muted montserrat-r">Promart</span>
+                                            </div>
+
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Experiencia </p>
+                                            <span class="muted montserrat-r">X años</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Publicado el </p>
+                                            <span class="muted montserrat-r">Vence</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Modalidad </p>
+                                            <span class="muted montserrat-r">Full Time</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Vence el </p>
+                                            <span class="muted montserrat-r">00/00/0000</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="./creceDetalle.html"
+                                            class="container_pill bg-white color-darkish-blue   roundBorder  montserrat-sb ">Ver
+                                            más</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/promart-icon.png" alt="" class="img-table " srcset="">
+                                            <div class="text-col pl-3 text-sm-center text-md-left">
+                                                <p class="color-darkish-blue m-0 montserrat-sb"> Product Manager</p>
+                                                <span class="muted montserrat-r">Promart</span>
+                                            </div>
+
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Experiencia </p>
+                                            <span class="muted montserrat-r">X años</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Publicado el </p>
+                                            <span class="muted montserrat-r">Vence</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Modalidad </p>
+                                            <span class="muted montserrat-r">Full Time</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Vence el </p>
+                                            <span class="muted montserrat-r">00/00/0000</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="./creceDetalle.html"
+                                            class="container_pill bg-white color-darkish-blue   roundBorder  montserrat-sb ">Ver
+                                            más</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/promart-icon.png" alt="" class="img-table " srcset="">
+                                            <div class="text-col pl-3 text-sm-center text-md-left">
+                                                <p class="color-darkish-blue m-0 montserrat-sb"> Product Manager</p>
+                                                <span class="muted montserrat-r">Promart</span>
+                                            </div>
+
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Experiencia </p>
+                                            <span class="muted montserrat-r">X años</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Publicado el </p>
+                                            <span class="muted montserrat-r">Vence</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Modalidad </p>
+                                            <span class="muted montserrat-r">Full Time</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Vence el </p>
+                                            <span class="muted montserrat-r">00/00/0000</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="./creceDetalle.html"
+                                            class="container_pill bg-white color-darkish-blue   roundBorder  montserrat-sb ">Ver
+                                            más</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/promart-icon.png" alt="" class="img-table " srcset="">
+                                            <div class="text-col pl-3 text-sm-center text-md-left">
+                                                <p class="color-darkish-blue m-0 montserrat-sb"> Product Manager</p>
+                                                <span class="muted montserrat-r">Promart</span>
+                                            </div>
+
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Experiencia </p>
+                                            <span class="muted montserrat-r">X años</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Publicado el </p>
+                                            <span class="muted montserrat-r">Vence</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Modalidad </p>
+                                            <span class="muted montserrat-r">Full Time</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-col pl-3 text-sm-center text-md-left">
+                                            <p class="color-darkish-blue m-0 montserrat-sb">Vence el </p>
+                                            <span class="muted montserrat-r">00/00/0000</span>
+                                        </div>
+                                    </td>
+                                    <td><a href="./creceDetalle.html"
+                                            class="container_pill bg-white color-darkish-blue   roundBorder  montserrat-sb ">Ver
+                                            más</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

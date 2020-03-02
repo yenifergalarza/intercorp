@@ -52,9 +52,12 @@
     }
 
     .nav-item:hover,
-    .nav-item:focus {
+    .nav-item:focus,
+    .nav-item.active {
         border-bottom-color: $pink;
     }
+
+
 
     .nav-link+.nav-link {
         margin-left: 1rem;

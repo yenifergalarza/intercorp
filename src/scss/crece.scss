@@ -1,3 +1,5 @@
+@import "colors";
+
 .sidebar,
 .fixed-top {
 
@@ -6,6 +8,11 @@
 
 .sidebar {
     height: 100vh;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .logo-sidebar {
@@ -47,7 +54,12 @@
         width: 100%;
         left: 0;
         top: 0;
-        height: 4.5em;
+
+        display: flex !important;
+        padding: 0rem 2rem;
+        height: 3.9rem;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 
@@ -58,8 +70,8 @@
 }
 
 .select-box .options-container {
-    background: #2f3640;
-    color: #f5f6fa;
+    background: $white;
+    color: $black2;
     max-height: 0;
     width: 100%;
     opacity: 0;
@@ -71,12 +83,12 @@
 }
 
 .selected {
-    background: #2f3640;
+    background: $white;
+    color: $black2;
     border-radius: 8px;
     margin-bottom: 8px;
-    color: #f5f6fa;
+    border: .05em solid $grey2;
     position: relative;
-
     order: 0;
 }
 
@@ -88,9 +100,9 @@
 
     position: absolute;
     height: 100%;
-    width: 32px;
-    right: 10px;
-    top: 5px;
+    width: 32rem;
+    right: -29.275rem;
+    top: 0px;
 
     transition: all 0.4s;
 }
@@ -108,7 +120,7 @@
 
 .select-box .options-container::-webkit-scrollbar {
     width: 8px;
-    background: #0d141f;
+    background: #e3e3e3;
     border-radius: 0 8px 8px 0;
 }
 
@@ -119,12 +131,12 @@
 
 .select-box .option,
 .selected {
-    padding: 12px 24px;
+    padding: .7rem 1rem;
     cursor: pointer;
 }
 
 .select-box .option:hover {
-    background: #414b57;
+    background: #e3e3e3;
 }
 
 .select-box label {
@@ -133,4 +145,67 @@
 
 .select-box .option .radio {
     display: none;
+}
+
+
+.search-button {
+    position: relative;
+    left: 70%;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.navbar-brand {
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav-border_b .nav-item:hover,
+.nav-border_b .nav-item:focus,
+.nav-border_b .nav-item.active {
+    border-bottom-color: $blue3
+}
+
+
+.img-table {
+    height: 5rem;
+
+}
+
+.table th,
+.table td {
+
+    vertical-align: middle;
+}
+
+
+
+td .roundBorder {
+
+    background-color: transparent;
+    border: none;
+    border: 0.0625rem solid $blue1;
+
+}
+
+.btn-growth {
+    height: 5rem;
+    line-height: initial;
+}
+
+.hero_leads {
+    .d-flex {
+        .second-hero__image.b_blue1 {
+            background-color: $blue1 !important;
+        }
+    }
+}
+
+
+.triplet-icon_growth {
+    font-size: 2.4375rem;
+    color: $pink;
 }
