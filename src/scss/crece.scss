@@ -209,3 +209,25 @@
     font-size: 2.4375rem;
     color: $blue3;
 }
+
+.hero_leads {
+    .hero-content {
+        .img-min-growth {
+            width: 5rem;
+            height: 5rem;
+            position: inherit;
+            background: none;
+            box-shadow: none;
+            border-radius: 0;
+        }
+    }
+}
+
+
+.line-height-Ini {
+    line-height: initial;
+}
+
+.flex-end-jus {
+    justify-content: flex-end !important;
+}
