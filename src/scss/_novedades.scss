@@ -65,37 +65,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .lq-body-wrapper.container {
-
-
-        .lq-body {
-
-
-            .container-text-homeColor {
-
-                .groupTitle__contentWhite .title {}
-            }
-        }
-    }
 
 
 
-    .lq-body-wrapper .lq-body .container-text-homeColor.container-text__FourthPage {
 
-        width: 100%;
-    }
-
-    .lq-body-wrapper {
-        width: 100%;
-
-        .lq-body {
-            .container-text-homeColor.container-text__FourthPage {
-                .groupTitle__contentWhite .title {
-                    font-size: 2.5rem;
-                }
-            }
-        }
-    }
 
     .scroll-mobile {
         flex-wrap: nowrap;

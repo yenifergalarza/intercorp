@@ -12,17 +12,6 @@ figure.offBorder {
 }
 
 
-.lq-body-wrapper {
-    .lq-body {
-        .detalle {
-            .groupTitle {
-                .title {
-                    font-size: 3.5rem;
-                }
-            }
-        }
-    }
-}
 
 
 .border-semiRound {
@@ -91,4 +80,19 @@ figure.offBorder {
         .news_details10 {}
 
     }
+}
+
+.cuadro {
+    height: 3.5rem;
+    min-width: 3.9rem;
+}
+
+
+@media (max-width:767px) {
+    .cuadro {
+        height: 6rem;
+        font-size: 2.3rem;
+        min-width: 5.9rem;
+    }
+
 }
