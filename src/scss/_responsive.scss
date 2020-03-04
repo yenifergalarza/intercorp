@@ -806,6 +806,10 @@ button.navbar-toggler {
         }
     }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
 
     .lead_position {
         .groupTitle {

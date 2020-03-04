@@ -49,6 +49,7 @@
 .carousel-inner {
     video {
         border-radius: 3rem 0;
+        height: inherit;
     }
 
     video[poster] {
