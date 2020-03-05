@@ -1,20 +1,3 @@
-// const selected1 = document.querySelector(".selected");
-// const optionsContainer1 = document.querySelector(".options-container");
-
-// const optionsList = document.querySelectorAll(".option");
-
-// selected1.addEventListener("click", () => {
-//     optionsContainer1.classList.toggle("active");
-// });
-
-// optionsList.forEach(o => {
-//     o.addEventListener("click", () => {
-//         selected1.innerHTML = o.querySelector("label").innerHTML;
-//         optionsContainer1.classList.remove("active");
-//     });
-// });
-
-
 const selected1 = document.querySelector(".s1");
 const optionsContainer1 = document.querySelector(".oc1");
 
@@ -80,6 +63,25 @@ optionsList4.forEach(o => {
         optionsContainer4.classList.remove("active");
     });
 });
+
+
+
+
+const selected0 = document.querySelector(".s0");
+const optionsContainer0 = document.querySelector(".oc0");
+const optionsList0 = document.querySelectorAll(".o0");
+
+selected0.addEventListener("click", () => {
+    optionsContainer0.classList.toggle("active");
+});
+
+optionsList0.forEach(o => {
+    o.addEventListener("click", () => {
+        selected0.innerHTML = o.querySelector("label").innerHTML;
+        optionsContainer0.classList.remove("active");
+    });
+});
+
 
 
 const jobs = [{
