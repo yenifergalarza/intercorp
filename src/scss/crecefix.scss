@@ -949,4 +949,19 @@ h2.montserrat-b {
         border-width: 0 8px 8px 8px;
         border-color: transparent transparent #fff transparent;
     }
+
+    .triplet-card_text {
+        text-align: left;
+    }
+
+    .header_growth .col-lg-3 {
+
+        padding-left: 2em;
+    }
+
+    .dashboard-growth_shadow {
+        -webkit-box-shadow: 0px 8px 36px -14px rgba(0, 0, 0, 0.51);
+        -moz-box-shadow: 0px 8px 36px -14px rgba(0, 0, 0, 0.51);
+        box-shadow: 0px 1px 37px -14px rgba(0, 0, 0, 0.70);
+    }
 }
