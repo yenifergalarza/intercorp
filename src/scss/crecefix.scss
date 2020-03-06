@@ -527,8 +527,14 @@ h2.montserrat-b {
     .container_pill {
         margin: 2rem 1rem;
     }
+
 }
 
+td {
+    .container_pill {
+        border: solid .04rem;
+    }
+}
 
 //fin crece detalle
 
