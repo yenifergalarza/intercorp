@@ -7,6 +7,14 @@
  const video3 = document.getElementById("video3");
  const video4 = document.getElementById("video4");
  const mainVideo = document.getElementById("mainVideo");
+
+
+ const playingVideos = (videoUnique, pause1, pause2, pause3) => {
+     playAndPause(videoUnique);
+     pause1.pause();
+     pause2.pause();
+     pause3.pause();
+ };
  const playAndPause = (video) => {
      if (video.paused) {
          mainVideo.pause();
@@ -15,66 +23,45 @@
      } else {
          video.pause();
      }
- }
-
+ };
  video1btn.addEventListener("click", () => {
-     playAndPause(video1);
-     video2.pause();
-     video3.pause();
-     video4.pause();
- });
+     playingVideos(video1, video2, video3, video4);
 
+ });
  video2btn.addEventListener("click", () => {
-     playAndPause(video2);
-     video1.pause();
-     video3.pause();
-     video4.pause();
+     playingVideos(video2, video1, video3, video4);
+
  });
 
  video3btn.addEventListener("click", () => {
-     playAndPause(video3);
-     video2.pause();
-     video1.pause();
-     video4.pause();
+     playingVideos(video3, video1, video2, video4);
  });
 
  video4btn.addEventListener("click", () => {
-     playAndPause(video4);
-     video2.pause();
-     video3.pause();
-     video1.pause();
+     playingVideos(video4, video1, video2, video3);
  });
 
 
-
- var removeItemFromArr = (arr, item) => {
-     var i = arr.indexOf(item);
+ const removeItemFromArr = (arr, item) => {
+     let i = arr.indexOf(item);
      i !== -1 && arr.splice(i, 1);
  };
 
-
-
-
  const clickAnyVideo = (video) => {
-     AllVideo = document.querySelectorAll("video");
+     let AllVideo = document.querySelectorAll("video");
      let allIdsVideo = [];
 
-     AllVideo.forEach(function (eachVideo) {
+     AllVideo.forEach(eachVideo => {
 
          const idEach = eachVideo.id;
          return allIdsVideo.push(idEach);
 
      });
-
-
-     let lessId;
-     let idEl;
+     let lessId = "";
+     let idEl = "";
      lessId = video.id;
-
-
-
      removeItemFromArr(allIdsVideo, lessId);
-     console.log(allIdsVideo);
+
      allIdsVideo.forEach(element => {
          idEl = document.getElementById(`${element}`);
          return idEl.pause();
@@ -101,14 +88,6 @@
      clickAnyVideo(mainVideo);
  });
 
-
- console.log(video1.duration);
-
-
-
-
-
-
  const dateToSpan = (eachVideo, idEl) => {
 
      eachVideo.onloadedmetadata = () => {
@@ -120,9 +99,7 @@
      };
  }
 
-
  dateToSpan(video1, "span1");
  dateToSpan(video2, "span2");
-
  dateToSpan(video3, "span3");
  dateToSpan(video4, "span4");

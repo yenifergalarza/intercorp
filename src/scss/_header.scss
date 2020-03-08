@@ -37,13 +37,17 @@
 
 
     .nav-item {
-        padding: .5rem 0;
-        font-weight: 700;
-        color: rgba(255, 255, 255, .5);
-        background-color: transparent;
-        border-bottom: .25rem solid transparent;
-        border-bottom: .25rem solid transparent;
-        color: $white;
+        a {
+            span {
+                padding: .5rem 0;
+                font-weight: 700;
+                color: rgba(255, 255, 255, .5);
+                background-color: transparent;
+                border-bottom: .25rem solid transparent;
+                border-bottom: .25rem solid transparent;
+                color: $white;
+            }
+        }
 
         i {
             font-size: .8rem;
@@ -54,7 +58,12 @@
     .nav-item:hover,
     .nav-item:focus,
     .nav-item.active {
-        border-bottom-color: $pink;
+        a {
+            span {
+
+                border-bottom-color: $pink;
+            }
+        }
     }
 
 

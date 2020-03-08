@@ -24,6 +24,10 @@ button.navbar-toggler {
         .hero-content {
             margin: 0 auto;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
             hr {
                 margin: 0 auto;
@@ -33,7 +37,8 @@ button.navbar-toggler {
             }
 
             form.group_Input {
-                margin: 0 auto;
+                margin: 1rem auto 0 auto;
+
                 width: fit-content;
                 display: flex;
 
@@ -42,8 +47,16 @@ button.navbar-toggler {
                 }
             }
         }
+
     }
 
+
+    .hero_leads {
+        .hero-content {
+            justify-content: end;
+            flex-direction: row;
+        }
+    }
 
     //fin de primera pagina 
 
@@ -230,6 +243,11 @@ button.navbar-toggler {
 
         }
     }
+
+    .container_pill {
+        padding: .5rem 1rem;
+    }
+
 }
 
 
@@ -470,7 +488,7 @@ button.navbar-toggler {
     .container_pill {
         font-size: 1.5rem;
 
-        padding: .5rem 2rem;
+        padding: .5rem 1rem;
 
         .montserrat-sb {
 
