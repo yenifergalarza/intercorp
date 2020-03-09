@@ -26,7 +26,6 @@
 //     @include forma(nth($colores,2),100px);
 // }
 
-
 @mixin background-hero($color, $urlimg, $backSize, $backX, $backY) {
 
     background-color: $color;
@@ -51,6 +50,8 @@
 
 @mixin footer($height, $color, $colortop:$white) {
     height: height;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 6% 0% 6%;
     background-color: $color;
@@ -102,7 +103,6 @@
 .border-shadow {
 
     -webkit-box-shadow: -2px 5px 46px 0px rgba(0, 0, 0, 0.20);
-    -moz-box-shadow: -2px 5px 46px 0px rgba(0, 0, 0, 0.20);
     box-shadow: 0rem 0.2rem 0.4rem 0.12rem rgba(0, 0, 0, 0.20);
 }
 
@@ -140,6 +140,7 @@
 
 
 .card-img-height {
+    -o-object-fit: cover;
     object-fit: cover;
     height: 15rem;
 }

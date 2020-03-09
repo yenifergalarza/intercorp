@@ -14,7 +14,7 @@ button.navbar-toggler {
         }
     }
 
-    //primera pagina
+    /* primera pagina */
     .hero_Double {
         .first-hero__Text {
 
@@ -24,9 +24,18 @@ button.navbar-toggler {
         .hero-content {
             margin: 0 auto;
             text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             hr {
@@ -39,10 +48,18 @@ button.navbar-toggler {
             form.group_Input {
                 margin: 1rem auto 0 auto;
 
+                width: -webkit-fit-content;
+
+                width: -moz-fit-content;
+
                 width: fit-content;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
 
                 .hero-icon-input {
+                    -ms-flex-item-align: center;
+                    -ms-grid-row-align: center;
                     align-self: center;
                 }
             }
@@ -53,14 +70,19 @@ button.navbar-toggler {
 
     .hero_leads {
         .hero-content {
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
             justify-content: end;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
         }
     }
 
-    //fin de primera pagina 
-
-    //comienzo de segunda pagina
+    /*   //fin de primera pagina 
+ */
+    /*   //comienzo de segunda pagina */
     body.sIbody {
         .hero_Double .first-hero__Text {
             height: 120vh;
@@ -69,8 +91,12 @@ button.navbar-toggler {
         .row-we-inter {
             width: 100%;
             padding-top: 3.25rem;
+            -ms-flex-flow: wrap;
             flex-flow: wrap;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             .four_cards {
@@ -100,7 +126,7 @@ button.navbar-toggler {
         bottom: -124vh;
     }
 
-    //novedades
+    /*   //novedades */
 
     .hero-white_text {
         width: 100% !important;
@@ -124,6 +150,8 @@ button.navbar-toggler {
     .after__hero {
         width: 100%;
         position: initial;
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
         transform: translateX(0%);
         left: 0%;
 
@@ -133,10 +161,12 @@ button.navbar-toggler {
 
             overflow-x: scroll;
             overflow-y: hidden;
+            -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
             width: 100%;
             margin-top: 7rem !important;
             margin-left: 1rem;
+            -webkit-box-shadow: none;
             box-shadow: none;
             margin-right: 2rem !important;
 
@@ -144,11 +174,17 @@ button.navbar-toggler {
 
 
             .triplets_container {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
                 flex-direction: row;
                 width: 82rem;
                 padding: 3rem 2rem;
                 border-radius: 11rem 0rem;
+                -webkit-box-shadow: .5rem .5rem 2.3rem -1rem;
                 box-shadow: .5rem .5rem 2.3rem -1rem;
                 background: #fbfbfb;
                 margin: 2rem 2rem 2rem 2rem;
@@ -274,6 +310,8 @@ button.navbar-toggler {
 
 
             .navbar.navbar-expand-md {
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
                 justify-content: flex-end;
 
                 .navbar-toggler {}
@@ -294,7 +332,7 @@ button.navbar-toggler {
         }
     }
 
-    //primera pagina
+    /*   //primera pagina */
     .hero_Double {
         .first-hero__Text {
 
@@ -384,9 +422,9 @@ button.navbar-toggler {
         background-color: $blue1;
     }
 
-    //fin de primera pagina 
+    /* //fin de primera pagina 
 
-    //segunda pagina 
+    //segunda pagina  */
     body.sIbody {
         background-color: $blue3;
     }
@@ -396,15 +434,19 @@ button.navbar-toggler {
             .card-title {
                 font-size: 3rem;
 
-                //fin segunda pagina
+
             }
         }
     }
 
-    //liders
+    /*  //fin segunda pagina */
+    /*   //liders */
     .hero_leads {
         .hero-content {
             top: -77vh;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
 
             .w-50 {
@@ -449,13 +491,16 @@ button.navbar-toggler {
 
     }
 
-    //fin lideres
-
-    //enterate tercera pag
+    /* 
+    //fin lideres */
+    /* 
+    //enterate tercera pag */
     .hero_findOut {
         .hero-content {
             .group_Input {
                 margin: 1rem auto 0 auto;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
                 width: fit-content;
 
                 .hero-input_btn {
@@ -480,6 +525,8 @@ button.navbar-toggler {
 
 
     .pill-p-center {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
 
         padding: .5rem 1rem;
@@ -505,6 +552,8 @@ button.navbar-toggler {
         .container {
             .pt-5 {
                 .row {
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
                     justify-content: center;
 
                     .col-md-4 {
@@ -522,6 +571,8 @@ button.navbar-toggler {
     .second-article-3 .roundBorder {
         border-width: 0.1rem;
         font-size: 1.7rem;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         padding: 0.8rem;
         width: 29rem;
@@ -572,7 +623,7 @@ button.navbar-toggler {
         }
     }
 
-    ///detalle
+    /*    ///detalle */
 
     .hero_Double .hero-content .subTitle_hero {
 
@@ -580,7 +631,8 @@ button.navbar-toggler {
 
     }
 
-    //detalle
+    /* 
+    //detalle */
     .details {
         .container {
             p.montserrat-r {
@@ -607,7 +659,8 @@ button.navbar-toggler {
         }
     }
 
-    //details 5
+    /* 
+    //details 5 */
     .col-12 {
         .w-50.border-semiRound {
             width: 100% !important;
@@ -649,11 +702,14 @@ button.navbar-toggler {
     .btn-register {
         margin-top: auto;
         width: 35%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         font-size: 3.5rem !important;
     }
 
-    //segunda pagina
+    /* 
+    //segunda pagina */
     .row-we-inter {
         .four_cards {
             .card {
@@ -687,8 +743,8 @@ button.navbar-toggler {
         }
     }
 
-
-    //tercera pagina
+    /* 
+    //tercera pagina */
     .font-sz-1_1 {
         font-size: 4.8rem;
     }
@@ -812,6 +868,7 @@ button.navbar-toggler {
 
     .row-pride {
         .row {
+            -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
             overflow-x: scroll;
             width: 100%;
@@ -878,8 +935,8 @@ button.navbar-toggler {
         }
     }
 
-
-    //vista novedades"
+    /* 
+    //vista novedades" */
     .hero_novedades,
     .hero_detalle {
         .d-flex {
@@ -981,8 +1038,9 @@ button.navbar-toggler {
         }
     }
 
+    /* 
 
-    //lideres
+    //lideres */
 
     video.card-img-height {
         height: 47rem;
@@ -1067,10 +1125,12 @@ button.navbar-toggler {
 
             overflow-x: scroll;
             overflow-y: hidden;
+            -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
             width: 98%;
             margin-top: 7rem !important;
             margin-left: 1rem;
+            -webkit-box-shadow: none;
             box-shadow: none;
             margin-right: 2rem !important;
 
@@ -1078,11 +1138,17 @@ button.navbar-toggler {
 
 
             .triplets_container {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
                 width: 82rem;
                 padding: 3rem 2rem;
                 border-radius: 11rem 0rem;
+                -webkit-box-shadow: .5rem .5rem 2.3rem -1rem;
                 box-shadow: .5rem .5rem 2.3rem -1rem;
                 background: #fbfbfb;
                 margin: 2rem 2rem 2rem 2rem;
@@ -1092,10 +1158,15 @@ button.navbar-toggler {
                 .triplets_container--img {
                     width: 71rem;
                     height: 23rem;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
                     justify-content: center;
 
                     .triplets--img {
+                        -o-object-fit: cover;
                         object-fit: cover;
                         width: 77%;
                         height: 91%;
@@ -1114,9 +1185,9 @@ button.navbar-toggler {
         }
     }
 
+    /* 
 
-
-    //detalle
+    //detalle */
     .details {
         .container {
             p.montserrat-r {

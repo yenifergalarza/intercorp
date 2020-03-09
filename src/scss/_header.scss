@@ -5,7 +5,11 @@
     z-index: 300;
 
     .lg-gh__main {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
 
         .lg-gh__brand {
@@ -97,6 +101,8 @@
         position: absolute;
         top: 150%;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
 
 
@@ -156,6 +162,7 @@
     .header_lg {
         .container {
             .navbar-brand {
+                -ms-flex-item-align: start;
                 align-self: flex-start;
                 padding-top: 4.3125rem;
             }

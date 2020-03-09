@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import "colors";
 
 .growthWhite {
@@ -22,8 +24,14 @@
 .full-nav {
     color: $white;
     height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-image: url(../assets/fondo-somos-intercorp.png);
     background-repeat: no-repeat;
@@ -81,8 +89,13 @@
 
 
 .select-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -92,9 +105,15 @@
     max-height: 0;
     width: 100%;
     opacity: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
     border-radius: 8px;
     overflow: hidden;
+
+    -webkit-box-ordinal-group: 2;
+
+    -ms-flex-order: 1;
 
     order: 1;
 }
@@ -106,6 +125,8 @@
     margin-top: 4rem;
     border: .05em solid $grey2;
     position: relative;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
     order: 0;
 }
 
@@ -120,6 +141,8 @@
     width: 11rem;
     right: 1.725rem;
     top: 2rem;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 
 }
@@ -131,6 +154,7 @@
 }
 
 .select-box .options-container.active+.selected::after {
+    -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
     top: 2rem;
 }
@@ -178,6 +202,9 @@
 
 
 .col_responsive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -211,6 +238,7 @@ hr {
 
 
 .shadowGrowth {
+    -webkit-box-shadow: rgb(153, 153, 153) 0rem -1.2rem 3rem;
     box-shadow: rgb(153, 153, 153) 0rem -1.2rem 3rem;
 }
 
@@ -247,6 +275,9 @@ hr {
 
 .container_search {
     margin: 5rem 0rem 6rem 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -266,8 +297,13 @@ hr {
 
 
 .tr_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: wrap;
     flex-flow: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     border-bottom: 0.5rem solid #dee2e6;
     padding: 4rem 0rem;
@@ -336,6 +372,8 @@ hr {
 
 .header_growth {
     .col-lg-3 {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 }
@@ -363,8 +401,12 @@ hr {
 }
 
 .container_rev-growth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: column-reverse;
     flex-flow: column-reverse;
     height: 100vh;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -372,6 +414,9 @@ hr {
 .hero_leads {
     .hero-content {
         top: -87vh;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
         flex-direction: column !important;
 
 
@@ -410,13 +455,22 @@ hr {
 
 .hero_leads .hero-content .w-50 {
     width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .container-img_text-overview {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
 }
 
@@ -435,6 +489,8 @@ hr {
 
 .container-info_extra-job-sm {
     width: 80% !important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
     div {
@@ -522,6 +578,7 @@ h2.montserrat-b {
 }
 
 .margin-top_grow-pill {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     .container_pill {
@@ -547,6 +604,8 @@ td {
     }
 
     .first_row_growth {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -595,7 +654,11 @@ td {
     }
 
     .sidenav_desktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: start;
     }
 
@@ -629,6 +692,9 @@ td {
 
     .triplet-container_growth {
         .card-body {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
 
             .triplet-icon_growth {
@@ -644,7 +710,11 @@ td {
     }
 
     .tr_container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 0rem 0rem;
         width: 100%;
@@ -669,6 +739,8 @@ td {
     }
 
     .th_container {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin-bottom: 0rem;
     }
@@ -678,6 +750,8 @@ td {
     }
 
     .td_container {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin-bottom: 0rem;
     }
@@ -689,8 +763,12 @@ td {
 
     .full-nav {
         color: $black2;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         background-color: white;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
 
@@ -710,7 +788,11 @@ td {
 
     .navbar-expand-lg .navbar-nav .nav-link {
         color: $black;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         border-bottom: 0.25rem solid #fff0;
         border-bottom-color: transparent;
@@ -756,8 +838,14 @@ td {
 
     .container_search {
         margin: 0rem 0rem 0rem 0rem;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
 
@@ -805,7 +893,10 @@ td {
 
             .w-50 {
                 width: 50% !important;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
             }
         }
@@ -919,6 +1010,8 @@ td {
 
         .logo_header {
 
+            -webkit-box-sizing: border-box;
+
             box-sizing: border-box;
             background-color: transparent;
             /* content: url(../assets/logo-intercorp.png); */
@@ -933,7 +1026,11 @@ td {
     }
 
     .container_rev-growth {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
         flex-flow: row;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 
@@ -969,6 +1066,8 @@ td {
         position: absolute;
         top: 76%;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 3;
         text-align: left;
@@ -985,6 +1084,8 @@ td {
 
 
     .dropdown-menu.show {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
 
@@ -1018,7 +1119,6 @@ td {
 
     .dashboard-growth_shadow {
         -webkit-box-shadow: 0px 8px 36px -14px rgba(0, 0, 0, 0.51);
-        -moz-box-shadow: 0px 8px 36px -14px rgba(0, 0, 0, 0.51);
         box-shadow: 0px 1px 37px -14px rgba(0, 0, 0, 0.70);
 
         padding-right: 7rem;
@@ -1040,6 +1140,8 @@ td {
 }
 
 .d-flex1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -1049,6 +1151,7 @@ td {
 
     border-color: $grey2 !important;
     outline: 0 !important;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0) !important;
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0) !important;
 
 }

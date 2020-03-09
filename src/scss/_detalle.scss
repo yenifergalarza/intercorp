@@ -5,6 +5,7 @@ figure.offBorder {
 
     img {
         height: 27rem;
+        -o-object-fit: cover;
         object-fit: cover;
 
     }

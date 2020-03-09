@@ -37,7 +37,6 @@
 
 .pride_triplets_shadow {
     -webkit-box-shadow: 4px 9px 23px -3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 9px 23px -3px rgba(0, 0, 0, 0.75);
     box-shadow: 4px 9px 23px -3px rgba(0, 0, 0, 0.75);
 }
 
@@ -53,6 +52,7 @@
     }
 
     video[poster] {
+        -o-object-fit: cover;
         object-fit: cover;
     }
 }

@@ -4,7 +4,7 @@ const optionsContainer0 = document.querySelector(".oc0");
 const optionsList0 = document.querySelectorAll(".o0");
 const selected1 = document.querySelector(".s1");
 const optionsContainer1 = document.querySelector(".oc1");
-const optionsList = document.querySelectorAll(".o1");
+const optionsList1 = document.querySelectorAll(".o1");
 const selected2 = document.querySelector(".s2");
 const optionsContainer2 = document.querySelector(".oc2");
 const optionsList2 = document.querySelectorAll(".o2");
@@ -24,6 +24,8 @@ const handlingSelect = (selectedNumero, optionsContainerNumero, optionsListNumer
             selectedNumero.innerHTML = o.querySelector("label").innerHTML;
             optionsContainerNumero.classList.remove("active");
             arrOfCategory.splice(numero, 1, o.querySelector("label").innerHTML);
+            console.log(arrOfCategory);
+
         });
     });
 
@@ -38,39 +40,19 @@ handlingSelect(selected3, optionsContainer3, optionsList3, 3);
 handlingSelect(selected4, optionsContainer4, optionsList4, 4);
 
 
-const jobs = [{
-        id: 1,
-        title: "Product Manager",
-        level: "Especialista",
-        area: "Contabilidad",
-        modalidad: "tiempo completo",
-        time: "00/00/0000",
-        company: "promart"
-    },
-    {
-        id: 1,
-        title: "Product Manager",
-        level: "Trainee",
-        area: "Contabilidad",
-        modalidad: "tiempo completo",
-        time: "00/00/0000",
-        company: "promart"
-    }
-
-
-]
-
 const btnFilterDesktop = document.getElementById("btnFilterDesktop");
 const hideCaptionFiltered = document.getElementById("hideCaptionFiltered");
 const showFilters = document.getElementById("showFilters");
 //const parentOfNodes = document.getElementById("parentOfNodes");
-function makeDiv(array) {
+
+
+const makeDiv = (array) => {
     if (document.querySelector(".margin-top_grow-pill")) {
-        document.querySelector(".margin-top_grow-pill").remove()
+        document.querySelector(".margin-top_grow-pill").remove();
     }
     let listPill = document.createElement('div');
     listPill.classList.add('d-flex', 'w-100', "margin-top_grow-pill");
-    for (let i = 0; i < array.length; i + 1) {
+    for (let i = 0; i < array.length; i++) {
 
         const item = document.createElement('div');
         const cross = document.createElement('i')
@@ -92,7 +74,7 @@ function makeDiv(array) {
 
     }
     return listPill;
-}
+};
 btnFilterDesktop.addEventListener("click", () => {
 
     if (hideCaptionFiltered) {
