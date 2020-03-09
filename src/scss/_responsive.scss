@@ -228,17 +228,24 @@ button.navbar-toggler {
 
 
     .navToBlack .nav-border_b {
-        .dropdown-menu {
-            top: 120%;
-        }
 
         .dropdown-item {
-            font-size: 1.5rem;
+            font-size: .9rem;
+        }
+
+        .nav-item {
+            i {
+                color: #212529;
+            }
         }
 
         .nav-link {
-            color: #212529;
-            font-size: 2rem;
+            span {
+
+                color: #212529;
+                font-size: 1rem;
+
+            }
 
 
         }
@@ -264,10 +271,7 @@ button.navbar-toggler {
 
     .header_lg {
         .container {
-            .navbar-brand {
-                align-self: flex-start;
-                padding-top: 4.3125rem;
-            }
+
 
             .navbar.navbar-expand-md {
                 justify-content: flex-end;
@@ -617,7 +621,7 @@ button.navbar-toggler {
 
     .nav-border_b {
         .dropdown-item {
-            font-size: 1.9rem;
+            font-size: .9rem;
         }
 
         .nav-link {

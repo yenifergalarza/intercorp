@@ -95,7 +95,7 @@
     .dropdown-menu {
         background: #fff;
         position: absolute;
-        top: 100%;
+        top: 150%;
         left: 50%;
         transform: translateX(-50%);
 
@@ -148,8 +148,20 @@
 }
 
 
+.header_text-black {}
+
 
 @media (max-width:767px) {
+
+    .header_lg {
+        .container {
+            .navbar-brand {
+                align-self: flex-start;
+                padding-top: 4.3125rem;
+            }
+        }
+    }
+
     .nav-border_b {
 
         color: #454545;
@@ -157,23 +169,32 @@
         background-color: $white !important;
 
         .nav-item {
-            padding: .5rem 0;
-            font-weight: 700;
+            a {
+                span {
+                    padding: .5rem 0;
+                    font-weight: 700;
 
-            background-color: rgb(255, 255, 255);
-            border-bottom: .25rem solid transparent;
-            border-bottom: .25rem solid transparent;
-            color: $white;
+                    background-color: rgb(255, 255, 255);
+                    border-bottom: .25rem solid transparent;
+                    border-bottom: .25rem solid transparent;
+                    color: $white;
 
-            i {
-                font-size: .8rem;
-                vertical-align: .1em;
+                    i {
+                        font-size: .8rem;
+                        vertical-align: .1em;
+                    }
+                }
             }
+
         }
 
         .nav-item:hover,
         .nav-item:focus {
-            border-bottom-color: $pink;
+            a {
+                span {
+                    border-bottom-color: $pink;
+                }
+            }
         }
 
         .nav-link+.nav-link {
@@ -181,8 +202,12 @@
         }
 
         .nav-item {
-            margin-left: 1rem;
-            margin-right: 1rem;
+            a {
+                span {
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+            }
         }
 
         .nav-link.active {
@@ -225,4 +250,21 @@
 
     }
 
+}
+
+
+
+
+
+@media (max-width:1024px) {
+
+    .nav-border_b {
+        .nav-item {
+            a {
+                span {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }
