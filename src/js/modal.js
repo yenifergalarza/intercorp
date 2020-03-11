@@ -15,20 +15,20 @@ btnGetInto.addEventListener("click", () => {
         popdiv.innerHTML = ``;
         const content = ` 
       <div class="modal-header justify-content-center" >
-          <h5 class="modal-title text-center" id="exampleModalScrollableTitle">Ingresa el código enviado a tu mail y/o
+          <h5 class="modal-title text-center mobileTilePopUp" id="exampleModalScrollableTitle ">Ingresa el código enviado a tu mail y/o
         
          
           </h5>
           
       </div>
       <div class="modal-body">
-    <h5 class="text-center"> xxxxxxxxxx@intercorp.com.pe   
+    <h5 class="text-center mobileTilePopUp"> xxxxxxxxxx@intercorp.com.pe   
  </h5>
- <h5 class="text-center">   Xxx xxx 987</h5>
-      <div class="d-flex justify-content-between"><label for="">Token : </label><input id="token" type="text"></div>
+ <h5 class="text-center mobileTilePopUp ">   Xxx xxx 987</h5>
+      <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" for="">Token : </label><input class="inputHeight montserrat-r" id="token" type="text"></div>
       </div>
       <div class="modal-footer">
-          <button type="button" class="container_pill b_blue4 color-darkish-blue border-0" data-dismiss="modal" id="pass">Ingresar
+          <button type="button" class="container_pill b_blue4 color-darkish-blue border-0 font-sz-1_1  montserrat-b " data-dismiss="modal" id="pass">Ingresar
           </button>
       </div>`
         popdiv.innerHTML = content;
@@ -50,29 +50,27 @@ btnGetInto.addEventListener("click", () => {
 
 
     } else {
-
         let popdiv = document.createElement('div');
         popdiv.classList.add('modal-content');
         popdiv.setAttribute("id", "popUpContent");
         popdiv.innerHTML = ``;
         const content = ` 
-  <div class="modal-header  justify-content-center" >
-      <h5 class="modal-title text-center" id="exampleModalScrollableTitle">¡Hola! Por favor registra tus datos aquí:
-      </h5>
-   
+  <div class="modal-header  pd-mobile justify-content-center" >
+      <h5 class="modal-title text-center mobileTilePopUp" id="exampleModalScrollableTitle">¡Hola! Por favor registra tus datos aquí:
+      </h5> </div>
+
+  <div class="modal-body pd-mobile">
+  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1 montserrat-r" " for="">DNI : </label><input class="inputHeight montserrat-r" id="dni"  type="number"></div>
+  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1 montserrat-r" "  for="">Nombres : </label><input class="inputHeight montserrat-r"   id="name" type="text"></div>
+  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" " for="">Apellido : </label><input class="inputHeight montserrat-r"   id="lastName" type="text"></div>
+  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" " for="">Empresa : </label><input  class="inputHeight montserrat-r"  id="bussines" type="text"></div>
+  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" " for="">Correo : </label><input  class="inputHeight montserrat-r"  id="email" type="email"></div>
+  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1 montserrat-r"  for="">Celular : </label><input class="inputHeight montserrat-r"   id="phone" type="number"></div>
   </div>
-  <div class="modal-body">
-  <div class="d-flex justify-content-between"><label for="">DNI : </label><input  id="dni"  type="number"></div>
-  <div class="d-flex justify-content-between"><label for="">Nombres : </label><input  id="name" type="text"></div>
-  <div class="d-flex justify-content-between"><label for="">Apellido : </label><input  id="lastName" type="text"></div>
-  <div class="d-flex justify-content-between"><label for="">Empresa : </label><input  id="bussines" type="text"></div>
-  <div class="d-flex justify-content-between"><label for="">Correo : </label><input  id="email" type="email"></div>
-  <div class="d-flex justify-content-between"><label for="">Celular : </label><input  id="phone" type="number"></div>
-  </div>
-  <div class="modal-footer">
-      <button type="button" class="container_pill b_blue4 color-darkish-blue  border-0" data-dismiss="modal" id="getData">Enviar
+  <div class="modal-footer pd-mobile">
+      <button type="button" class="container_pill b_blue4 color-darkish-blue  montserrat-b border-0" data-dismiss="modal" id="getData">Enviar
       </button>
-  </div>`
+  </div> `
         popdiv.innerHTML = content;
 
         popUp.appendChild(popdiv);
