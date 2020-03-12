@@ -22,6 +22,7 @@ button.navbar-toggler {
         }
 
         .hero-content {
+
             margin: 0 auto;
             text-align: center;
             display: -webkit-box;
@@ -37,6 +38,11 @@ button.navbar-toggler {
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+
+            .title_hero,
+            .subTitle_hero {
+                width: 100%;
+            }
 
             hr {
                 margin: 0 auto;
@@ -245,7 +251,9 @@ button.navbar-toggler {
 
     .hero_leads,
     .hero_detalle {
-        .hero-content video {
+
+        .hero-content video,
+        .hero-content iframe {
 
             right: 0rem;
         }
@@ -347,6 +355,7 @@ button.navbar-toggler {
             .title_hero {
                 font-size: 1.3em;
                 text-align: center;
+                width: 100%;
             }
 
             .hero_hr-blue {
@@ -358,6 +367,8 @@ button.navbar-toggler {
                 padding-top: 3.5rem;
                 line-height: 5.5rem;
                 text-align: center;
+                width: 100%;
+
             }
 
             hr {
@@ -460,7 +471,8 @@ button.navbar-toggler {
                 width: 100% !important;
 
                 video.d-block,
-                img {
+                img,
+                iframe.d-block {
                     width: 60%;
                     height: auto;
                     position: relative;
@@ -475,7 +487,8 @@ button.navbar-toggler {
         }
     }
 
-    video.card-img-height {
+    video.card-img-height,
+    iframe.card-img-height {
         height: 45rem;
     }
 
@@ -1071,7 +1084,8 @@ button.navbar-toggler {
 
     //lideres */
 
-    video.card-img-height {
+    video.card-img-height,
+    iframe.card-img-height {
         height: 47rem;
     }
 
@@ -1111,7 +1125,8 @@ button.navbar-toggler {
     }
 
 
-    .hero_leads .hero-content .container-video video.d-block {
+    .hero_leads .hero-content .container-video video.d-block,
+    .hero_leads .hero-content .container-video iframe.d-block {
 
         margin: 2.5em auto;
     }
@@ -1137,7 +1152,8 @@ button.navbar-toggler {
 
 
                 video.d-block,
-                img {
+                img,
+                iframe.d-block {
                     width: 100%;
 
 

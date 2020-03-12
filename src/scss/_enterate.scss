@@ -46,7 +46,9 @@
 }
 
 .carousel-inner {
-    video {
+
+    video,
+    iframe {
         border-radius: 3rem 0;
         height: inherit;
     }
