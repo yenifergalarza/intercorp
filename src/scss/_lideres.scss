@@ -1,36 +1,4 @@
-.lq-body-wrapper {
-    .lq-body {
-
-        .container-text__SixthPage {
-            @include background-hero($white2, "../assets/fondo-white.png", 83%, -1rem, 6rem);
-            background-blend-mode: darken;
-
-            .groupTitle {
-
-
-                .title {
-                    font-size: 4.5rem;
-                }
-            }
-
-
-        }
-
-        .lq__second {
-            margin-left: -14%;
-            height: calc(100% + 3rem);
-            margin-bottom: 0;
-            padding: 0;
-            flex: 0 0 47.3%;
-            max-width: 50%;
-            align-items: center;
-            display: flex;
-
-
-        }
-    }
-}
-
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .hero_leads {
     height: 100vh;
@@ -52,6 +20,8 @@
 
     .hero-content {
         line-height: 6rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         .container-video {
@@ -61,7 +31,8 @@
 
         }
 
-        video {
+        video,
+        img {
 
             width: 41.875rem;
             height: 27.25rem;
@@ -70,15 +41,27 @@
             border-radius: 3rem 0;
             background: black;
             -webkit-box-shadow: 29px 33px 69px -13px rgba(0, 0, 0, 0.350);
-            -moz-box-shadow: 29px 33px 69px -13px rgba(0, 0, 0, 0.350);
             box-shadow: 29px 33px 69px -13px rgba(0, 0, 0, 0.350);
+            -o-object-fit: contain;
             object-fit: contain;
         }
 
         video[poster] {
+            -o-object-fit: cover;
             object-fit: cover;
 
         }
     }
 
+}
+
+
+.video-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    img {
+        width: 2rem;
+    }
 }

@@ -19,6 +19,10 @@
 
 .triplets_container {
 
+    -webkit-box-align: center;
+
+    -ms-flex-align: center;
+
     align-items: center;
 
     .triplets__container--text {
@@ -33,6 +37,7 @@
         height: 6rem;
 
         .triplets--img {
+            -o-object-fit: cover;
             object-fit: cover;
             width: 100%;
             height: 100%;
@@ -46,6 +51,8 @@
 .after__hero {
     z-index: 100;
     position: absolute;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50%;
     top: calc(100vh - 3rem);
@@ -59,45 +66,23 @@ section.last_news {
 
 footer {
 
+    -webkit-box-align: center;
+
+    -ms-flex-align: center;
+
     align-items: center;
     padding: 0 8% 0% 8%;
     @include footer(6rem, "auto", $white);
 }
 
 @media (max-width: 768px) {
-    .lq-body-wrapper.container {
-
-
-        .lq-body {
-
-
-            .container-text-homeColor {
-
-                .groupTitle__contentWhite .title {}
-            }
-        }
-    }
 
 
 
-    .lq-body-wrapper .lq-body .container-text-homeColor.container-text__FourthPage {
 
-        width: 100%;
-    }
-
-    .lq-body-wrapper {
-        width: 100%;
-
-        .lq-body {
-            .container-text-homeColor.container-text__FourthPage {
-                .groupTitle__contentWhite .title {
-                    font-size: 2.5rem;
-                }
-            }
-        }
-    }
 
     .scroll-mobile {
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         overflow: auto;
     }

@@ -4,22 +4,49 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Líderes | Somos Intercorp</title>
+    <meta name="description" content="Infórmate y encuentra lo último que sucede
+        en nuestra compañia, nuestros productos
+        y nuestros colaboradores" />
+    <meta name="author" content="Intercorp" />
+    <meta name="keywords"
+        content="somos Intercorp,Intercorp,Entérate,Novedades,Líderes,Líderes Intercorp,Nuestros Líderes Intercorp" />
+    <meta name="copyright" content="Grupo Intercorp" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#005daa">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Líderes | Somos Intercorp" />
+    <meta property="og:type" content="article" />
+    <!--    <meta property="og:url" content="./index.html" /> cambiar según url  -->
+    <meta property="og:image" content="./assets/logo-intercorp.png" />
+    <meta property="og:description" content="Infórmate y encuentra lo último que sucede
+  en nuestra compañia, nuestros productos
+  y nuestros colaboradores" />
+
+
+
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#005daa">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/nosotros.css" />
+
 </head>
 
 <body>
-    <header class="header_lg">
+    <header class="header_lg header_text-black">
         <div class="container d-flex justify-content-between">
             <a href="#" class="navbar-brand d-flex align-items-center">
-                <img src="./assets/logo-intercorp.png" class="logo_header" alt="">
+                <img src="./assets/logo-intercorp.png" class="logo_header" alt="logo Intercorp">
 
             </a>
-            <nav class="navbar navbar-expand-md ">
+            <nav class="navbar navbar-expand-md navToBlack ">
 
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -28,32 +55,33 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="navbar-collapse collapse" id="navbarsExampleDefault">
+                <div class="navbar-collapse collapse full-nav" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-auto nav-border_b ">
-                        <li class="nav-item active">
-                            <a class="nav-link montserrat-b" href="#">Inicio</a>
+                        <li class="nav-item ">
+                            <a class="nav-link montserrat-b" href="./somosIntercorp.html"><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-b" href="#">Entrénate</a>
+                            <a class="nav-link montserrat-b" href="#"><span>Entrénate</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-b" href="#">Beneficiate</a>
+                            <a class="nav-link montserrat-b" href="#"><span>Beneficiate</span></a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item active dropdown">
                             <a href="./enterate.html" class="nav-link  active montserrat-b dropdown-toggle"
                                 id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">Entérate <i class="fa fa-chevron-down"></i></a>
+                                aria-expanded="false"><span>Entérate</span> <i class="fa fa-angle-down"></i></a>
                             <div class="dropdown-menu" aria-labelledby="dropdown01">
                                 <div class="d-flex">
                                     <a class="dropdown-item montserrat-r" href="./novedades.html">Novedades</a>
-                                    <a class="dropdown-item montserrat-r" href="./lideres.html">Líderes Intercorp</a>
+                                    <a class="dropdown-item montserrat-r" href="./lideres.html">Líderes
+                                        Intercorp</a>
                                     <a class="dropdown-item montserrat-r" href="./orgullo.html">#Orgullo</a>
                                 </div>
 
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-b" href="#">Crece</a>
+                            <a class="nav-link montserrat-b" href="./crece.html"><span>Crece</span></a>
                         </li>
                     </ul>
 
@@ -85,7 +113,8 @@
                     <hr class="hero_hr-blue ">
                 </div>
                 <div class="w-50 container-video">
-                    <video class="d-block" src="assets/Entrevista LFC.mp4" controls="" poster="assets/Bitmap-4.png">
+                    <video class="d-block" src="assets/Entrevista-LFC.mp4" controls="" poster="assets/Bitmap-4.png"
+                        id="mainVideo">
                     </video>
                 </div>
 
@@ -94,21 +123,22 @@
         </div>
 
         <div class="album py-5">
-            <section class="last_news container">
+            <section class="last_news container lead_news">
                 <div class="groupTitle w100">
-                    <h1 class="title montserrat-b text-center 
+                    <h2 class="title montserrat-b text-center 
                     fsz-3_1 ">
                         Conoce más historias
-                    </h1>
+                    </h2>
                     <hr class="hr-tiny-green mx-auto hr-tiny-line  mb-5">
                 </div>
                 <article class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/lgtbi.webp" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista-LFC.mp4" id="video1" class="card-img-top card-img-height"
+                                controls="" poster="assets/Bitmap-14.png"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de mejores empresas<br> para
-                                    talento LGTBIQ+</h5>
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Luis Felipe Castellanos -<br>
+                                    Interbank</h5>
                                 <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
                                     elit
                                     ultrices
@@ -116,44 +146,47 @@
 
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span1"></span>
                                     </div>
-                                    <a href="./orgullodetalle2.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
+                                    <div class="color-darkish-blue video-icon" id="video1Btn">
+
+                                        <img src="./assets/play-circle-regular.svg" alt="reproducir video">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/ranking.webp" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista-Rafael-Dasso.mp4" id="video2"
+                                class="card-img-top card-img-height" controls="" poster="assets/Bitmap-13.png"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de las 20 marcas más
-                                    <br>valoradas del Perú</h5>
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Rafael Dasso -
+                                    <br>InRetail Pharma</h5>
                                 <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
                                     elit
                                     ultrices
                                 </p>
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span2"></span>
                                     </div>
-                                    <a href="./orgullodetalle3.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
+                                    <div class="color-darkish-blue video-icon" id="video2Btn">
+
+                                        <img src="./assets/play-circle-regular.svg" alt="reproducir video">
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card  border-shadow mt-4 ">
-                            <img src="assets/Bitmap-8.png" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista-fernandoZavala.mp4" id="video3"
+                                class="card-img-top card-img-height" controls="" poster="assets/Bitmap-15.png"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Inauguramos Real Plaza <br> Puruchuco
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Fernando Zavala - <br>
+                                    Intercorp
                                 </h5>
                                 <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
                                     elit
@@ -161,88 +194,45 @@
                                 </p>
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span3"></span>
                                     </div>
-                                    <a href="./novedadesDetalle5.html"
-                                        class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
+                                    <div class="color-darkish-blue video-icon" id="video3Btn">
+
+                                        <img src="./assets/play-circle-regular.svg" alt="reproducir video">
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class=" col-md-6">
                         <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/page-1.jpg" alt="" class="card-img-top card-img-height">
+                            <video src="./assets/Entrevista-Rafael-Dasso.mp4" class="card-img-top card-img-height"
+                                controls poster="assets/Bitmap-13.png" id="video4"></video>
                             <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de mejores empresas<br> para
-                                    talento LGTBIQ+</h5>
-                                <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
+                                <h5 class="card-title montserrat-b font-sz-1_1">Entrevista Rafael Dasso
+                                    - <br>InRetail
+                                    Pharma</h5>
+                                <p class="card-text montserrat-r">Vestibulum semper diam in purus
+                                    ullamcorper,vel semper
                                     elit
                                     ultrices
                                 </p>
 
                                 <div class="d-flex justify-content-between">
                                     <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
+                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2" id="span4"></span>
                                     </div>
-                                    <a href="./orgullodetalle2.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card  border-shadow  mt-4 ">
-                            <img src="assets/ranking.webp" alt="" class="card-img-top card-img-height">
-                            <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Ranking de las 20 marcas más
-                                    <br>valoradas del Perú</h5>
-                                <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
-                                    elit
-                                    ultrices
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2">4:15</span>
-                                    </div>
-                                    <a href="./orgullodetalle3.html" class="container_pill bg-white color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
+                                    <div class="color-darkish-blue video-icon" id="video4Btn">
 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card  border-shadow mt-4 ">
-                            <img src="assets/Bitmap-8.png" alt="" class="card-img-top card-img-height">
-                            <div class="p-3">
-                                <h5 class="card-title montserrat-b font-sz-1_1">Inauguramos Real Plaza <br> Puruchuco
-                                </h5>
-                                <p class="card-text montserrat-r">Vestibulum semper diam in purus ullamcorper,vel semper
-                                    elit
-                                    ultrices
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <div class="container_pill b_blue4 ">
-                                        <span class="montserrat-sb color-darkish-blue pl-2 pr-2 ">4:15</spam>
+                                        <img src="./assets/play-circle-regular.svg" alt="reproducir video">
                                     </div>
-                                    <a href="./novedadesDetalle5.html" class="  container_pill bg-white
-                                        color-darkish-blue">
-                                        <span class="montserrat-sb ">Ver más</span>
-                                        <i class="fa fa-arrow-right"></i>
-                                    </a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
+
+
                 </article>
             </section>
 
@@ -284,7 +274,8 @@
                         </div>
                     </div>
                     <div class="col-12 col-md footer__logo d-flex">
-                        <img class="mb-2" src="assets/logo-intercorp-blanco.png" alt="" style="    height: 1.8rem;">
+                        <img class="mb-2" src="assets/logo-intercorp-blanco.png" alt="logo Intercorp"
+                            style="    height: 1.8rem;">
 
                     </div>
                 </div>
@@ -309,6 +300,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="./js/video.js"></script>
 </body>
 
 </html>
