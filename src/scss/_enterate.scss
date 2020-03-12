@@ -47,10 +47,26 @@
 
 .carousel-inner {
 
-    video,
+    video {
+        border-radius: 3rem 0;
+
+        height: 100%;
+    }
+
+
     iframe {
         border-radius: 3rem 0;
         height: inherit;
+        height: 100%;
+    }
+
+    .vp-center {
+        iframe {
+
+            .player .vp-video-wrapper.transparent {
+                border-radius: 3rem 0 !important;
+            }
+        }
     }
 
     video[poster] {
