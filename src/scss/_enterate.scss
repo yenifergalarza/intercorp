@@ -74,3 +74,11 @@
         object-fit: cover;
     }
 }
+
+.pt-5 {
+
+    .row::-webkit-scrollbar {
+        display: none;
+        -ms-overflow-style: none;
+    }
+}
