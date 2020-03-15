@@ -301,6 +301,11 @@ button.navbar-toggler {
 
 }
 
+.inputHeight {
+    border-radius: 1rem;
+    border: solid .1rem $grey;
+    padding: 0rem 1rem;
+}
 
 @media(max-width:768px) {
 
@@ -726,15 +731,22 @@ button.navbar-toggler {
 
 }
 
-
+@media(min-width:769px) {
+    .mobile-col {
+        margin: .5rem 0;
+    }
+}
 
 @media(max-width:576px) {
 
 
 
     .inputHeight {
+
+        border: solid 0.3rem $grey;
         height: 7rem !important;
         font-size: 4rem;
+        padding: 0rem 3rem;
     }
 
     .mobileTilePopUp {
