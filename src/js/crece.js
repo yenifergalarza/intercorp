@@ -1,4 +1,6 @@
 const arrOfCategory = [0, 0, 0, 0, 0];
+
+const cellOne = document.getElementById("firstTableCell");
 const selected0 = document.querySelector(".s0");
 const optionsContainer0 = document.querySelector(".oc0");
 const optionsList0 = document.querySelectorAll(".o0");
@@ -14,7 +16,17 @@ const optionsList3 = document.querySelectorAll(".o3");
 const selected4 = document.querySelector(".s4");
 const optionsContainer4 = document.querySelector(".oc4");
 const optionsList4 = document.querySelectorAll(".o4");
+const redirect = (cell, link) => {
+    if (window.innerWidth <= 992) {
+        cell.addEventListener("click", () => {
+            window.location.href = link;
+        })
+    }
 
+
+};
+console.log(innerWidth);
+redirect(cellOne, "../crecedetalle.html");
 const handlingSelect = (selectedNumero, optionsContainerNumero, optionsListNumero, numero) => {
     selectedNumero.addEventListener("click", () => {
         optionsContainerNumero.classList.toggle("active");
