@@ -1146,6 +1146,15 @@ td {
 
 @media (min-width:1020px) {
 
+    .dropdown-item.active,
+    .dropdown-item:active,
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: $black;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
     .hero_Double .d-flex.container_rev-growth {
         height: 100vh;
     }
