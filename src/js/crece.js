@@ -55,6 +55,7 @@ handlingSelect(selected4, optionsContainer4, optionsList4, 4);
 const btnFilterDesktop = document.getElementById("btnFilterDesktop");
 const hideCaptionFiltered = document.getElementById("hideCaptionFiltered");
 const showFilters = document.getElementById("showFilters");
+const searchMobile = document.getElementById("searchMobile");
 //const parentOfNodes = document.getElementById("parentOfNodes");
 
 
@@ -91,7 +92,8 @@ btnFilterDesktop.addEventListener("click", () => {
 
     if (hideCaptionFiltered) {
         // parentOfNodes.removeChild(hideCaptionFiltered);
-        hideCaptionFiltered.remove()
+        searchMobile.remove();
+        hideCaptionFiltered.remove();
     }
     showFilters.appendChild(makeDiv(arrOfCategory));
 
