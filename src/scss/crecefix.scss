@@ -1338,7 +1338,7 @@ td {
 
     .hero_leads {
         .hero-content {
-            top: 26vh;
+            top: 20vh;
 
             .img-min-growth {
                 width: 6rem;
@@ -1775,9 +1775,10 @@ td {
 
 
             .fz-5 {
-                font-size: 4.375rem !important;
-                width: 90%;
+                font-size: 3.5rem !important;
+                width: 70%;
                 line-height: 1;
+                overflow-wrap: break-word;
             }
 
             .growth-detail_hr {
@@ -1803,7 +1804,7 @@ td {
             .container-video img {
                 margin: 0 0 0 auto;
                 width: 100%;
-                right: 16%;
+                right: 12%;
                 height: 28rem;
                 object-fit: cover;
                 background: none;
