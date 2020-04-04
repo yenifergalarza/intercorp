@@ -518,7 +518,11 @@ tbody {
 
 
 ///crece detalle
-
+.pill_goBack {
+    width: fit-content;
+    border: solid .6rem;
+    padding: 1rem
+}
 
 .hero_Double {
     .d-flex.container_rev-growth {
@@ -565,12 +569,13 @@ tbody {
 
 
         .img-min-growth {
-            width: 13rem;
-            height: 13rem;
+            width: 20rem;
+            height: 20rem;
             position: relative;
             margin-right: 2rem;
             right: 0;
             background: none;
+
         }
     }
 }
@@ -821,6 +826,10 @@ section.grow_content-noMainNav {
 }
 
 @media (min-width:573px) {
+    .pill_goBack {
+        border: solid .3rem;
+        padding: .8rem;
+    }
 
     .navbar-nav .nav-link {
 
@@ -864,8 +873,16 @@ section.grow_content-noMainNav {
             top: 3vh;
 
             .img-min-growth {
-                width: 10rem;
-                height: 10rem;
+                width: 15rem;
+                height: 15rem;
+
+
+            }
+
+            div.d-flex.align-items-start {
+                p {
+                    margin-bottom: .3rem;
+                }
             }
 
             .fz-5 {
@@ -969,6 +986,19 @@ section.grow_content-noMainNav {
 //comienzocrece detalle
 
 @media (min-width:768px) {
+    .header_growth {
+        padding: 1.7rem 2em;
+    }
+
+    .header_growth .logo_header {
+        height: 3.2rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
     section.grow_content-noMainNav {
         .col-sm-6 {
             flex: 0 0 33.33333%;
@@ -1087,6 +1117,7 @@ section.grow_content-noMainNav {
     #goBack {
         color: $blue2;
         font-size: 2rem;
+        background-color: $white;
 
         span {
             font-size: 2rem;
@@ -1168,8 +1199,8 @@ section.grow_content-noMainNav {
             }
 
             .img-min-growth {
-                width: 8rem;
-                height: 8rem;
+                width: 10rem;
+                height: 10rem;
             }
 
             .w-100.container-img_text-overview {
@@ -1190,6 +1221,10 @@ section.grow_content-noMainNav {
 }
 
 @media (min-width: 992px) {
+    .pill_goBack {
+        border: solid .1rem;
+        padding: .8rem;
+    }
 
 
     .header_growth {
@@ -1420,7 +1455,7 @@ section.grow_content-noMainNav {
 
     .hero_leads {
         .hero-content {
-            top: 20vh;
+            top: 8rem;
 
             .img-min-growth {
                 width: 6rem;
@@ -1596,6 +1631,7 @@ section.grow_content-noMainNav {
 
 
     .full-nav {
+
         color: $black2;
         height: -webkit-fit-content;
         height: -moz-fit-content;
@@ -1914,9 +1950,10 @@ section.grow_content-noMainNav {
             }
 
             .img-min-growth {
-                width: 4.375rem;
-                height: 4.375rem;
+                width: 6.8rem;
+                height: 6.8rem;
                 margin-right: 0rem;
+
             }
 
             .btn-growth {
@@ -1933,7 +1970,7 @@ section.grow_content-noMainNav {
                 width: 100%;
                 right: 12%;
                 height: 28rem;
-                object-fit: cover;
+                object-fit: fill;
                 background: none;
             }
         }
@@ -2062,7 +2099,12 @@ section.grow_content-noMainNav {
 
 
 
-
+@media (min-width:1104px) {
+    .header_growth-details .full-nav {
+        position: relative;
+        right: -4vw;
+    }
+}
 
 @media (min-width:1300px) {
     section.grow_content-noMainNav {
@@ -2072,6 +2114,94 @@ section.grow_content-noMainNav {
         }
     }
 }
+
+
+@media (min-width:1400px) {
+    .header_growth-details .full-nav {
+
+        right: -6vw;
+    }
+}
+
+@media (min-width:1500px) {
+    .header_growth-details .full-nav {
+
+        right: -8vw;
+    }
+}
+
+@media (min-width:1600px) {
+    .header_growth-details .full-nav {
+
+        right: -10vw;
+    }
+}
+
+@media (min-width:1700px) {
+    .header_growth-details .full-nav {
+
+        right: -13vw;
+    }
+}
+
+
+@media (min-width:1700px) {
+    .header_growth-details .full-nav {
+
+        right: -4vw;
+    }
+}
+
+
+@media (min-width:1700px) {
+    .header_growth-details .full-nav {
+        right: -4vw;
+    }
+
+    h1.fz-5.montserrat-b {
+        font-size: 2.2rem !important;
+    }
+}
+
+@media (min-width:2000px) {
+    .header_growth-details .full-nav {
+        right: -6vw;
+    }
+}
+
+@media (min-width:2200px) {
+    .header_growth-details .full-nav {
+        right: -9vw;
+    }
+}
+
+
+@media (min-width:2400px) {
+    .header_growth-details .full-nav {
+        right: -12vw;
+    }
+}
+
+@media (min-width:2700px) {
+    .header_growth-details .full-nav {
+        right: -15vw;
+    }
+}
+
+@media (min-width:2900px) {
+    .header_growth-details .full-nav {
+        right: -18vw;
+    }
+}
+
+@media (min-width:3300px) {
+    .header_growth-details .full-nav {
+        right: -22vw;
+    }
+}
+
+
+
 
 
 
