@@ -1,8 +1,6 @@
 @import "colors";
-
 .sidebar,
 .fixed-top {
-
     background-color: $white;
 }
 
@@ -21,13 +19,11 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
 }
 
 .logo-sidebar {
     background-color: $blue1;
 }
-
 
 .growthWhite {
     background-color: $white3;
@@ -47,17 +43,13 @@
         position: static;
         height: auto;
     }
-
     .top-navbar {
         position: static;
     }
-
     .shadowGrowth {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-
-
     .nav-logo {
         height: 17rem;
         position: fixed;
@@ -65,11 +57,8 @@
         width: 100%;
         left: 0;
         top: 0;
-
         display: -webkit-box !important;
-
         display: -ms-flexbox !important;
-
         display: flex !important;
         padding: 0rem 2rem;
         height: 3.9rem;
@@ -104,11 +93,8 @@
     transition: all 0.4s;
     border-radius: 8px;
     overflow: hidden;
-
     -webkit-box-ordinal-group: 2;
-
     -ms-flex-order: 1;
-
     order: 1;
 }
 
@@ -117,7 +103,7 @@
     color: $black2;
     border-radius: 8px;
     margin-bottom: 8px;
-    border: .05em solid $grey2;
+    border: 0.05em solid $grey2;
     position: relative;
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
@@ -129,17 +115,13 @@
     background: url("../assets/arrow-down.svg");
     background-size: contain;
     background-repeat: no-repeat;
-
     position: absolute;
     height: 100%;
     width: 32rem;
     right: -29.275rem;
     top: 0px;
-
     -webkit-transition: all 0.4s;
-
     -o-transition: all 0.4s;
-
     transition: all 0.4s;
 }
 
@@ -168,7 +150,7 @@
 
 .select-box .option,
 .selected {
-    padding: .7rem 1rem;
+    padding: 0.7rem 1rem;
     cursor: pointer;
 }
 
@@ -184,7 +166,6 @@
     display: none;
 }
 
-
 .search-button {
     position: relative;
     left: 70%;
@@ -195,7 +176,6 @@
 }
 
 .navbar-brand {
-
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -203,29 +183,22 @@
 .nav-border_b .nav-item:hover,
 .nav-border_b .nav-item:focus,
 .nav-border_b .nav-item.active {
-    border-bottom-color: $blue3
+    border-bottom-color: $blue3;
 }
-
 
 .img-table {
     height: 5rem;
-
 }
 
 .table th,
 .table td {
-
     vertical-align: middle;
 }
 
-
-
 .roundBorder {
-
     background-color: transparent;
     border: none;
     border: 0.0625rem solid $blue1;
-
 }
 
 .btn-growth {
@@ -240,7 +213,6 @@
         }
     }
 }
-
 
 .triplet-icon_growth {
     font-size: 2.4375rem;
@@ -261,7 +233,6 @@
     }
 }
 
-
 .line-height-Ini {
     line-height: initial;
 }
@@ -270,4 +241,10 @@
     -webkit-box-pack: end !important;
     -ms-flex-pack: end !important;
     justify-content: flex-end !important;
+}
+
+.container-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
