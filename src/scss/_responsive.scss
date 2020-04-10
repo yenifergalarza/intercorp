@@ -259,6 +259,11 @@ button.navbar-toggler {
 }
 
 @media(max-width:768px) {
+    .hero_Double.hero_detalle .hero-content .title_hero {
+        font-size: 1.3em;
+        text-align: center;
+        width: 100%;
+    }
     .hero-secondPage.hero_Double {
         .hero-content {
             h1 {
@@ -278,13 +283,6 @@ button.navbar-toggler {
     }
     * {
         font-size: 4vh;
-    }
-    .header_lg {
-        .logo_header {
-            padding-top: 0.7em;
-            width: 5em;
-            padding-left: 0.3em;
-        }
     }
     /*   //primera pagina */
     .hero_Double {

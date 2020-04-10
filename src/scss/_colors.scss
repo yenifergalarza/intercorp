@@ -15,7 +15,6 @@ $blue4:#b9d0ee;
 $white2:#f6f6f6;
 $white3:#f8f8f8;
 $grey2:#909094;
-
 .color_black2 {
     color: $black2 !important;
 }
@@ -46,9 +45,7 @@ $grey2:#909094;
 
 footer.bg-dark {
     background-color: #000000 !important;
-
     hr.border-top-white {
-
         border-top: 1px solid rgba(255, 255, 255, 0.21);
     }
 }
@@ -62,14 +59,12 @@ footer.bg-dark {
     justify-content: flex-end;
 }
 
-
 .container_pill {
     padding-right: .6em;
     padding-left: .6em;
     border-radius: 10rem;
     padding: 0.5rem 1rem;
 }
-
 
 .w-80 {
     width: 80% !important;
@@ -82,7 +77,6 @@ footer.bg-dark {
 .darkImage {
     background-color: rgba(0, 0, 0, 0.3);
 }
-
 
 .darkImage:hover,
 .darkImage:active {

@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,700&display=swap');
-
-
-
 .montserrat-b {
-
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-
 }
 
 .color-darkish-blue {
@@ -17,12 +12,10 @@
     color: #454545 !important;
 }
 
-
 .montserrat-sb {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-
 
 .montserrat-r {
     font-family: 'Montserrat', sans-serif;
@@ -38,19 +31,15 @@
     color: $grey;
 }
 
-
-
 a,
 a:hover,
 a:active {
     text-decoration: none !important;
 }
 
-
 .fz-5 {
     font-size: 5rem !important;
 }
-
 
 .subTitle_hero_white-container {
     font-size: 1.625rem;
@@ -60,11 +49,9 @@ a:active {
     font-size: 0.875rem;
 }
 
-
 .fsz-3_75 {
     font-size: 3.75rem;
 }
-
 
 .font-sz-1_1 {
     font-size: 1.125rem;
@@ -80,4 +67,8 @@ a:active {
 
 .text-gray:hover {
     color: $white;
+}
+
+.line-h_1 {
+    line-height: 1;
 }

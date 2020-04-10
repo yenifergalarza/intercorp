@@ -28,10 +28,11 @@
     <meta property="og:image" content="./assets/logo-intercorp.png" />
 
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./css/crecefix.css">
-    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/crecefix.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
 </head>
 
 
@@ -46,9 +47,9 @@
         <button id="btn-menu_blue" class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdownBlue" aria-controls="navbarNavDropdownBlue" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-lg-9  full-nav dashboard-growth_shadow" id="navbarNavDropdownBlue">
+        <div class="collapse navbar-collapse col-lg-9   full-nav dashboard-growth_shadow" id="navbarNavDropdownBlue">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link montserrat-b active" href="./somosIntercorp.html">
                         <span>Somos Intercorp</span> <span class="sr-only">(current)</span></a>
                 </li>
@@ -99,21 +100,125 @@
 
                     <p class="montserrat-b ">Explora los retos profesionales por:</p>
 
-                    <select class="selectpicker" multiple>
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                      </select>
+                    <select id="select1" class="border-select  montserrat-r selectpicker" data-selected-text-format="count" data-width="100%" data-size="5" data-live-search="true" data-actions-box="true" multiple title="Nuestras Empresas">
+                        <option class="o1">Interbank</option>
+                        <option class="o1">Intelligo</option>
+                        <option class="o1">Interfondos</option>
+                        <option class="o1">Interseguros</option>
+                        <option class="o1">ExpressNet</option>
+                        <option class="o1"> Indigital</option>
+                        <option class="o1">Supermercados Peruanos</option>
+                        <option class="o1">Promart</option>
+                        <option class="o1">Oechsle</option>
+                        <option class="o1">Financiera Oh!</option>
+                        <option class="o1">Real Plaza</option>
+                        <option class="o1">Innova Schools Perú</option>
+                        <option class="o1">Innova Schools México</option>
+                        <option class="o1">Innova Teaching School</option>
+                        <option class="o1">UTP</option>
+                        <option class="o1">Zegel IPAE</option>
+                        <option class="o1">IDAT</option>
+                        <option class="o1">Corriente Alterna</option>
+                        <option class="o1">Colectivo 23</option>
+                        <option>Quicorp</option>
+                        <option>Quifatex</option>
+                        <option>Farmacias Peruanas</option>
+                        <option>Aviva</option>
+                        <option>Intercorp Managment</option>
+                        <option>UCIC</option>
+                        <option>Casa Andina</option>
+                        <option>Cineplanet</option>
+                        <option>Intralot</option>
+                        <option>San Miguel Industria PET</option>
+                        <option>SINECA</option>
+                        <option>NG Restaurantes 3</option>
+                        <option>Perú Champs</option>
+                        <option>URBI</option>
+                        <option>La Victoria Lab</option>
+                        <option>Nexus Group</option>
 
+                    </select>
+
+
+                    <select id="select2" class=" border-select selectpicker  montserrat-r" data-selected-text-format="count" data-width="100%" data-size="5" data-live-search="true" data-actions-box="true" multiple title="Nuestras Áreas de Trabajo">
+                        <option>Aduanas y Comercio Exterior</option>
+                        <option>Almacén </option>
+                        <option>Atención al Cliente</option>
+                        <option>Auditoria/Contraloría</option>
+                        <option>Call Center/Telemarketing</option>
+                        <option>Canales</option>
+                        <option>Centro de distribución </option>
+                        <option>Compras</option>
+                        <option>Comunicación</option>
+                        <option>Contabilidad</option>
+                        <option>CX / UX</option>
+                        <option>Data Analitycs</option>
+                        <option>Finanzas</option>
+                        <option>Ingeniería</option>
+                        <option>Innovación</option>
+                        <option>Inversiones</option>
+                        <option>Legal/Riesgos</option>
+                        <option>Logística / Cadena de
+                            suministro</option>
+                        <option>Mantenimiento /
+                            Limpieza</option>
+                        <option>Marketing</option>
+                        <option>Mejora Continua</option>
+                        <option>Operaciones</option>
+                        <option>Producción / Operación</option>
+                        <option>Proyectos</option>
+                        <option>Publicidad</option>
+                        <option>Recursos Humanos</option>
+                        <option>Relaciones
+                            Institucionales/ Públicas</option>
+                        <option>Senior Managment</option>
+                        <option>Secretarias Y Recepción</option>
+                        <option>Seguridad</option>
+                        <option>Sistemas y
+                            Telecomunicaciones</option>
+                        <option>Sostenibilidad / Medio
+                            Ambiente</option>
+                        <option>Tecnología</option>
+                        <option>Tesorería</option>
+                        <option>Trademarketing</option>
+                        <option>Transporte</option>
+                        <option>Ventas</option>
+                        <option>Otros</option>
+                    </select>
+
+                    <select id="select3" class=" border-select selectpicker show-tick  montserrat-r" data-width="100%" data-size="5" title="Experiencia mínima">
+                        <option>No sé necesita experiencia previa</option>
+                        <option>1 año</option>
+                        <option>2 años </option>
+                        <option>3 años</option>
+                        <option> 4 años</option>
+                        <option>5 años </option>
+                        <option>Entre más de 5 años 10 años</option>
+                        <option>Más de 10 años </option>
+                    </select>
+
+                    <select id="select4" class=" border-select selectpicker show-tick  montserrat-r" data-width="100%" data-size="5" title="Modalidad de Trabajo">
+                        <option>Full Time</option>
+                        <option>Part time </option>
+                        <option>Temporal</option>
+                    </select>
 
                     <div class="w-100  d-flex  flex-column">
+
+
                         <button type="button" id="btnFilterDesktop" class=" w-100 container_pill roundBorder_b color-darkish-blue align-self-end   roundBorder  montserrat-sb  ">Aplicar</button>
                     </div>
 
-                    <div class="container-links">
-                        <a href="#" class="montserrat-r"> Política Crece con Intercorp</a>
-                        <a href="#" class="montserrat-r">Requisitos para postular</a>
-                        <a href="#" class="montserrat-r">Preguntas Frecuentes</a>
+                    <div class="container-links text-center">
+                        <p class="montserrat-r mb-0 "><a class="color-darkish-blue" href="#"><u>Política Crece con
+                                    Intercorp</u></a></p>
+                        <p class="montserrat-r mb-0 "><a class="color-darkish-blue" href="#"><u>Requisitos para
+                                    postular</u></a></p>
+                        <p class="montserrat-r mb-0 "><a class="color-darkish-blue" href="#"><u>Preguntas
+                                    Frecuentes</u></a>
+                        </p>
+
+
                     </div>
 
 
@@ -134,7 +239,7 @@
                     <hr class="hero_hr-blue ">
                     <p class="montserrat-r subTitle-child_hero_white-container text-muted ">
                         Revisa los requisitos para postular
-                        <span type="button" class="btn-pink_search  border-0 container_pill background-pink montserrat-sb text-white " data-toggle="modal" data-target="#exampleModalCenter">
+                        <span type="button" class="btn-pink_search border-0 container_pill background-pink montserrat-sb text-white " data-toggle="modal" data-target="#requirements">
                             Aquí
                         </span>
                     </p>
@@ -999,30 +1104,26 @@
 
         </section>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="requirements" tabindex="-1" role="dialog" aria-labelledby="requirementsTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header border-0">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Requisitos para postular</h5>
+                        <h5 class="modal-title montserrat-sb" id="exampleModalLongTitle">Requisitos para Postular</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p class="montserrat-r">
-                            Tener como minimo un 01 laborando en algunas de las empresas del Grupo,en una misma posicion.Para caso de practicas pre o profesionales debe tener un minimo de 6 meses en su practica actual.
 
-                        </p>
-                        <p class="montserrat-r">
-                            Tener un desempeño igual o superior a la calificacion "bueno " en su ultima evaluacion de desempeño.
-                        </p>
-                        <p class="montserrat-r">
-                            No tener sanciones disiciplinarias (memorandum,amonestaciones escritas,suspensiones,etc.) en el ultimo año.
-                        </p>
-                        <p class="montserrat-r">
-                            Cumplir cabalmente con el perfil del puesto publicados en Somos Intercorp - Crece.
-                        </p>
-                        <p class="montserrat-r">Informar a su Jefe/Supervisor inmediato de su interes por participar en convocatoria,antes de remitir su CV. </p>
+                        <ul>
+                            <li class="montserrat-r"> Tener como mínimo 01 año laborando en alguna de las empresas del Grupo, en una misma posición. Para caso de prácticas pre o profesionales debe de tener un mínimo de 6 meses en su práctica actual.
+                            </li>
+                            <li class="montserrat-r"> Tener un desempeño igual o superior a la calificación “bueno” en su última evaluación del desempeño. </li>
+                            <li class="montserrat-r"> No tener sanciones disciplinarias (memorándums, amonestaciones escritas, suspensiones, etc.) en el último año. </li>
+                            <li class="montserrat-r"> Cumplir cabalmente con el perfil del puesto publicado en Somos Intercorp – Crece.</li>
+                            <li class="montserrat-r">Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.</li>
+                        </ul>
+
                     </div>
 
                 </div>
@@ -1039,8 +1140,25 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
+    <script src="./js/bootstrap-select.js"></script>
     <script src="./js/crece.js"></script>
     <script src="./js/navFull.js"></script>
+    <script>
+        (function($) {
+            $.fn.selectpicker.defaults = {
+                noneSelectedText: 'No hay selección',
+                noneResultsText: 'No hay resultados {0}',
+                countSelectedText: 'Seleccionados {0} de {1}',
+                maxOptionsText: ['Límite alcanzado ({n} {var} max)',
+                    'Límite del grupo alcanzado({n} {var} max)', ['elementos', 'element']
+                ],
+                multipleSeparator: ', ',
+                selectAllText: 'Seleccionar Todos',
+                deselectAllText: 'Desmarcar Todos'
+            };
+        })(jQuery);
+    </script>
 
 </body>
 
