@@ -301,16 +301,16 @@ tbody {
 
 .hero_Double {
     .d-flex.container_rev-growth {
-        height: calc(68vw + 100vh);
+        height: calc(68vw + 92vh);
         .first-hero__Text {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 90vh;
         }
         .second-hero__image {
             display: block;
             background-color: $blue1 !important;
             height: 68vw;
-            width: 100vw;
+            width: 100%;
             position: relative;
             border-radius: 0rem 0 8rem 0;
         }
@@ -331,7 +331,7 @@ tbody {
 }
 
 .hero_leads {
-    height: calc(68vw + 100vh);
+    height: calc(68vw + 82vh);
     .hero-content {
         top: 4vh;
         -webkit-box-orient: vertical !important;
@@ -405,16 +405,16 @@ tbody {
 }
 
 .fz-info_extra-job {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .fz-info_extra-job-sm {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 .container-info_extra-job-sm {
     margin-top: 4rem;
-    width: 80% !important;
+    width: 100% !important;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -615,6 +615,9 @@ section.grow_content-noMainNav {
 }
 
 @media(min-width:693px) {
+    .quoteGrowth {
+        justify-content: flex-end;
+    }
     section.grow_content-noMainNav {
         .container_pill.bg-light {
             border: solid .15rem;
@@ -649,12 +652,40 @@ section.grow_content-noMainNav {
                                         comienzocrece detalle */
 
 @media (min-width:768px) {
+    .border-select {
+        border: 0.05rem solid #909094;
+        border-radius: .6rem;
+        margin-top: .4rem;
+        margin-bottom: .4rem;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+    }
+    .bootstrap-select>.dropdown-toggle:after {
+        margin-top: -1px;
+        content: "";
+        background: url(../assets/arrow-down.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 3rem;
+        right: -0.9rem;
+        top: 0px;
+        border: none;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+    .bootstrap-select:active>.dropdown-toggle:after {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
     .textToWhite {
         color: $white
     }
     .container-info_extra-job-sm {
+        width: 80% !important;
         margin-top: 2rem;
-        margin-top: 4rem;
     }
     section.grow_content-noMainNav {
         .col-sm-6 {
@@ -772,9 +803,10 @@ section.grow_content-noMainNav {
             flex-flow: row;
             -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
+            height: 100vh;
             .second-hero__image {
-                width: 70vw;
-                height: 100vh;
+                width: 90vw;
+                height: 100%;
             }
         }
         .hero-content {
@@ -796,7 +828,7 @@ section.grow_content-noMainNav {
             }
             .fz-info_extra-job,
             .fz-info_extra-job-sm {
-                font-size: 2rem;
+                font-size: 1.2rem;
                 line-height: initial;
             }
             .btn-growth {
@@ -840,6 +872,9 @@ section.grow_content-noMainNav {
 }
 
 @media (min-width: 992px) {
+    .quoteGrowth {
+        justify-content: center;
+    }
     h1.montserrat-b {
         font-size: 3.5rem;
         margin-top: 3rem;
@@ -999,34 +1034,6 @@ section.grow_content-noMainNav {
 }
 
 @media (min-width:1020px) {
-    .border-select {
-        border: 0.05rem solid #909094;
-        border-radius: .6rem;
-        margin-top: .4rem;
-        margin-bottom: .4rem;
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-    }
-    .bootstrap-select>.dropdown-toggle:after {
-        margin-top: -1px;
-        content: "";
-        background: url(../assets/arrow-down.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        height: 100%;
-        width: 3rem;
-        right: -0.9rem;
-        top: 0px;
-        border: none;
-        -webkit-transition: all 0.4s;
-        -o-transition: all 0.4s;
-        transition: all 0.4s;
-    }
-    .bootstrap-select:active>.dropdown-toggle:after {
-        -webkit-transform: rotateX(180deg);
-        transform: rotateX(180deg);
-    }
     .subTitle-child_hero_white-container.text-muted {
         display: flex;
         align-items: center;
@@ -1186,11 +1193,12 @@ section.grow_content-noMainNav {
             .fz-info_extra-job-sm {
                 font-size: .9rem;
                 line-height: initial;
+                margin-bottom: .5rem;
             }
             /*        top: -77vh; */
             .fz-5 {
-                font-size: 3.5rem !important;
-                width: 70%;
+                font-size: 2.5rem !important;
+                width: 70% !important;
                 line-height: 1;
                 overflow-wrap: break-word;
             }
@@ -1227,9 +1235,9 @@ section.grow_content-noMainNav {
         line-height: initial;
     }
     .hero_Double {
-        .d-flex.container_rev-growth {
+        .d-flex.container_ {
             .first-hero__Text {
-                width: 100vw;
+                width: 100%;
                 height: 100vh;
                 background-repeat: no-repeat;
                 background-position-y: 19.3vh;
@@ -1251,7 +1259,7 @@ section.grow_content-noMainNav {
     .details {
         .container {
             h2.montserrat-b {
-                font-size: 2.2rem;
+                font-size: 1.9rem;
             }
             p.montserrat-r {
                 span {
@@ -1290,6 +1298,69 @@ section.grow_content-noMainNav {
                 margin: 0 0.3rem;
             }
         }
+    }
+}
+
+@media(max-width:769px) {
+    .border-select {
+        border: .2rem solid #909094;
+        border-radius: 1.6rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1.375rem 1.75rem;
+        font-size: 1rem;
+        .filter-option-inner-inner {
+            font-size: 3.7rem;
+        }
+    }
+    .bootstrap-select.show-tick .dropdown-menu li a span.text {
+        margin-right: 34px;
+        font-size: 3rem;
+    }
+    .container-links {
+        line-height: 1;
+        a {
+            u {
+                font-size: 4rem;
+            }
+        }
+    }
+    .bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+        font-size: 3.5rem;
+        color: $pink;
+        margin-top: 2rem;
+    }
+    .btn-sm,
+    .btn-group-sm>.btn {
+        font-size: 3rem;
+    }
+    .inner.show {
+        max-width: 85.5vw;
+    }
+    .bs-searchbox .form-control {
+        margin-bottom: 0;
+        height: 8rem;
+        border-radius: 1rem;
+        font-size: 4.3rem;
+    }
+    .bootstrap-select .no-results {
+        font-size: 3.5rem;
+    }
+    .bootstrap-select>.dropdown-toggle:after {
+        margin-top: .5rem;
+        content: "";
+        background: url(../assets/arrow-down.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 7rem;
+        right: 1.1rem;
+        top: 0px;
+        border: none;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
     }
 }
 

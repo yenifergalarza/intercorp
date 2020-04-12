@@ -14,49 +14,12 @@ figure.offBorder {
 }
 
 .hero_detalle {
-    height: 100vh;
+    height: 150vw;
     .d-flex {
         .hero-first {
             @include background-hero($white3, "../assets/fondo-white.png", 72%, 10%, 6.5rem);
             background-blend-mode: darken;
         }
-        .pride_details1 {
-            background-image: url(../assets/Bitmap-16.png);
-        }
-        .pride_details2 {
-            background-image: url(../assets/lgtbi.webp);
-        }
-        .pride_details3 {
-            background-image: url(../assets/ranking.webp);
-        }
-        .news_details1 {
-            background-image: url(../assets/Bitmap-7.png);
-        }
-        .news_details2 {
-            background-image: url(../assets/Bitmap-6.png);
-        }
-        .news_details3 {
-            background-image: url(../assets/Bitmap-5.png);
-        }
-        .news_details4 {
-            background-image: url(../assets/Imagen2.webp);
-        }
-        .news_details5 {
-            background-image: url(../assets/Bitmap-8.png);
-        }
-        .news_details6 {
-            background-image: url(../assets/Bitmap-10.png);
-        }
-        .news_details7 {
-            background-image: url(../assets/interfondos.webp);
-        }
-        .news_details8 {
-            background-image: url(../assets/fest.webp);
-        }
-        .news_details9 {
-            background-image: url(../assets/ucic.webp);
-        }
-        .news_details10 {}
     }
 }
 
@@ -73,5 +36,17 @@ figure.offBorder {
     }
     figure.offBorder img {
         height: 50rem;
+    }
+}
+
+@media (min-width:769px) {
+    .hero_detalle {
+        height: 80vh;
+    }
+}
+
+@media (min-width:1000px) {
+    .hero_detalle {
+        height: 70vh;
     }
 }

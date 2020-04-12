@@ -15,27 +15,20 @@ html {
 }
 
 .btn-register {
-    margin-top: 1.875rem;
     width: 8.75rem;
     height: 3.125rem;
 }
 
 .hero_Double {
-
     position: relative;
     height: 0rem;
-
     .first-hero__Text {
-
         height: 100vh;
         width: 70vw;
     }
-
-
     .second-hero__image {
         position: absolute;
         margin: 0 auto;
-
         right: 0;
         height: 110vh;
         width: 50vw;
@@ -43,34 +36,33 @@ html {
         background-size: cover;
         z-index: 10;
     }
-
     .hero-content {
         position: relative;
         z-index: 20;
         top: -70vh;
         margin: 0 auto;
         right: 0;
-
-
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: left;
         .title_hero {
             font-size: 3.75rem;
             width: 45%;
+            margin-right: 52%;
         }
-
         .subTitle_hero {
             font-size: 1.125rem;
             line-height: 26px;
             width: 45%;
-
+            margin-right: 52%;
         }
-
         form.group_Input {
             width: 39.01rem;
             position: relative;
             margin-top: 3.125rem;
             border-radius: 3.18rem;
             display: flex;
-
             .hero-input {
                 height: 4.375rem;
                 width: 33.75rem;
@@ -78,17 +70,12 @@ html {
                 padding: 0 4.5rem 0 4rem;
                 border: solid 0.0625rem $grey2;
             }
-
             .hero-icon-input {
                 position: absolute;
-
                 left: 1.6rem;
                 font-size: 1.2rem;
-
                 align-self: center;
-
             }
-
             .hero-input_btn {
                 background-color: $pink;
                 border-radius: 2.1875rem;
@@ -102,19 +89,47 @@ html {
             }
         }
     }
+}
 
+.hero_Double.hero70 {
+    height: 80vh;
+    .hero-content {
+        top: -55vh;
+    }
+    .first-hero__Text {
+        height: 80vh;
+    }
+    .second-hero__image {
+        height: 90vh;
+    }
+}
+
+.hero_detalle {
+    .hero-content {
+        top: -52vh;
+    }
+    .d-flex {
+        .second-hero__image {
+            height: 80vh;
+        }
+        .hero-first {
+            height: 70vh;
+        }
+    }
 }
 
 .hero_Double.hero_detalle .hero-content .title_hero {
-
     font-size: 2.75rem;
     width: 45%;
     overflow-wrap: break-word;
 }
 
 .hero-first {
-    @include background-hero($blue1, "../assets/fondo-login.png", 30%, -3.5%, 94%);
-
+    @include background-hero($blue1,
+    "../assets/fondo-login.png",
+    30%,
+    -3.5%,
+    94%);
 }
 
 .hero_Double.one_page {
@@ -126,7 +141,6 @@ html {
 .footer_lg {
     width: 100vw;
     position: relative;
-
     bottom: -105vh;
 }
 
@@ -148,7 +162,6 @@ html {
 
 @media (max-width:767px) {}
 
-
 .w50 {
     width: 50%;
 }
@@ -157,17 +170,13 @@ html {
     text-align: justify;
 }
 
-
 input:focus {
-
     outline: none !important;
     outline-width: 0 !important;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
-
-
 
 .video {
     position: relative;
@@ -210,7 +219,9 @@ input:focus {
     background: black;
 }
 
+
 /* image poster clicked, player class added using js */
+
 .video.player img {
     display: none;
 }

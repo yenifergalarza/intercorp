@@ -2,7 +2,6 @@
 //   background-color: $color;
 //   height: $alto;
 // }
-
 // $colores: (#aaa, #ddd, #000);
 // @for $i from 1 through length($colores) {
 //   #rec#{$i} {
@@ -14,25 +13,17 @@
 //   #rec#{$i} {
 //     @include forma($color, $i));
 //   }
-
 // #rec1{
 //     @include forma(red);
 // }
-
 // #rec1{
 //     @include forma(null,null);
 // }
 // #rec1{
 //     @include forma(nth($colores,2),100px);
 // }
-
 @mixin background-hero($color, $urlimg, $backSize, $backX, $backY) {
-
     background-color: $color;
-
-
-
-
     background-image: url($urlimg);
     background-repeat: no-repeat;
     background-size: $backSize;
@@ -41,12 +32,6 @@
     background-blend-mode: color-dodge;
     border-radius: 0 0 0 5rem;
 }
-
-
-
-
-
-
 
 @mixin footer($height, $color, $colortop:$white) {
     height: height;
@@ -58,13 +43,10 @@
     border-top: .2rem solid $colortop;
 }
 
-
 @mixin btn($color) {
     border-radius: 2rem;
-
     height: 4.15rem;
     z-index: 200;
-
     background-color: $color;
     border: none;
 }
@@ -76,12 +58,8 @@
     margin-left: 0;
 }
 
-
 .hero_hr-blue {
-
     @include hr-tiny-color($blue3);
-
-
 }
 
 .hr-tiny-pink {
@@ -101,20 +79,15 @@
 }
 
 .border-shadow {
-
     -webkit-box-shadow: -2px 5px 46px 0px rgba(0, 0, 0, 0.20);
     box-shadow: 0rem 0.2rem 0.4rem 0.12rem rgba(0, 0, 0, 0.20);
 }
-
-
-
 
 .hr-tiny-line {
     width: 3.3rem;
     border-radius: 2rem;
     margin-left: 0;
 }
-
 
 .background-pink {
     background-color: $pink;
@@ -136,9 +109,6 @@
     height: 80vh;
 }
 
-
-
-
 .card-img-height {
     -o-object-fit: cover;
     object-fit: cover;
@@ -147,18 +117,14 @@
 
 video.card-img-height,
 iframe.card-img-height {
-
     height: 22rem;
 }
 
-
 @media (max-width:767px) {
-
     .fsz-3_1 {
         font-size: 2.5rem;
     }
 }
-
 
 .carousel-control-prev-icon {
     background-image: url();
@@ -170,10 +136,4 @@ iframe.card-img-height {
     background-image: url();
     width: 20px;
     height: 20px;
-}
-
-
-.hero-white_text {
-    width: 49.3% !important;
-    border-radius: 3rem 0 0 0;
 }
