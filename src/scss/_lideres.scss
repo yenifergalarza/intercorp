@@ -49,11 +49,14 @@
 .growth-detail_hr {
     width: 20%;
     margin-left: 0;
-    border-width: .5rem;
+    border-width: .4rem;
+    border-top-color: $blue3;
+    border-radius: 2rem;
 }
 
 @media (max-width: 768px) {
     .hero_leads {
+        height: 105vh;
         .hero-content {
             position: absolute;
             .growth-detail_hr {
