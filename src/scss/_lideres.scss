@@ -1,16 +1,18 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .hero_leads {
-    height: 100vh;
+    height: 90vh;
     .d-flex {
         .hero-first {
             @include background-hero($white3, "../assets/fondo-white.png", 71%, 2rem, 6rem);
             background-blend-mode: darken;
+            height: 85vh;
         }
         .second-hero__image {
             background-color: $pink !important;
             border-radius: 8rem 0 8rem 0;
             background-image: none;
+            height: 90vh;
         }
     }
     .hero-content {
@@ -21,7 +23,7 @@
         .container-video {
             position: absolute;
             right: 0%;
-            top: -25%;
+            top: 0%;
         }
         video,
         img,
@@ -57,6 +59,7 @@
             .growth-detail_hr {
                 margin: auto;
                 border-radius: 1.5rem;
+                border-top-color: $blue3;
             }
             .container-img_leads {
                 display: flex;

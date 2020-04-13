@@ -893,7 +893,7 @@ section.grow_content-noMainNav {
                     -ms-flex-align: center;
                     align-items: center;
                     height: 100%;
-                    top: 0;
+                    top: -2%;
                 }
             }
         }
@@ -1089,10 +1089,10 @@ section.grow_content-noMainNav {
     }
     .hero_leads .d-flex.container_rev-growth {
         .second-hero__image {
-            height: 110vh
+            height: 95vh
         }
         .first-hero__Text {
-            height: 100vh;
+            height: 90vh;
         }
     }
 }
@@ -1131,6 +1131,7 @@ section.grow_content-noMainNav {
     .hero_hr-blue {
         border-width: 0.3rem;
         width: 6%;
+        border-color: $blue3;
     }
     hr {
         margin-top: 1rem;
@@ -1267,7 +1268,7 @@ section.grow_content-noMainNav {
                 overflow-wrap: break-word;
             }
             .growth-detail_hr {
-                border-width: .3rem;
+                border: .3rem;
                 width: 10%;
             }
             .img-min-growth {

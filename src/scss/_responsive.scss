@@ -42,6 +42,7 @@ button.navbar-toggler {
                 margin-bottom: 3rem;
                 margin-left: 0;
                 margin-right: 70%;
+                border-color: $blue3;
             }
             form.group_Input {
                 margin: 1rem auto 0 auto;
@@ -343,7 +344,7 @@ button.navbar-toggler {
             }
             hr {
                 border-width: 1.5rem;
-                margin-bottom: 2rem;
+                margin: auto 2rem auto 2rem;
             }
             form.group_Input {
                 width: 100%;
