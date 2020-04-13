@@ -531,6 +531,18 @@ section.grow_content-noMainNav {
     font-size: 3rem;
 }
 
+.btn-under-text_growth {
+    .text-condition {
+        a {
+            font-size: 3.2rem;
+        }
+    }
+    .container_pill.background-pink {
+        padding: 2.5rem;
+        margin: 3rem 0px;
+    }
+}
+
 @media (min-width:425px) {
     .hero_leads {
         .hero-content {
@@ -607,6 +619,17 @@ section.grow_content-noMainNav {
 }
 
 @media(min-width:576px) {
+    .btn-under-text_growth {
+        .text-condition {
+            a {
+                font-size: 2.2rem;
+            }
+        }
+        .container_pill.background-pink {
+            padding: 1.5rem;
+            margin: 1rem 0px;
+        }
+    }
     section.grow_content-noMainNav {
         .col-sm-6 {
             -webkit-box-flex: 0;
@@ -882,6 +905,17 @@ section.grow_content-noMainNav {
     }
     .text-condition {
         font-size: 1rem;
+    }
+    .btn-under-text_growth {
+        .text-condition {
+            a {
+                font-size: 1rem;
+            }
+        }
+        .container_pill.background-pink {
+            padding: 1.5rem;
+            margin: 1rem 0px;
+        }
     }
 }
 
