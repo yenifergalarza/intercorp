@@ -399,7 +399,7 @@ button.navbar-toggler {
     /*   //liders */
     .hero_leads {
         .hero-content {
-            top: -77vh;
+            top: 8vh;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -415,7 +415,7 @@ button.navbar-toggler {
                 video.d-block,
                 img,
                 iframe.d-block {
-                    width: 60%;
+                    width: 100%;
                     height: auto;
                     position: relative;
                     right: 0rem;
@@ -939,13 +939,7 @@ button.navbar-toggler {
             .card {
                 .p-3 {
                     padding: 3rem !important;
-                    .d-flex {
-                        .video-icon {
-                            img {
-                                width: 8.5rem;
-                            }
-                        }
-                    }
+                    .d-flex {}
                     .card-text {
                         font-size: .6em;
                     }
@@ -958,7 +952,7 @@ button.navbar-toggler {
     }
     .hero_leads .hero-content .container-video video.d-block,
     .hero_leads .hero-content .container-video iframe.d-block {
-        margin: 2.5em auto;
+        margin: 1.5em auto;
     }
     .hero_leads {
         .d-flex {
