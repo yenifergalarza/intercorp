@@ -21,7 +21,7 @@ nav.innerHTML = `<div>
                     <i class="fa fa-search container_search_icon text-muted"></i>
                     <input type="text" class="form-control form-control_search montserrat-r" placeholder="Palabra clave" aria-label="Username">
                 </div>
-                <button type="button" class="w-100 container_pill roundBorder_b color-darkish-blue align-self-end   roundBorder  montserrat-sb  ">Explora</button>
+                <button type="button" class="w-100 container_pill roundBorder_b color-darkish-blue align-self-end   roundBorder  montserrat-sb  hoverPulse">Explora</button>
             </div>
         </div>
 
@@ -133,7 +133,7 @@ nav.innerHTML = `<div>
         <div class="w-100  d-flex  flex-column">
 
 
-            <button type="button" id="btnFilterDesktop" class=" w-100 container_pill roundBorder_b color-darkish-blue align-self-end mb-3   roundBorder  montserrat-sb  ">Aplicar</button>
+            <button type="button" id="btnFilterDesktop" class=" w-100 container_pill roundBorder_b color-darkish-blue align-self-end mb-3   roundBorder  montserrat-sb hoverPulse ">Aplicar</button>
         </div>
 
         <div class="container-links text-center">
