@@ -302,15 +302,15 @@
     
     .hero_Double {
         .d-flex.container_rev-growth {
-            height: calc(68vw + 92vh);
+            height: 100%;
             .first-hero__Text {
                 width: 100%;
-                height: 90vh;
+                height: 70%;
             }
             .second-hero__image {
                 display: block;
                 background-color: $blue1 !important;
-                height: 68vw;
+                height: 30%;
                 width: 100%;
                 position: relative;
                 border-radius: 0rem 0 8rem 0;
@@ -623,7 +623,7 @@
                 .second-hero__image {
                     display: block;
                     background-color: #052cb9 !important;
-                    height: 56vw;
+                    height: 30%;
                 }
             }
         }
@@ -703,6 +703,9 @@
                                         comienzocrece detalle */
     
     @media (min-width:768px) {
+        .pill_goBack {
+            margin-bottom: 2rem;
+        }
         .arrow-down {
             width: 100%;
             margin: 0 auto;
@@ -867,7 +870,7 @@
             justify-content: center;
         }
         .fz-4 {
-            font-size: 2rem;
+            font-size: 1.2rem;
             line-height: initial;
         }
         .hero_leads {
@@ -899,7 +902,7 @@
                                                     top: -103rem; */
                 top: 8vh;
                 .fz-5 {
-                    font-size: 4rem !important;
+                    font-size: 3rem !important;
                 }
                 .container-video {
                     position: relative;
@@ -918,9 +921,9 @@
                 }
                 .btn-growth {
                     margin: 2rem 0;
-                    font-size: 2rem;
+                    font-size: 1rem;
                     height: auto;
-                    padding: 2rem 0rem;
+                    padding: 1.4rem 0rem;
                     width: 80%;
                 }
                 .fz-5 {
@@ -931,8 +934,8 @@
                     width: 8rem;
                 }
                 .img-min-growth {
-                    width: 10rem;
-                    height: 10rem;
+                    width: 8rem;
+                    height: 8rem;
                 }
                 .w-100.container-img_text-overview {
                     .w-50 {
@@ -1137,7 +1140,7 @@
         }
         .hero_leads .d-flex.container_rev-growth {
             .second-hero__image {
-                height: 95vh
+                height: 100vh
             }
             .first-hero__Text {
                 height: 90vh;
