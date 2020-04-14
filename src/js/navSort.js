@@ -242,11 +242,12 @@ const makeDiv = (array) => {
 
         } else {
             if (typeof indexArr === 'object') {
-                let indexArrNum = indexArr.indexOf(i);
+                let indexArrNum = i;
                 for (let i = 0; i < indexArr.length; i++) {
+
                     const itemM = document.createElement('div');
-
-
+                    console.log(i) //sub numero del array 
+                    console.log(indexArrNum);
                     itemM.classList.add('container_pill', 'b_blue4', 'montserrat-sb', 'color-darkish-blue');
                     const crossM = document.createElement('i');
                     crossM.classList.add('fa', 'fa-times');
@@ -255,9 +256,10 @@ const makeDiv = (array) => {
                     itemM.appendChild(document.createTextNode(indexArr[i]));
                     listPill.appendChild(itemM);
                     crossM.addEventListener("click", () => {
-                        console.log(indexArrNum);
-                        indexArr[indexArrNum].i = 0;
+                        indexArr.splice((indexArrNum), 1);
                         itemM.remove()
+                        console.log(indexArr);
+                        console.log(array);
                     })
 
 

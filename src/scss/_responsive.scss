@@ -200,10 +200,6 @@ button.navbar-toggler {
     }
     .hero_leads,
     .hero_detalle {
-        .hero-content video,
-        .hero-content iframe {
-            right: 0rem;
-        }
         .d-flex .hero-first {
             background-size: 64%;
             background-position-x: center;
@@ -248,6 +244,7 @@ button.navbar-toggler {
 @media(max-width:768px) {
     .hero-white_text {
         width: 100% !important;
+        margin-top: 2rem;
         border-radius: 4rem 0 4rem 0;
     }
     .hero_Double {
@@ -282,7 +279,7 @@ button.navbar-toggler {
         width: 80%;
         height: 50vw;
         margin: 0 10%;
-        top: 12vw;
+        top: 16vw;
     }
     .flex-details {
         justify-content: center;
@@ -884,12 +881,12 @@ button.navbar-toggler {
     }
     .hero_detalle {
         .hero-content {
-            top: 70vw;
+            top: 75vw;
             position: absolute;
         }
-    }
-    .hero_detalle .hero-content.goBack_details {
-        top: 0vw;
+        .hero-content.goBack_details {
+            top: 6vw;
+        }
     }
     .album {
         padding-top: 2em !important;

@@ -54,9 +54,17 @@
     border-radius: 2rem;
 }
 
+@media(max-width:991px) {
+    .hero_leads {
+        .d-flex .second-hero__image {
+            border-radius: 0rem 0 8rem 0;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .hero_leads {
-        height: 105vh;
+        height: 120vw;
         .hero-content {
             position: absolute;
             .growth-detail_hr {
@@ -74,14 +82,29 @@
             flex-direction: column-reverse;
             .hero-first {
                 height: 50%;
+                position: relative;
                 width: 100%;
+                top: -4%;
             }
             .second-hero__image {
                 display: block;
                 width: 100%;
                 position: relative;
-                border-radius: 0 0 8rem 8rem;
+                border-radius: 0 0 8rem 0;
+                height: 71%;
             }
         }
+    }
+}
+
+@media(max-width:588px) {
+    .hero_leads {
+        height: 165vw;
+    }
+}
+
+@media(max-width:588px) {
+    .hero_leads {
+        height: 140vw;
     }
 }
