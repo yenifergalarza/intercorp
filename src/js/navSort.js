@@ -114,7 +114,7 @@ nav.innerHTML = `<div>
         </select>
 
         <select id="select3" class=" border-select selectpicker show-tick  montserrat-r" data-width="100%" data-size="5" title="Experiencia mínima">
-            <option>No sé necesita experiencia previa</option>
+            <option>No se necesita experiencia previa</option>
             <option>1 año</option>
             <option>2 años </option>
             <option>3 años</option>

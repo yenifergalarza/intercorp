@@ -11,6 +11,17 @@
         font-style: normal;
     }
     
+    .orderByPills {
+        label:hover {
+            color: $blue2;
+        }
+        label.active,
+        label.active:hover {
+            background-color: $blue2;
+            color: $white;
+        }
+    }
+    
     .popover.fade {
         max-width: 93%;
         top: 26rem !important;
@@ -111,7 +122,7 @@
         border: none;
         border: 0.25rem solid #052cb9;
         padding: 2rem;
-        font-size: 4.5rem;
+        font-size: 3rem;
         margin-top: 6rem;
     }
     
@@ -1515,6 +1526,13 @@
         outline: 0 !important;
         -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0) !important;
         box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0) !important;
+    }
+    
+    .btn:focus {
+        .btn.focus {
+            outline: 0;
+            box-shadow: none !important
+        }
     }
     
      :focus,
