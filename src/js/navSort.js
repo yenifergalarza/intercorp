@@ -137,11 +137,11 @@ nav.innerHTML = `<div>
         </div>
 
         <div class="container-links text-center">
-            <p class="montserrat-r mb-0 "><a class="color-darkish-blue" data-toggle="modal" data-target="#requirements"><u class="color-darkish-blue">Política Crece con
+            <p class="montserrat-r mb-0 "><a class="color-darkish-blue"  href="#"><u class="color-darkish-blue">Política Crece con
                         Intercorp</u></a></p>
-            <p class="montserrat-r mb-0 "><a class="color-darkish-blue" href="#"><u>Requisitos para
+            <p class="montserrat-r mb-0 "><a class="color-darkish-blue" data-toggle="modal" data-target="#requirements"><u class="color-darkish-blue">Requisitos para
                         postular</u></a></p>
-            <p class="montserrat-r mb-0 "><a class="color-darkish-blue" href="#"><u>Preguntas
+            <p class="montserrat-r mb-0 "><a class="color-darkish-blue" href="#"><u class="color-darkish-blue">Preguntas
                         Frecuentes</u></a>
             </p>
 
@@ -159,19 +159,12 @@ nav.innerHTML = `<div>
 </div>`
 
 
-
-
-
 if (window.innerWidth < 992) {
     fathermobile.insertBefore(nav, mobileDesktop);
 
 } else {
     fatherDesktop.replaceChild(nav, navDesktop);
 }
-
-
-
-
 
 const arrOfCategory = [0, 0, 0, 0];
 const select1 = document.getElementById("select1");

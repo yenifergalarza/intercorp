@@ -279,7 +279,12 @@
         .header_growth-details .full-nav {
             right: -4vw;
         }
-        h1.fz-5.montserrat-b {
+        h1.fz-5.montserrat-b,
+        h1.fz-5.montserrat-sb,
+        h1.fz-5.montserrat-r,
+        h1.fz-5.montserrat-b span,
+        h1.fz-5.montserrat-sb span,
+        h1.fz-5.montserrat-r span {
             font-size: 2.2rem !important;
         }
     }

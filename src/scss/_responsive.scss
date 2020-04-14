@@ -536,13 +536,22 @@ button.navbar-toggler {
     }
     /* 
     //detalle */
+    p.montserrat-r,
+    p.montserrat-sb,
+    p.montserrat-b,
+    p.montserrat-r span,
+    p.montserrat-sb span,
+    p.montserrat-b span,
+    p.montserrat-r a,
+    p.montserrat-sb a,
+    p.montserrat-b a,
+    p.montserrat-r u,
+    p.montserrat-sb u,
+    p.montserrat-b u {
+        font-size: 2rem;
+    }
     .details {
         .container {
-            p.montserrat-r {
-                font-size: 2rem;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
             cite,
             li {
                 font-size: 2.2rem;
@@ -1036,14 +1045,22 @@ button.navbar-toggler {
     /* 
 
     //detalle */
+    p.montserrat-r,
+    p.montserrat-sb,
+    p.montserrat-b,
+    p.montserrat-r span,
+    p.montserrat-sb span,
+    p.montserrat-b span,
+    p.montserrat-sb a,
+    p.montserrat-b a,
+    p.montserrat-r a,
+    p.montserrat-sb u,
+    p.montserrat-b u,
+    p.montserrat-r u {
+        font-size: 3.2rem;
+    }
     .details {
         .container {
-            p.montserrat-r {
-                font-size: 3.2rem;
-            }
-            p.montserrat-sb {
-                font-size: 3.5rem;
-            }
             h3,
             .h3 {
                 font-size: 3.75rem;
