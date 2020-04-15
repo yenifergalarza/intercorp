@@ -4,14 +4,14 @@ const mobileDesktop = document.getElementById("searchMobile");
 const fatherDesktop = document.getElementById("allContainer")
 const nav = document.createElement("nav");
 nav.classList.add("navbar", "navbar-expand-lg", "navbar-light", "bg-white", "header_growth", "sidenav_desktop", "col-lg-3");
-nav.innerHTML = `<div>
-
-<p class="navbar-brand montserrat-r text-one_filter none_desktop"><i class="fa fa-filter"></i> Ver Filtros
+nav.innerHTML = `<div class="w-100">
+<div class="d-flex justify-content-between w-100">
+<p class="navbar-brand montserrat-r text-one_filter "><i class="fa fa-filter"></i> Ver Filtros
 </p>
 <button class="navbar-toggler border-0 p-0 " type="button" data-toggle="collapse" data-target="#navbarNavDropdown01" aria-controls="navbarNavDropdown01" aria-expanded="false" aria-label="Toggle navigation">
 
     <i class="fa fa-angle-right arrow-mob_pink"></i>
-</button>
+</button></div>
 <div class="collapse navbar-collapse w-100_desktop" id="navbarNavDropdown01">
     <form class=" mt-4  w-100_desktop">
         <div class="none_mobile-b w-100">
@@ -181,7 +181,7 @@ const selectedMultiple = (select, numero) => {
             if (opt.selected) {
 
                 opts.push(opt.text);
-                //       opts.push(opt);
+
             }
         }
         console.log(opts);
@@ -206,16 +206,12 @@ selectedMultiple(select2, 1);
 selectUnique(select3, 2);
 selectUnique(select4, 3);
 
-//selectedNumero.addEventListener("click", () => {
-//         selectedNumero.classList.toggle("active");
-//     });
-
 
 const btnFilterDesktop = document.getElementById("btnFilterDesktop");
 const hideCaptionFiltered = document.getElementById("hideCaptionFiltered");
 const showFilters = document.getElementById("showFilters");
 const searchMobile = document.getElementById("searchMobile");
-//const parentOfNodes = document.getElementById("parentOfNodes");
+
 
 const makeDiv = (array) => {
     if (document.querySelector(".margin-top_grow-pill")) {
@@ -280,7 +276,7 @@ const makeDiv = (array) => {
 btnFilterDesktop.addEventListener("click", () => {
 
     if (hideCaptionFiltered) {
-        // parentOfNodes.removeChild(hideCaptionFiltered);
+
         searchMobile.remove();
         hideCaptionFiltered.remove();
     }
