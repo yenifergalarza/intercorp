@@ -160,7 +160,27 @@ html {
 
 @media (max-width:1024px) {}
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    .modal-footer {
+        .container_pill {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width:580px) {
+    .modal-dialog {
+        margin: 6.5rem;
+    }
+    .mobile-col {
+        flex-direction: column !important;
+    }
+    .modal-footer {
+        .container_pill {
+            font-size: 3.7rem;
+        }
+    }
+}
 
 .w50 {
     width: 50%;

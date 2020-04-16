@@ -229,7 +229,7 @@ button.navbar-toggler {
 }
 
 .inputHeight {
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: solid .1rem $grey;
     padding: 0rem 1rem;
 }
@@ -329,7 +329,7 @@ button.navbar-toggler {
                 margin-right: 0;
             }
             .hero_hr-blue {
-                border-top: 1.3rem solid #358dde;
+                border-top: 0.8rem solid #358dde;
                 width: 29.3rem;
                 margin-right: 0;
             }
@@ -582,10 +582,8 @@ button.navbar-toggler {
     .btn-register {
         width: auto;
         height: auto;
-        font-size: 2.5rem !important;
-    }
-    .mobile-col {
-        flex-direction: column !important;
+        font-size: 2rem !important;
+        padding: 1rem 3rem;
     }
     .pd-mobile {
         padding: 2rem 5rem !important;
@@ -646,7 +644,8 @@ button.navbar-toggler {
         }
     }
     .inputHeight {
-        border: solid 0.3rem $grey;
+        border-radius: 1rem;
+        border: solid 0.25rem $grey;
         height: 7rem !important;
         font-size: 4rem;
         padding: 0rem 3rem;
@@ -662,7 +661,7 @@ button.navbar-toggler {
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
-        font-size: 3.5rem !important;
+        font-size: 3rem !important;
     }
     /* 
     //segunda pagina */
@@ -695,7 +694,7 @@ button.navbar-toggler {
     /* 
     //tercera pagina */
     .font-sz-1_1 {
-        font-size: 4.8rem;
+        font-size: 3.8rem;
     }
     .pill-p-center {
         width: 32rem;
@@ -715,7 +714,7 @@ button.navbar-toggler {
         .p-4 {
             padding: 3.5rem !important;
             .card-text {
-                font-size: 4rem;
+                font-size: 3rem;
                 margin-bottom: 3rem;
             }
         }
@@ -745,10 +744,10 @@ button.navbar-toggler {
     .second-article-3 .roundBorder {
         font-size: 4rem;
         width: 59.1875rem;
-        height: 5.5rem;
+        height: initial;
         border-radius: 6rem;
         border-width: 0.3rem;
-        padding: 2rem 0;
+        padding: .8rem 0;
     }
     .second-article-3.background-pink {
         height: 55.5rem;
@@ -1081,6 +1080,12 @@ button.navbar-toggler {
         .nav-link {
             font-size: 4rem !important;
         }
+    }
+}
+
+@media(max-width:500px) {
+    .inputHeight {
+        border: solid 0.3rem $grey;
     }
 }
 
