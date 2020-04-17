@@ -70,7 +70,7 @@
 
 @media (max-width: 768px) {
     .hero_leads {
-        height: 120vw;
+        height: 110vw;
         .hero-content {
             position: absolute;
             .growth-detail_hr {
@@ -103,14 +103,26 @@
     }
 }
 
-@media(max-width:588px) {
+@media (max-width: 767px) {
     .hero_leads {
-        height: 165vw;
+        height: 100vw;
     }
 }
 
-@media(max-width:588px) {
+@media(max-width:630px) {
+    .hero_leads {
+        height: 120vw;
+    }
+}
+
+@media(max-width:560px) {
     .hero_leads {
         height: 140vw;
+    }
+}
+
+@media(max-width:400px) {
+    .hero_leads {
+        height: 165vw;
     }
 }
