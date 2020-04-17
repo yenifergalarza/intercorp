@@ -1,39 +1,25 @@
 .hero_findOut {
     height: 110vh;
-
     .d-flex {
         .hero-first {
             @include background-hero($blue1, "../assets/fondo-enterate.png", 72%, 2rem, 6rem);
-
-        }
-
-        .hero-enterate {
-            background-image: url(../assets/Bitmap-2.png);
         }
     }
-
     .hero-content {
-
-
         .group_Input {
             margin-top: 3.125rem;
             height: 4.375rem;
             width: 10rem;
-
             .hero-input_btn {
-
                 background-color: $pink;
                 border-radius: 2.1875rem;
                 padding: 1.6875rem 3.0625rem;
                 border: none;
                 font-size: 1rem;
-
-
             }
         }
     }
 }
-
 
 .pride_triplets_shadow {
     -webkit-box-shadow: 4px 9px 23px -3px rgba(0, 0, 0, 0.75);
@@ -46,37 +32,29 @@
 }
 
 .carousel-inner {
-
     video {
         border-radius: 3rem 0;
-
         height: 100%;
     }
-
-
     iframe {
         border-radius: 3rem 0;
         height: inherit;
         height: 100%;
     }
-
     .vp-center {
         iframe {
-
             .player .vp-video-wrapper.transparent {
                 border-radius: 3rem 0 !important;
             }
         }
     }
-
     video[poster] {
-        -o-object-fit: cover;
-        object-fit: cover;
+        -o-object-fit: unset;
+        object-fit: unset;
     }
 }
 
 .pt-5 {
-
     .row::-webkit-scrollbar {
         display: none;
         -ms-overflow-style: none;

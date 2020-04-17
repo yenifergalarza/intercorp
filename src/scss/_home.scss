@@ -23,7 +23,7 @@ html {
     position: relative;
     height: 0rem;
     .first-hero__Text {
-        height: 100vh;
+        height: 80vh;
         width: 70vw;
     }
     .second-hero__image {
@@ -32,7 +32,6 @@ html {
         right: 0;
         height: 110vh;
         width: 50vw;
-        background-image: url("../assets/Bitmap-1.png");
         background-size: cover;
         z-index: 10;
     }
@@ -92,7 +91,7 @@ html {
 }
 
 .hero_Double.hero70 {
-    height: 80vh;
+    height: 85vh;
     .hero-content {
         top: -55vh;
     }
@@ -125,23 +124,21 @@ html {
 }
 
 .hero-first {
-    @include background-hero($blue1,
-    "../assets/fondo-login.png",
-    30%,
-    -3.5%,
-    94%);
-}
-
-.hero_Double.one_page {
-    .second-hero__image {
-        background-image: url("../assets/Bitmap.png");
-    }
+    @include background-hero($blue1, "../assets/fondo-login.png", 30%, -3.5%, 94%);
 }
 
 .footer_lg {
     width: 100vw;
     position: relative;
     bottom: -105vh;
+}
+
+.hero_Double.one_page,
+.hero_Double.hero-secondPage {
+    .first-hero__Text {
+        height: 100vh;
+        ;
+    }
 }
 
 @media (min-width: 1921px) {}

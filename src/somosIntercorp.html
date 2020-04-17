@@ -51,10 +51,12 @@
                 <div class="first-hero__Text  hero-we">
 
                 </div>
-
-                <div class="second-hero__image br-hero_img">
-
-                </div>
+                <picture>
+                    <source class="second-hero__image br-hero_img " media='(min-width: 1200px)' srcset='/assets/Bitmap-1.png'>
+                    <source class="second-hero__image br-hero_img " media='(min-width: 940px)' srcset='/assets/middle-si.png'>
+                    <source class="second-hero__image br-hero_img" media='(min-width: 700px)' srcset='/assets/tabletsi.png'>
+                    <img class="second-hero__image br-hero_img " src='/assets/Bitmap-1.png' alt='enterate' />
+                </picture>
             </div>
 
             <div class="hero-content container animated bounceInRight">
@@ -105,11 +107,13 @@
             </div>
         </div>
     </main>
-    <footer class="footer_lg container sI-foo">
+
+    <footer class="footer_lg container">
         <p class="montserrat-r">
             2020 Somos Intercorp. Todos los derechos reservados .
         </p>
     </footer>
+
     <script src="./js/icon-transition.js">
     </script>
 </body>

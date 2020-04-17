@@ -81,10 +81,15 @@
             <div class="d-flex flex-details">
                 <div class="first-hero__Text  hero-first">
                 </div>
-                <img class="second-hero__image news_details1 br-hero_img" src="./assets/Bitmap-16.png" />
+                <picture>
+                    <source class="second-hero__image news_details1 br-hero_img" media='(min-width: 1200px)' srcset="./assets/Bitmap-16.png">
+                    <source class="second-hero__image news_details1 br-hero_img" media='(min-width: 940px)' srcset="/assets/middle-16.png">
+                    <source class="second-hero__image news_details1 br-hero_img" media='(min-width: 768px)' srcset='/assets/16-tablet.png'>
+                    <img class="second-hero__image news_details1 br-hero_img" src='./assets/mobile-16.png' alt='enterate' />
+                </picture>
             </div>
             <div class="hero-content container goBack_details">
-                <div id="goBack" class="p-2 color-darkish-blue line-height-Ini container_pill roundBorder pill_goBack">
+                <div id="goBack" class="p-2 color-darkish-blue line-h_1 container_pill roundBorder pill_goBack">
                     <i class="fa fa-arrow-left"></i>
                     <span class="montserrat-sb">Regresar</span>
                 </div>
