@@ -6,7 +6,6 @@
         @include background-hero($blue3, "../assets/fondo-enterate.png", contain, left, center);
     }
     .second-hero__image {
-        background-image: url("../assets/Bitmap-16.png");
         height: 90vh;
     }
 }

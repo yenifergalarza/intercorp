@@ -32,7 +32,6 @@ html {
         right: 0;
         height: 110vh;
         width: 50vw;
-        background-image: url("../assets/Bitmap-1.png");
         background-size: cover;
         z-index: 10;
     }
@@ -125,17 +124,7 @@ html {
 }
 
 .hero-first {
-    @include background-hero($blue1,
-    "../assets/fondo-login.png",
-    30%,
-    -3.5%,
-    94%);
-}
-
-.hero_Double.one_page {
-    .second-hero__image {
-        background-image: url("../assets/Bitmap.png");
-    }
+    @include background-hero($blue1, "../assets/fondo-login.png", 30%, -3.5%, 94%);
 }
 
 .footer_lg {
