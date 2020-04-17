@@ -161,7 +161,7 @@
 
                     </div>
                     <div class="w-50 container-video">
-                        <img src="assets/Bitmap-4.png" alt="Fondo detalle">
+                        <img src="assets/Bitmap-4.png" alt="Fondo detalle" id="imgGrowth">
                         <div class="d-flex quoteGrowth">
                             <p class="montserrat-r wfullTo70 line-h_1 text-center text-condition textToWhite ">
                                 “En Interbank, acompañamos a los peruanos a alcanzar sus sueños, hoy. Queremos que trasciendas con nosotros y dejes una huella en los demás. Únete a un equipo que siempre va por más. #EsTiempoDeTrascender”
@@ -490,7 +490,24 @@
     <script src="js/pulseCards-transition.js"></script>
     <script src="js/crece.js">
     </script>
-    <script src="js/heroDetailContent.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+            const contentGrowth = document.getElementById("contentDetail");
+            const container = document.getElementById("allContainerBackground");
+
+            const contentGrowthHeight = contentGrowth.offsetHeight;
+
+
+            if (window.innerWidth < 768) {
+                console.log(contentGrowthHeight);
+
+                container.setAttribute('style', `height: calc(${contentGrowthHeight}px + 15vh) !important`);
+                console.log(container.clientHeight);
+            }
+        })
+    </script>
 </body>
 
 </html>
