@@ -92,10 +92,12 @@
                 <div class="first-hero__Text  hero-first">
 
                 </div>
-
-                <img class="second-hero__image br-hero_img hero-enterate" src="./assets/Bitmap-2.png" />
-
-
+                <picture>
+                    <source class="second-hero__image br-hero_img hero-enterate" media='(min-width: 1200px)' srcset='/assets/Bitmap-2.png'>
+                    <source class="second-hero__image br-hero_img  hero-enterate" media='(min-width: 940px)' srcset='/assets/middle-size.png'>
+                    <source class="second-hero__image br-hero_img hero-enterate" media='(min-width: 700px)' srcset='/assets/tablet.png'>
+                    <img class="second-hero__image br-hero_img hero-enterate" src='/assets/Bitmap-2.png' alt='enterate' />
+                </picture>
             </div>
 
             <div class="hero-content container">
@@ -117,7 +119,7 @@
         <section class="  first-article-3 d-flex justify-content-center">
             <article class="container" id="viewNews">
                 <div class="pt-5">
-                    <div class="groupTitle w100 pb-4 pt-5">
+                    <div class="groupTitle w100 pb-4 pt-3">
                         <h2 class="title montserrat-b text-center fsz-3_75 mb-0">
                             Novedades
                         </h2>
@@ -132,7 +134,7 @@
                                         <h4 class="card-title montserrat-b font-sz-1_1 text-black">Conoce Plin y envía dinero al instante con tu número de celular</h4>
                                         <p class="card-text text-black">Aliquam rhoncus et mauris ut sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <div class="container_pill pill-p-center  b_blue4 ">
+                                            <div class="container_pill pill-p-center  b_blue4 line-h_1 ">
                                                 <span class="montserrat-sb color-darkish-blue">Fecha
                                                 </span></div>
                                             <div class="container_pill bg-light color-darkish-blue pill_goBack line-h_1  mb-0">
@@ -154,7 +156,7 @@
                                         <h4 class="card-title montserrat-b font-sz-1_1 text-black">Inauguramos Casa Andina San Premium Isidro</h4>
                                         <p class="card-text text-black">Aliquam rhoncus et mauris ut sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <div class="container_pill pill-p-center b_blue4 ">
+                                            <div class="container_pill pill-p-center b_blue4 line-h_1">
                                                 <span class="montserrat-sb color-darkish-blue">Fecha
                                                 </span></div>
                                             <div class="container_pill  bg-light color-darkish-blue pill_goBack line-h_1  mb-0">
@@ -177,7 +179,7 @@
                                         <h4 class="card-title montserrat-b font-sz-1_1 text-black">Entrevista a Iván Mateo: Sinergia entre equipos digitales retail</h4>
                                         <p class="card-text text-black">Aliquam rhoncus et mauris ut sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit .</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <div class="container_pill pill-p-center  b_blue4 ">
+                                            <div class="container_pill pill-p-center  b_blue4 line-h_1 ">
                                                 <span class="montserrat-sb color-darkish-blue">Fecha
                                                 </span></div>
                                             <div class="container_pill bg-light color-darkish-blue pill_goBack line-h_1  mb-0">

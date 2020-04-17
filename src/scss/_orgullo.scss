@@ -1,13 +1,12 @@
 @media (max-width:697px) {}
 
 .hero_pride_double {
-    height: 100vh;
-
+    height: 90vh;
     .hero-pride {
-        @include background-hero($blue3, "../assets/fondo-enterate.png", 83%, -1rem, 6rem);
+        @include background-hero($blue3, "../assets/fondo-enterate.png", contain, left, center);
     }
-
     .second-hero__image {
         background-image: url("../assets/Bitmap-16.png");
+        height: 90vh;
     }
 }

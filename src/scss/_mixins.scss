@@ -62,10 +62,6 @@
     @include hr-tiny-color($blue3);
 }
 
-.hr-tiny-pink {
-    @include hr-tiny-color($pink);
-}
-
 .hr-tiny-green {
     @include hr-tiny-color($green);
 }
@@ -87,6 +83,10 @@
     width: 3.3rem;
     border-radius: 2rem;
     margin-left: 0;
+}
+
+.hr-tiny-pink {
+    @include hr-tiny-color($pink);
 }
 
 .background-pink {

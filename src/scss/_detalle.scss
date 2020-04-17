@@ -28,6 +28,12 @@ figure.offBorder {
     min-width: 3.9rem;
 }
 
+.goBack_details {
+    #goBack {
+        color: $blue2;
+    }
+}
+
 @media (max-width:767px) {
     .cuadro {
         height: 6rem;

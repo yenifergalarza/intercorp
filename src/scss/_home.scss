@@ -23,7 +23,7 @@ html {
     position: relative;
     height: 0rem;
     .first-hero__Text {
-        height: 100vh;
+        height: 80vh;
         width: 70vw;
     }
     .second-hero__image {
@@ -92,7 +92,7 @@ html {
 }
 
 .hero_Double.hero70 {
-    height: 80vh;
+    height: 85vh;
     .hero-content {
         top: -55vh;
     }
@@ -144,6 +144,14 @@ html {
     bottom: -105vh;
 }
 
+.hero_Double.one_page,
+.hero_Double.hero-secondPage {
+    .first-hero__Text {
+        height: 100vh;
+        ;
+    }
+}
+
 @media (min-width: 1921px) {}
 
 @media (min-width:1800px) {
@@ -160,7 +168,27 @@ html {
 
 @media (max-width:1024px) {}
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    .modal-footer {
+        .container_pill {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width:580px) {
+    .modal-dialog {
+        margin: 6.5rem;
+    }
+    .mobile-col {
+        flex-direction: column !important;
+    }
+    .modal-footer {
+        .container_pill {
+            font-size: 3.7rem;
+        }
+    }
+}
 
 .w50 {
     width: 50%;

@@ -2,7 +2,7 @@
 .hero_pride_double {
     height: 100vh;
     .hero-content {
-        top: -90vh;
+        top: -72vh;
     }
 }
 
@@ -13,7 +13,7 @@
 .hero_novedades {
     .d-flex {
         .hero-first {
-            @include background-hero($yellow, "../assets/fondo-enterate.png", 70%, 3em, 6.5rem);
+            @include background-hero($yellow, "../assets/fondo-enterate.png", 80%, 3em, 6.5rem);
             background-blend-mode: inherit;
         }
     }
@@ -70,11 +70,27 @@ footer {
     }
 }
 
-@media(min-width:992px) {
-    .hero_novedades,
-    .hero_pride_double {
+@media(min-width:768px) {
+    .hero_novedades {
         .hero-content {
-            top: -82vh;
+            top: -85vh;
         }
     }
+}
+
+@media(min-width:992px) {
+    .hero_pride_double {
+        .hero-content {
+            top: -68vh;
+        }
+    }
+    .hero_novedades {
+        .hero-content {
+            top: -75vh;
+        }
+    }
+}
+
+.hero_novedades .d-flex .hero-first {
+    height: 100vh;
 }

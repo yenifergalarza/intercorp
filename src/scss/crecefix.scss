@@ -16,9 +16,13 @@
                         padding: 5rem;
                     }
                     
+                    #showFilters {
+                        margin-top: 5rem;
+                    }
+                    
                     .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
                         overflow: hidden;
-                        font-size: 2.5rem;
+                        font-size: 2.7rem;
                         padding: 1rem;
                     }
                     
@@ -173,8 +177,9 @@
                     }
                     
                     .hero_hr-blue {
-                        border-width: 1.5rem;
+                        border-width: .8rem;
                         width: 13%;
+                        margin-top: 0;
                     }
                     
                     hr {
@@ -382,10 +387,14 @@
                         }
                     }
                     
+                    .hero_leads.grow_content-noMainNav {
+                        height: calc(68vw + 82vh);
+                    }
+                    
                     .hero_Double .hero-content {
                         position: absolute;
                         .growth-detail_hr {
-                            border-top: 1.5rem solid #358dde;
+                            border-top: .8rem solid #358dde;
                             width: 10rem;
                             margin: 0;
                             border-radius: 3rem;
@@ -422,6 +431,9 @@
                     }
                     
                     .container-img_text-overview {
+                        .fz-5 {
+                            font-size: 6rem !important;
+                        }
                         display: -webkit-box;
                         display: -ms-flexbox;
                         display: flex;
@@ -587,6 +599,15 @@
                     }
                     
                     @media (min-width:425px) {
+                        p.text-one_filter {
+                            font-size: 3rem;
+                            i {
+                                font-size: 5rem;
+                            }
+                        }
+                        .hero_leads.grow_content-noMainNav {
+                            height: calc(100vw + 82vh);
+                        }
                         .hero_leads {
                             .hero-content {
                                 position: absolute;
@@ -612,6 +633,15 @@
                     }
                     
                     @media (min-width:573px) {
+                        p.text-one_filter {
+                            font-size: 2.5rem;
+                            i {
+                                font-size: 4rem;
+                            }
+                        }
+                        .hero_leads .hero-content .container-video img {
+                            width: 100%;
+                        }
                         .ps-rel {
                             margin-right: 4rem;
                         }
@@ -665,6 +695,9 @@
                     }
                     
                     @media(min-width:576px) {
+                        .margin-top_grow-pill .container_pill {
+                            padding: 2rem;
+                        }
                         .navbar-expand-lg.navbar-light.bg-white.header_growth.sidenav_desktop {
                             padding: 2rem;
                         }
@@ -707,6 +740,9 @@
                     }
                     
                     @media(min-width:693px) {
+                        .margin-top_grow-pill .container_pill {
+                            padding: 1rem;
+                        }
                         .form-control_search,
                         #btnFilterDesktop.container_pill,
                         .border-select {
@@ -776,8 +812,18 @@
                                         comienzocrece detalle */
                     
                     @media (min-width:768px) {
-                        .navbar-expand-lg.navbar-light.bg-white.header_growth.sidenav_desktop {
+                        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+                            font-size: 2rem;
                             padding: 0rem;
+                        }
+                        #showFilters {
+                            margin-top: 2rem;
+                        }
+                        .hero_leads.grow_content-noMainNav {
+                            height: 110vh;
+                        }
+                        .navbar-expand-lg.navbar-light.bg-white.header_growth.sidenav_desktop {
+                            padding: 3rem;
                         }
                         .container_search_icon {
                             font-size: 2rem;
@@ -825,9 +871,9 @@
                             position: absolute;
                             top: 0;
                             bottom: 0;
-                            left: 20vw;
+                            left: 25vw;
                             right: 0;
-                            margin: 60vh 0 0 0;
+                            margin: 82vh 0 0 0;
                             animation: 3s arrow infinite ease;
                             background-position: center;
                             background-size: contain;
@@ -970,6 +1016,12 @@
                             -webkit-box-direction: normal;
                             -ms-flex-direction: row;
                             flex-direction: row;
+                            .wfullTo80 {
+                                width: 80%;
+                                h1.fz-5 {
+                                    width: 100% !important;
+                                }
+                            }
                         }
                         .flex-end-jus {
                             -webkit-box-pack: center;
@@ -1059,6 +1111,12 @@
                         .hero_leads .hero-content .w-50:nth-child(1) {
                             margin-top: 0rem;
                         }
+                        .hero_leads.grow_content-noMainNav .d-flex.container_rev-growth {
+                            height: 100%;
+                            .first-hero__Text {
+                                height: 100vh;
+                            }
+                        }
                         .wfullTo70 {
                             width: 70%;
                         }
@@ -1125,7 +1183,15 @@
                     }
                     
                     @media (min-width: 992px) {
+                        #showFilters {
+                            margin-top: 0rem;
+                        }
+                        .arrow-down::after {
+                            left: 20vw;
+                            margin: 70vh 0 0 0;
+                        }
                         .navbar-expand-lg.navbar-light.bg-white.header_growth.sidenav_desktop {
+                            padding: 0;
                             font-size: .9rem;
                             p.montserrat-b {
                                 margin-bottom: 0rem;
@@ -1262,11 +1328,11 @@
                                     height: 6rem;
                                 }
                                 .btn-growth {
-                                    margin: 3rem 0;
+                                    margin: 2rem 0;
                                     font-size: 1.6rem;
-                                    padding: 1rem 0rem;
+                                    padding: 1.1rem 0rem;
                                     width: 70%;
-                                    height: 6rem;
+                                    height: initial;
                                     line-height: initial;
                                 }
                                 .container-video {
@@ -1281,7 +1347,7 @@
                         }
                         .hero_leads .d-flex.container_rev-growth {
                             .second-hero__image {
-                                height: 100vh
+                                height: 110vh
                             }
                             .first-hero__Text {
                                 height: 90vh;
@@ -1495,7 +1561,7 @@
                                     background-position-x: left;
                                 }
                                 .second-hero__image {
-                                    height: 110vh;
+                                    height: 90vh;
                                     width: 50vw;
                                     border-radius: 8rem 0 8rem 0;
                                     position: absolute;
@@ -1608,12 +1674,6 @@
                         .inner.show {
                             max-width: 85.5vw;
                         }
-                        .bs-searchbox .form-control {
-                            margin-bottom: 0;
-                            height: 8rem;
-                            border-radius: 1rem;
-                            font-size: 4.3rem;
-                        }
                         .bootstrap-select .no-results {
                             font-size: 3.5rem;
                         }
@@ -1645,6 +1705,10 @@
                     }
                     
                     @media(max-width:767px) {
+                        .bs-searchbox .form-control {
+                            height: 4rem;
+                            font-size: 2.3rem;
+                        }
                         .btn-group.btn-group-toggle.orderByPills {
                             label {
                                 font-size: 2.2rem;
@@ -1658,6 +1722,12 @@
                     }
                     
                     @media(max-width: 576px) {
+                        .bs-searchbox .form-control {
+                            margin-bottom: 0;
+                            height: 6rem;
+                            border-radius: 1rem;
+                            font-size: 4.3rem;
+                        }
                         td .container_pill {
                             border: solid .4rem;
                             font-size: 4rem;
