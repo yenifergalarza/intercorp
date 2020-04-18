@@ -2,12 +2,8 @@ const Inputdni = document.getElementById("documentId");
 const btnGetInto = document.getElementById("btn_send");
 const popUp = document.getElementById("popUp");
 const form = document.getElementById("form");
-
 const modal = document.getElementById("exampleModalScrollable");
-
-
 const verifying = (e) => {
-
     const valInput = Inputdni.value;
     console.log(valInput);
     if (document.getElementById("popUpContent") != null) {
@@ -43,18 +39,19 @@ const verifying = (e) => {
         const passBtn = document.getElementById("pass");
 
         const token = document.getElementById("token");
-        passBtn.addEventListener("click", () => {
 
+        const redirecting = () => {
             if (token.value == 1234) {
                 location.href = "../somosIntercorp.html";
             }
+        }
+        passBtn.addEventListener("click", () => {
+            redirecting();
         });
 
         document.addEventListener("keyup", (e) => {
             if (e.keycode == 13 || e.which == 13) {
-                if (token.value == 1234) {
-                    location.href = "../somosIntercorp.html";
-                }
+                redirecting();
             }
         });
 
@@ -82,9 +79,7 @@ const verifying = (e) => {
       </button>
   </div> `
         popdiv.innerHTML = content;
-
         popUp.appendChild(popdiv);
-
         const btnSendData = document.getElementById("getData");
         btnSendData.addEventListener("click", () => {
             const dni = document.getElementById("dni").value;
@@ -98,9 +93,6 @@ const verifying = (e) => {
         })
     }
 }
-
-
-
 $(document).keypress(function(e) {
     if ((e.keycode == 13 || e.which == 13)) {
         event.preventDefault();
@@ -108,7 +100,6 @@ $(document).keypress(function(e) {
 
     }
 });
-
 btnGetInto.addEventListener("click",
     () => {
         verifying();
