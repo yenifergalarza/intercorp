@@ -1,0 +1,27 @@
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../assets/left-arrowB.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../assets/right-arrowB.svg);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+@media (max-width:576px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 7rem;
+        height: 7rem;
+    }
+}
