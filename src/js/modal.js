@@ -1,8 +1,13 @@
 const Inputdni = document.getElementById("documentId");
 const btnGetInto = document.getElementById("btn_send");
 const popUp = document.getElementById("popUp");
+const form = document.getElementById("form");
 
-btnGetInto.addEventListener("click", () => {
+const modal = document.getElementById("exampleModalScrollable");
+
+
+const verifying = (e) => {
+
     const valInput = Inputdni.value;
     console.log(valInput);
     if (document.getElementById("popUpContent") != null) {
@@ -37,16 +42,21 @@ btnGetInto.addEventListener("click", () => {
 
         const passBtn = document.getElementById("pass");
 
-
+        const token = document.getElementById("token");
         passBtn.addEventListener("click", () => {
-            const token = document.getElementById("token");
 
             if (token.value == 1234) {
                 location.href = "../somosIntercorp.html";
-            } else {
-
             }
-        })
+        });
+
+        document.addEventListener("keyup", (e) => {
+            if (e.keycode == 13 || e.which == 13) {
+                if (token.value == 1234) {
+                    location.href = "../somosIntercorp.html";
+                }
+            }
+        });
 
 
     } else {
@@ -87,4 +97,19 @@ btnGetInto.addEventListener("click", () => {
 
         })
     }
-})
+}
+
+
+
+$(document).keypress(function(e) {
+    if ((e.keycode == 13 || e.which == 13)) {
+        event.preventDefault();
+        verifying();
+
+    }
+});
+
+btnGetInto.addEventListener("click",
+    () => {
+        verifying();
+    })

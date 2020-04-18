@@ -73,7 +73,7 @@
                     ¡Que bueno verte de nuevo! <br> Ingresa con tu documento de identidad a la plataforma
                 </p>
 
-                <form class="group_Input border-shadow">
+                <form class="group_Input border-shadow" id="form">
                     <i class="fa fa-address-card hero-icon-input"></i>
                     <input type="number" name="documentId" id="documentId" class="hero-input montserrat-r" placeholder="Documento de identidad">
 
@@ -109,6 +109,27 @@
     </script>
     <script src="./js/form.js"></script>
     <script src="./js/modal.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+            $(document).keypress(function(e) {
+                if (e.keycode == 13 || e.which == 13) {
+                    $("#exampleModalScrollable").modal('show');
+
+                    if ($("#documentId").value == "12345678") {
+                        if (e.keycode == 13 || e.which == 13 && $("#token").value == "1234") {
+                            e.preventDefault();
+                            location.href = "../somosIntercorp.html";
+                        }
+                    }
+
+                }
+            });
+
+
+        });
+    </script>
 </body>
 
 </html>
