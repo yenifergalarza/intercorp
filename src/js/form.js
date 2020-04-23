@@ -88,11 +88,11 @@ const content = `
         </div>
         <div class="d-flex justify-content-between mobile-col ">
             <label class="font-sz-1_1 montserrat-r " for="area">Área Actual : </label>
-            <input class="desktop-w50 inputHeight montserrat-r "  pattern="([^\s][A-zÀ-ž\s]+){2,}" title="ingresa tu área actual correctamente"   id="area" required type="text">
+            <input class="desktop-w50 inputHeight montserrat-r "  pattern="([^\s][A-zÀ-ž\s]+){1,}" title="ingresa tu área actual correctamente"   id="area" required type="text">
         </div>
         <div class="d-flex justify-content-between mobile-col ">
             <label class="font-sz-1_1 montserrat-r " for="job">Puesto Actual : </label>
-            <input class="desktop-w50 inputHeight montserrat-r"  pattern="([^\s][A-zÀ-ž\s]+){2,}" title="ingresa tu puesto actual correctamente"   id="job" required type="text">
+            <input class="desktop-w50 inputHeight montserrat-r"  pattern="([^\s][A-zÀ-ž\s]+){1,}" title="ingresa tu puesto actual correctamente"   id="job" required type="text">
         </div>
         <div class="d-flex justify-content-between mobile-col ">
             <label class="font-sz-1_1 montserrat-r " for="jobBoss">Jefe Actual : </label>
@@ -101,7 +101,7 @@ const content = `
         <div class="d-flex justify-content-between  mobile-col">
             <label class="font-sz-1_1  montserrat-r" for="jobBossPosition">Puesto Actual del jefe
                 :</label>
-            <input class="desktop-w50 inputHeight montserrat-r "  pattern="([^\s][A-zÀ-ž\s]+){2,}"  id="jobBossPosition" required type="text ">
+            <input class="desktop-w50 inputHeight montserrat-r "  pattern="([^\s][A-zÀ-ž\s]+){1,}"  id="jobBossPosition" required type="text ">
         </div>
         <div class="d-flex justify-content-between mobile-col ">
           <label class="font-sz-1_1 montserrat-r " for="latestSalary">Ultimo salario : </label>    
@@ -346,14 +346,12 @@ Yo,<span class="montserrat-sb">${values[0].toUpperCase()}</span>  de Nacionalida
                 margins.left,
                 margins.top, {
                     'width': margins.width,
-                    'elementHandlers': elementHandler
                 }, margins);
 
             pdf.fromHTML(document.getElementById("printPage32"),
                 margins.left,
                 275, {
                     'width': margins.width,
-                    'elementHandlers': elementHandler
                 }, margins);
 
             pdf.save('Declaracion-jurada.pdf');
