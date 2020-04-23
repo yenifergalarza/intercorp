@@ -1,334 +1,334 @@
-    .header_growth_blue {
-        background-color: $blue1;
+.header_growth_blue {
+    background-color: $blue1;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-skyblue {
+    background-color: $blue3;
+}
+
+.bg_pink {
+    background-color: $pink;
+}
+
+.bg-white3-dark {
+    background-color: $white3;
+}
+
+.filter-greyMobile {
+    filter: sepia() saturate(2266%) hue-rotate(-183deg) brightness(54%) contrast(4) grayscale(1)
+}
+
+.navbar {
+    a.col-lg-3 {
+        padding-right: 0px;
+        padding-left: 0px;
     }
-    
-    .bg-yellow {
-        background-color: $yellow;
+}
+
+.header_growth {
+    padding: 0.7em 1em;
+    .logo_header {
+        height: 1.2em;
+        width: auto;
     }
-    
-    .bg-skyblue {
-        background-color: $blue3;
+}
+
+.full-nav {
+    color: $white;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(../assets/fondo-somos-intercorp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 20vh;
+    li {
+        a {
+            color: $white;
+            font-size: 1.2em;
+            text-align: center;
+        }
     }
-    
-    .bg_pink {
-        background-color: $pink;
+}
+
+.navbar-nav .nav-link {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width:573px) {
+    .navbar-nav .nav-link {
+        span {
+            font-size: 3rem;
+        }
     }
-    
-    .bg-white3-dark {
-        background-color: $white3;
+    .full-nav li a {
+        font-size: 2rem;
     }
-    
+}
+
+@media(min-width:693px) {
+    .navbar-toggler-icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .header_growth {
+        padding: 1.7em 2em;
+    }
+}
+
+.growthWhite {
+    background-color: $white3;
+}
+
+@media (min-width:768px) {
+    .header_growth {
+        padding: 1.7rem 2em;
+        .logo_header {
+            height: 3.2rem;
+        }
+    }
+    .navbar-toggler-icon {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .header_growth_outMenu {
+        padding-top: 2.7rem;
+    }
+}
+
+@media(max-width:991px) {
+    .logo-toWhite {
+        filter: invert(50%) brightness(1007%) contrast(100%);
+    }
+}
+
+@media (min-width: 992px) {
     .filter-greyMobile {
-        filter: sepia() saturate(2266%) hue-rotate(-183deg) brightness(54%) contrast(4) grayscale(1)
+        filter: none
     }
-    
+    .navbar-expand-lg .navbar-nav .nav-link.active span,
+    .navbar-expand-lg .navbar-nav .nav-link span:hover {
+        border-bottom-color: $blue3;
+    }
+    .header_growth {
+        padding: 0em 0em 0em 0;
+        .logo_header {
+            height: 2.2em;
+        }
+    }
     .navbar {
         a.col-lg-3 {
-            padding-right: 0px;
-            padding-left: 0px;
+            padding-right: 15px;
+            padding-left: 15px;
         }
     }
-    
-    .header_growth {
-        padding: 0.7em 1em;
+    .header_growth-details {
+        padding: 0em;
+        position: absolute;
+        z-index: 28;
+        width: 100%;
+        background-color: transparent;
+        margin: 2% auto;
+        .full-nav {
+            background-color: transparent;
+        }
         .logo_header {
-            height: 1.2em;
-            width: auto;
+            background-color: transparent;
         }
     }
-    
-    .full-nav {
-        color: $white;
-        height: 90vh;
+    .full-nav.col-lg-9 {
+        padding-right: 7rem;
+    }
+    .full-nav.dashboard-growth_shadow {
+        background-color: $white;
+    }
+    .full-nav.dashboard-growth_shadow li a {
+        color: $black;
+        font-size: 1.2em;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: auto;
+    }
+    .navbar-nav .nav-link {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link span {
+        font-size: 1rem;
+        border-bottom: .25rem solid transparent;
+        padding: .5rem 0;
+    }
+    .navbar-nav .nav-link {
+        margin-top: .4rem;
+        margin-bottom: .9rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        background-image: url(../assets/fondo-somos-intercorp.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-x: center;
-        background-position-y: 20vh;
-        li {
-            a {
-                color: $white;
-                font-size: 1.2em;
-                text-align: center;
-            }
+        border-bottom: 0.25rem solid #fff0;
+        border-bottom-color: transparent;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link.active span.bottom_pink,
+    .navbar-expand-lg .navbar-nav .nav-link span.bottom_pink:hover {
+        border-bottom-color: $pink;
+    }
+}
+
+@media (min-width:1020px) {
+    .header_growth {
+        position: fixed;
+        margin: 0;
+        padding: 0em;
+        width: 100vw;
+        z-index: 28;
+        .logo_header {
+            height: 2.1em;
+            width: auto;
         }
     }
-    
-    .navbar-nav .nav-link {
-        margin-top: 4rem;
-        margin-bottom: 3rem;
-    }
-    
-    @media (min-width:573px) {
-        .navbar-nav .nav-link {
-            span {
-                font-size: 3rem;
-            }
-        }
-        .full-nav li a {
-            font-size: 2rem;
-        }
-    }
-    
-    @media(min-width:693px) {
-        .navbar-toggler-icon {
-            width: 1.5em;
-            height: 1.5em;
-        }
-        .header_growth {
-            padding: 1.7em 2em;
-        }
-    }
-    
-    .growthWhite {
-        background-color: $white3;
-    }
-    
-    @media (min-width:768px) {
-        .header_growth {
-            padding: 1.7rem 2em;
-            .logo_header {
-                height: 3.2rem;
-            }
-        }
-        .navbar-toggler-icon {
-            width: 4.5rem;
-            height: 4.5rem;
-        }
-        .header_growth_outMenu {
-            padding-top: 2.7rem;
-        }
-    }
-    
-    @media(max-width:991px) {
-        .logo-toWhite {
-            filter: invert(50%) brightness(1007%) contrast(100%);
-        }
-    }
-    
-    @media (min-width: 992px) {
-        .filter-greyMobile {
-            filter: none
-        }
-        .navbar-expand-lg .navbar-nav .nav-link.active span,
-        .navbar-expand-lg .navbar-nav .nav-link span:hover {
-            border-bottom-color: $blue3;
-        }
-        .header_growth {
-            padding: 0em 0em 0em 0;
-            .logo_header {
-                height: 2.2em;
-            }
-        }
-        .navbar {
-            a.col-lg-3 {
-                padding-right: 15px;
-                padding-left: 15px;
-            }
-        }
-        .header_growth-details {
-            padding: 0em;
-            position: absolute;
-            z-index: 28;
-            width: 100%;
+    .header_growth-details {
+        position: absolute;
+        width: 100%;
+        .full-nav {
+            position: relative;
+            right: -4vw;
             background-color: transparent;
-            margin: 2% auto;
-            .full-nav {
-                background-color: transparent;
-            }
-            .logo_header {
-                background-color: transparent;
-            }
         }
-        .full-nav.col-lg-9 {
-            padding-right: 7rem;
-        }
-        .full-nav.dashboard-growth_shadow {
-            background-color: $white;
-        }
-        .full-nav.dashboard-growth_shadow li a {
-            color: $black;
-            font-size: 1.2em;
-            text-align: center;
-            font-size: 1rem;
-        }
-        .navbar-expand-lg .navbar-collapse {
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
-            justify-content: flex-end;
-            height: auto;
-        }
-        .navbar-nav .nav-link {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-        .navbar-expand-lg .navbar-nav .nav-link span {
-            font-size: 1rem;
-            border-bottom: .25rem solid transparent;
-            padding: .5rem 0;
-        }
-        .navbar-nav .nav-link {
-            margin-top: .4rem;
-            margin-bottom: .9rem;
-        }
-        .navbar-expand-lg .navbar-nav .nav-link {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            border-bottom: 0.25rem solid #fff0;
-            border-bottom-color: transparent;
-        }
-        .navbar-expand-lg .navbar-nav .nav-link.active span.bottom_pink,
-        .navbar-expand-lg .navbar-nav .nav-link span.bottom_pink:hover {
-            border-bottom-color: $pink;
+        .logo_header {
+            background-color: transparent;
+            height: 2.26rem;
         }
     }
-    
-    @media (min-width:1020px) {
-        .header_growth {
-            position: fixed;
-            margin: 0;
-            padding: 0em;
-            width: 100vw;
-            z-index: 28;
-            .logo_header {
-                height: 2.1em;
-                width: auto;
-            }
-        }
-        .header_growth-details {
-            position: absolute;
-            width: 100%;
-            .full-nav {
-                position: relative;
-                right: -4vw;
-                background-color: transparent;
-            }
-            .logo_header {
-                background-color: transparent;
-                height: 2.26rem;
-            }
-        }
-        .header_growth_outMenu {
-            padding-top: 1.5rem;
+    .header_growth_outMenu {
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width:1104px) {
+    .header_growth-details .navbar-nav .nav-link {
+        color: $white;
+    }
+    .full-nav li a {
+        font-size: 1em;
+        margin: 0 .5rem;
+    }
+}
+
+@media (min-width:1300px) {
+    section.grow_content-noMainNav {
+        .container_pill.bg-light {
+            border: solid .11rem;
+            border-radius: 2rem;
         }
     }
-    
-    @media (min-width:1104px) {
-        .header_growth-details .navbar-nav .nav-link {
-            color: $white;
-        }
-        .full-nav li a {
-            font-size: 1em;
-            margin: 0 .5rem;
-        }
+}
+
+@media (min-width:1400px) {
+    .header_growth-details .full-nav {
+        right: -6vw;
     }
-    
-    @media (min-width:1300px) {
-        section.grow_content-noMainNav {
-            .container_pill.bg-light {
-                border: solid .11rem;
-                border-radius: 2rem;
-            }
-        }
+}
+
+@media (min-width:1500px) {
+    .header_growth-details .full-nav {
+        right: -8vw;
     }
-    
-    @media (min-width:1400px) {
-        .header_growth-details .full-nav {
-            right: -6vw;
-        }
+}
+
+@media (min-width:1600px) {
+    .header_growth-details .full-nav {
+        right: -10vw;
     }
-    
-    @media (min-width:1500px) {
-        .header_growth-details .full-nav {
-            right: -8vw;
-        }
+}
+
+@media (min-width:1700px) {
+    .header_growth-details .full-nav {
+        right: -13vw;
     }
-    
-    @media (min-width:1600px) {
-        .header_growth-details .full-nav {
-            right: -10vw;
-        }
+}
+
+@media (min-width:1700px) {
+    .header_growth-details .full-nav {
+        right: -4vw;
     }
-    
-    @media (min-width:1700px) {
-        .header_growth-details .full-nav {
-            right: -13vw;
-        }
+}
+
+@media (min-width:1700px) {
+    .header_growth-details .full-nav {
+        right: -4vw;
     }
-    
-    @media (min-width:1700px) {
-        .header_growth-details .full-nav {
-            right: -4vw;
-        }
+    h1.fz-5.montserrat-b,
+    h1.fz-5.montserrat-sb,
+    h1.fz-5.montserrat-r,
+    h1.fz-5.montserrat-b span,
+    h1.fz-5.montserrat-sb span,
+    h1.fz-5.montserrat-r span {
+        font-size: 2.2rem !important;
     }
-    
-    @media (min-width:1700px) {
-        .header_growth-details .full-nav {
-            right: -4vw;
-        }
-        h1.fz-5.montserrat-b,
-        h1.fz-5.montserrat-sb,
-        h1.fz-5.montserrat-r,
-        h1.fz-5.montserrat-b span,
-        h1.fz-5.montserrat-sb span,
-        h1.fz-5.montserrat-r span {
-            font-size: 2.2rem !important;
-        }
+}
+
+@media (min-width:2000px) {
+    .header_growth-details .full-nav {
+        right: -6vw;
     }
-    
-    @media (min-width:2000px) {
-        .header_growth-details .full-nav {
-            right: -6vw;
-        }
+}
+
+@media (min-width:2200px) {
+    .header_growth-details .full-nav {
+        right: -9vw;
     }
-    
-    @media (min-width:2200px) {
-        .header_growth-details .full-nav {
-            right: -9vw;
-        }
+}
+
+@media (min-width:2400px) {
+    .header_growth-details .full-nav {
+        right: -12vw;
     }
-    
-    @media (min-width:2400px) {
-        .header_growth-details .full-nav {
-            right: -12vw;
-        }
+}
+
+@media (min-width:2700px) {
+    .header_growth-details .full-nav {
+        right: -15vw;
     }
-    
-    @media (min-width:2700px) {
-        .header_growth-details .full-nav {
-            right: -15vw;
-        }
+}
+
+@media (min-width:2900px) {
+    .header_growth-details .full-nav {
+        right: -18vw;
     }
-    
-    @media (min-width:2900px) {
-        .header_growth-details .full-nav {
-            right: -18vw;
-        }
+}
+
+@media (min-width:3300px) {
+    .header_growth-details .full-nav {
+        right: -22vw;
     }
-    
-    @media (min-width:3300px) {
-        .header_growth-details .full-nav {
-            right: -22vw;
-        }
-    }
-    
-    .navbar-expand-lg .navbar-nav .nav-link.bbWhite span:hover {
-        border-bottom-color: $white;
-    }
-    
-    .navbar-expand-lg .navbar-nav .nav-link.bbBlack span:hover {
-        border-bottom-color: $black2;
-    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.bbWhite span:hover {
+    border-bottom-color: $white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.bbBlack span:hover {
+    border-bottom-color: $black2;
+}

@@ -8,6 +8,84 @@
     font-style: normal;
 }
 
+.modal-content {
+    .bootstrap-select>.dropdown-toggle.bs-placeholder,
+    .bootstrap-select>.dropdown-toggle.bs-placeholder:hover,
+    .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+    .bootstrap-select>.dropdown-toggle.bs-placeholder:active {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .bootstrap-select>.dropdown-toggle {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}
+
+.was-validated .custom-control-input:valid~.custom-control-label,
+.custom-control-input.is-valid~.custom-control-label {
+    color: $blue2;
+}
+
+.was-validated .custom-control-input:invalid~.custom-control-label,
+.custom-control-input.is-invalid~.custom-control-label,
+.was-validated .custom-control-input:invalid~.custom-control-label::before,
+.custom-control-input.is-invalid~.custom-control-label::before {
+    color: $black2;
+    border-color: $black2;
+}
+
+.was-validated .custom-control-input:valid:checked~.custom-control-label::before,
+.custom-control-input.is-valid:checked~.custom-control-label::before {
+    border-color: $blue2;
+    background-color: $blue2;
+}
+
+.badge {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+}
+
+.badge::before {
+    content: "new";
+    background: #052cb9;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: .9rem;
+    position: relative;
+    width: 6rem;
+    height: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge.badge-top-left:before {
+    top: 0rem;
+    left: -2.5rem;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group>.btn-group:not(:last-child)>.btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 54% !important;
+    z-index: 1;
+    position: relative;
+    left: 4%;
+}
+
 .navbar-expand-lg.navbar-light.bg-white.header_growth.sidenav_desktop {
     font-size: 2rem;
     padding: 5rem;
@@ -24,11 +102,15 @@
 }
 
 .orderByPills {
+    position: relative;
+    right: 3%;
+    width: 60%;
     label:hover {
         color: $blue2;
     }
     label.active,
     label.active:hover {
+        border-radius: 4rem !important;
         background-color: $blue2;
         color: $white;
     }
@@ -42,88 +124,6 @@
     border: .2rem solid #909094;
     margin-top: 2rem;
     border-radius: 2rem;
-}
-
-.popover.fade {
-    max-width: 93%;
-    top: 26rem !important;
-    -webkit-box-shadow: 3px 12px 60px -34px rgba(0, 0, 0, 0.35);
-    box-shadow: 3px 12px 60px -34px rgba(0, 0, 0, 0.35);
-}
-
-.popover-header {
-    padding: 1.5rem 2.75rem;
-    font-size: 6rem;
-    background-color: $blue4;
-    color: $blue2;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-.popover-body {
-    padding: 1.5rem 6.75rem;
-    div {
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        i,
-        i:before {
-            color: $blue2;
-            font-size: 19rem;
-            content: '\e804';
-            font-family: "fontello";
-            font-style: normal;
-            font-weight: normal;
-            speak: none;
-            display: inline-block;
-            text-decoration: inherit;
-            width: 1em;
-            text-align: center;
-            /* opacity: .8; */
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1em;
-            /* font-size: 120%; */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-        }
-        p,
-        a {
-            overflow: auto;
-            font-size: 5.5rem;
-        }
-    }
-}
-
-.demo-icon,
-.popover-body div i {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    /* opacity: .8; */
-    /* For safety - reset parent styles, that can break glyph codes*/
-    font-variant: normal;
-    text-transform: none;
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    margin-left: .2em;
-    /* You can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .arrow-mob_pink {
@@ -811,6 +811,10 @@ section.grow_content-noMainNav {
                     comienzocrece detalle */
 
 @media (min-width:768px) {
+    .container-orderByPills {
+        width: 50%;
+        margin-left: auto;
+    }
     .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
         font-size: 2rem;
         padding: 0rem;
@@ -938,56 +942,6 @@ section.grow_content-noMainNav {
         }
         .montserrat-sb {
             font-size: 1.5rem;
-        }
-    }
-    .popover.fade {
-        max-width: 40%;
-        top: 0rem !important;
-    }
-    .popover-header {
-        font-size: 1.5rem;
-    }
-    .popover-header,
-    .popover-body {
-        padding: .5rem .75rem;
-    }
-    .popover-body {
-        div {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            justify-content: center;
-            i,
-            i:before {
-                font-size: 5rem;
-                content: '\e804';
-                font-family: "fontello";
-                font-style: normal;
-                font-weight: normal;
-                speak: none;
-                display: inline-block;
-                text-decoration: inherit;
-                width: 1em;
-                text-align: center;
-                font-variant: normal;
-                text-transform: none;
-                line-height: 1em;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-            p,
-            a {
-                overflow: auto;
-                font-size: 1.5rem;
-            }
-            .popWrap {
-                justify-content: left;
-                flex-direction: column;
-                align-items: flex-start;
-            }
         }
     }
     .details {
@@ -1186,7 +1140,7 @@ section.grow_content-noMainNav {
         margin-top: 0rem;
     }
     .arrow-down::after {
-        left: 20vw;
+        left: 25vw;
         margin: 70vh 0 0 0;
     }
     .navbar-expand-lg.navbar-light.bg-white.header_growth.sidenav_desktop {
@@ -1355,6 +1309,22 @@ section.grow_content-noMainNav {
 }
 
 @media (min-width:1020px) {
+    .container-orderByPills {
+        width: 60%;
+    }
+    .orderByPills {
+        width: 50%;
+        right: 0;
+        label.active,
+        label.active:hover {
+            border-radius: 2rem !important;
+        }
+    }
+    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group>.btn-group:not(:last-child)>.btn {
+        width: 47% !important;
+        left: 3%;
+    }
     .border-select {
         border-width: 0.1rem;
     }
@@ -1637,13 +1607,41 @@ section.grow_content-noMainNav {
             }
         }
     }
+    .modal-content {
+        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            font-size: 1.125rem;
+        }
+        .bootstrap-select>.dropdown-toggle:after {
+            right: -2rem;
+        }
+        .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+            width: initial;
+        }
+    }
 }
 
 @media(max-width:991px) {
+    .modal-content {
+        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            font-size: 1.125rem;
+        }
+        .bootstrap-select>.dropdown-toggle:after {
+            margin-top: 0rem;
+            width: 3rem;
+            right: -2.2rem;
+        }
+        .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+            width: initial;
+        }
+    }
+    .orderByPills-text {
+        width: 40%;
+    }
     .btn-group.btn-group-toggle.orderByPills {
         label {
             font-size: 1.2rem;
             padding: .5rem;
+            width: 50%;
         }
     }
     .bootstrap-select.show-tick .dropdown-menu li a span.text {
@@ -1704,6 +1702,25 @@ section.grow_content-noMainNav {
 }
 
 @media(max-width:767px) {
+    .modal-content {
+        .bootstrap-select>.dropdown-toggle:after {
+            margin-top: 0rem;
+            width: 3rem;
+            right: -1.9rem;
+            ;
+        }
+        .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+            width: initial;
+            padding-right: 3rem;
+        }
+        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            padding: 0rem;
+            font-size: 1.7rem;
+        }
+        .bootstrap-select .dropdown-menu li a span.text {
+            font-size: 2rem;
+        }
+    }
     .bs-searchbox .form-control {
         height: 4rem;
         font-size: 2.3rem;
@@ -1721,6 +1738,23 @@ section.grow_content-noMainNav {
 }
 
 @media(max-width: 576px) {
+    .modal-content {
+        .bootstrap-select>.dropdown-toggle:after {
+            margin-top: .5rem;
+            width: 3rem;
+            right: -1.9rem;
+            ;
+        }
+        .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+            width: initial;
+        }
+        .bootstrap-select .dropdown-menu li a span.text {
+            font-size: 3rem;
+        }
+        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            font-size: 2.7rem;
+        }
+    }
     .bs-searchbox .form-control {
         margin-bottom: 0;
         height: 6rem;
@@ -1774,6 +1808,12 @@ section.grow_content-noMainNav {
                 }
             }
         }
+    }
+}
+
+@media(min-width: 581px) {
+    .desktop-w50 {
+        width: 50% !important;
     }
 }
 

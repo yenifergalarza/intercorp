@@ -67,12 +67,12 @@ const verifying = (e) => {
       </h5> </div>
 
   <div class="modal-body pd-mobile">
-  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1 montserrat-r" " for="">DNI : </label><input class="inputHeight montserrat-r" id="dni"  type="number"></div>
-  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1 montserrat-r" "  for="">Nombres : </label><input class="inputHeight montserrat-r"   id="name" type="text"></div>
-  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" " for="">Apellido : </label><input class="inputHeight montserrat-r"   id="lastName" type="text"></div>
-  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" " for="">Empresa : </label><input  class="inputHeight montserrat-r"  id="bussines" type="text"></div>
-  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" " for="">Correo : </label><input  class="inputHeight montserrat-r"  id="email" type="email"></div>
-  <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1 montserrat-r"  for="">Celular : </label><input class="inputHeight montserrat-r"   id="phone" type="number"></div>
+  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1 montserrat-r" for="dni">DNI : </label><input class="inputHeight montserrat-r" id="dni"  type="number"></div>
+  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1 montserrat-r"  for="name">Nombres : </label><input class="inputHeight montserrat-r"   id="name" type="text"></div>
+  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1  montserrat-r"  for="lastName">Apellido : </label><input class="inputHeight montserrat-r"   id="lastName" type="text"></div>
+  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1  montserrat-r"  for="bussines">Empresa : </label><input  class="inputHeight montserrat-r"  id="bussines" type="text"></div>
+  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1  montserrat-r"  for="email">Correo : </label><input  class="inputHeight montserrat-r"  id="email" type="email"></div>
+  <div class="d-flex justify-content-between mobile-col"><label class="font-sz-1_1 montserrat-r"  for="phone">Celular : </label><input class="inputHeight montserrat-r"   id="phone" type="number"></div>
   </div>
   <div class="modal-footer pd-mobile">
       <button type="button" class="container_pill b_blue4 color-darkish-blue  montserrat-b border-0" data-dismiss="modal" id="getData">Enviar

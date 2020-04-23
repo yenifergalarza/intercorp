@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-select.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="./css/crecefix.css">
     <link rel="stylesheet" href="css/animation.css">
@@ -134,19 +135,8 @@
                                     </p>
                                     <p class="montserrat-r text-muted fz-info_extra-job-sm line-h_1">00/00/0000</p>
                                 </div>
-                            </div><button data-trigger="focus" data-toggle="popover" title="" data-content="
-                            <div>
-                             <div>  <i></i>
-                            </div> 
-                             <div class='popWrap d-flex'>
-                                 <p class='montserrat-sb mb-0'>Envía tu CV al siguiente correo :</p>
-                                <a class='montserrat-r color-darkish-blue' href='mailto:correo@correo.com.pe'>correo@correo.com</a>
-                                <p class='montserrat-sb mb-0'>Coloca en el asunto  </p>
-                                <p class='montserrat-r'>“Crece - Nombre de la Posición”</p>
-                            </div>
-                            </div>" class="btnPopOver w-100 hoverPulse border-0 container_pill background-pink montserrat-sb text-white btn-growth" data-original-title="Postula por medio de:">Postular
-                                a
-                                este empleo</button>
+                            </div><button data-toggle="modal" data-target="#popOver" class="btnPopOver w-100 hoverPulse border-0 container_pill background-pink montserrat-sb text-white btn-growth">Postular
+                                a este empleo</button>
 
                             <p class="montserrat-r  line-h_1  text-center link  text-condition color-darkish-blue" data-toggle="modal" data-target="#requirements">
                                 <u> Recuerde revisar los Requisitos para Postular</u>
@@ -313,20 +303,8 @@
                     </div>
 
                     <div class="col-12 col-sm-12 col-md-6 mx-auto btn-under-text_growth  mb-4">
-                        <button data-trigger="focus" data-toggle="popover" title="" data-content="     
-                        <div>
-                            <div>  <i></i>
-                           </div> 
-                            <div class='popWrap d-flex'>
-                                <p class='montserrat-sb mb-0'>Envía tu CV al siguiente correo :</p>
-                               <a class='montserrat-r color-darkish-blue' href='mailto:correo@correo.com.pe'>correo@correo.com</a>
-                               <p class='montserrat-sb mb-0'>Coloca en el asunto  </p>
-                               <p class='montserrat-r'>“Crece - Nombre de la Posición”</p>
-                           </div>
-                           </div>" class="hoverPulse btnPopOver
-                            w-100 border-0 container_pill background-pink montserrat-sb text-white " data-original-title="Postula por medio de:">Postular
-                            a
-                            este empleo</button>
+                        <button class="hoverPulse btnPopOver w-100 border-0 container_pill background-pink montserrat-sb text-white " data-toggle="modal" data-target="#popOver">
+                            Postular a este empleo</button>
 
                         <p class="montserrat-r line-h_1  link text-center text-condition color-darkish-blue" data-toggle="modal" data-target="#requirements">
                             <u> Recuerde revisar los Requisitos para Postular</u>
@@ -480,27 +458,32 @@
         </section>
 
     </main>
+    <!-- Modal data of applicant -->
+    <div class="modal fade" id="popOver" tabindex="-1" role="dialog" aria-labelledby="popoverTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" id="contentAplicant">
 
-    <!-- Modal -->
-    <div class="modal fade" id="requirements" tabindex="-1" role="dialog" aria-labelledby="requirementsTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        </div>
+    </div>
+    <!-- Modal requirements -->
+    <div class="modal fade " id="requirements" tabindex="-1 " role="dialog " aria-labelledby="requirementsTitle " aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document ">
             <div class="modal-content">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title montserrat-sb text-title_modal" id="exampleModalLongTitle">Requisitos para Postular
+                <div class="modal-header border-0 ">
+                    <h5 class="modal-title montserrat-sb text-title_modal " id="exampleModalLongTitle ">Requisitos para Postular
                     </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body ">
 
                     <ul>
-                        <li class="montserrat-r text-body_modal"> Tener como mínimo 01 año laborando en alguna de las empresas del Grupo, en una misma posición. Para caso de prácticas pre o profesionales debe de tener un mínimo de 6 meses en su práctica actual.
+                        <li class="montserrat-r text-body_modal "> Tener como mínimo 01 año laborando en alguna de las empresas del Grupo, en una misma posición. Para caso de prácticas pre o profesionales debe de tener un mínimo de 6 meses en su práctica actual.
                         </li>
-                        <li class="montserrat-r text-body_modal"> Tener un desempeño igual o superior a la calificación “bueno” en su última evaluación del desempeño. </li>
-                        <li class="montserrat-r text-body_modal"> No tener sanciones disciplinarias (memorándums, amonestaciones escritas, suspensiones, etc.) en el último año. </li>
-                        <li class="montserrat-r text-body_modal"> Cumplir cabalmente con el perfil del puesto publicado en Somos Intercorp – Crece.</li>
-                        <li class="montserrat-r text-body_modal">Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.</li>
+                        <li class="montserrat-r text-body_modal "> Tener un desempeño igual o superior a la calificación “bueno” en su última evaluación del desempeño. </li>
+                        <li class="montserrat-r text-body_modal "> No tener sanciones disciplinarias (memorándums, amonestaciones escritas, suspensiones, etc.) en el último año. </li>
+                        <li class="montserrat-r text-body_modal "> Cumplir cabalmente con el perfil del puesto publicado en Somos Intercorp – Crece.</li>
+                        <li class="montserrat-r text-body_modal ">Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.</li>
                     </ul>
 
                 </div>
@@ -509,28 +492,23 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
     </script>
+    <script src="./js/navFull.js "></script>
+    <script src="js/pulseCards-transition.js "></script>
+    <script src="js/crece.js ">
+    </script>
+    <script src="js/carouselGrowth.js "></script>
+    <script src="./js/bootstrap-select.js"></script>
+    <script src="./js/form.js"></script>
     <script>
-        $(function() {
-            $('[data-toggle="popover"]').popover({
-                container: 'body',
-                html: true
-            })
-        })
-    </script>
-    <script src="./js/navFull.js"></script>
-    <script src="js/pulseCards-transition.js"></script>
-    <script src="js/crece.js">
-    </script>
-    <script>
-        $(window).on("load", () => {
+        $(window).on("load ", () => {
             const contentGrowth = document.getElementById("contentDetail");
-            const container = document.getElementById("allContainerBackground");
+            const container = document.getElementById("allContainerBackground ");
 
             const contentGrowthHeight = contentGrowth.offsetHeight;
 
@@ -543,7 +521,7 @@
             }
         })
     </script>
-    <script src="js/carouselGrowth.js"></script>
+
 </body>
 
 </html>
