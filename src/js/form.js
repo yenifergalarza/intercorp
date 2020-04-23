@@ -117,7 +117,7 @@ const content = `
         </div>
 </div>
 <div class="modal-footer pd-mobile ">
-    <button type="submit" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 " id="getData">Siguiente<i class="fa fa-arrow-right"></i>
+    <button type="submit" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 hoverPulse" id="getData">Siguiente<i class="fa fa-arrow-right"></i>
     </button>
 </div>
 </form>`;
@@ -140,39 +140,39 @@ const content2 = `
 <form class="was-validated" id="form2" ><div class="modal-body pd-mobile">
     <div class="custom-control custom-checkbox mb-3">
       <input type="checkbox" class="custom-control-input" id="Validation1" required>
-      <label class="custom-control-label" for="Validation1">Tener como mínimo 01 año laborando en alguna de las empresas del Grupo, en una misma posición. Para caso de prácticas pre o profesionales debe de tener un mínimo de 6 meses en su práctica actual.
+      <label class="custom-control-label font-sz-1_1" for="Validation1">Tener como mínimo 01 año laborando en alguna de las empresas del Grupo, en una misma posición. Para caso de prácticas pre o profesionales debe de tener un mínimo de 6 meses en su práctica actual.
       </label>
     
     </div>
     <div class="custom-control custom-checkbox mb-3">
     <input type="checkbox" class="custom-control-input" id="Validation2" required>
-    <label class="custom-control-label" for="Validation2">
-    Tener un desempeño igual o superior a la calificacion <span class="montserrat-sb">"bueno"</span> en su última evaluación del desempeño.
+    <label class="custom-control-label font-sz-1_1" for="Validation2">
+    Tener un desempeño igual o superior a la calificacion <span class="montserrat-sb font-sz-1_1">"bueno"</span> en su última evaluación del desempeño.
     </label>
   
   </div>
   <div class="custom-control custom-checkbox mb-3">
   <input type="checkbox" class="custom-control-input" id="Validation3" required>
-  <label class="custom-control-label" for="Validation3">No tener sanciones disciplinarias (memorándums, amonestaciones escritas, suspenciones, etc.) en el último año.
+  <label class="custom-control-label font-sz-1_1" for="Validation3">No tener sanciones disciplinarias (memorándums, amonestaciones escritas, suspenciones, etc.) en el último año.
   </label>
  
 </div>
 <div class="custom-control custom-checkbox mb-3">
-<input type="checkbox" class="custom-control-input" id="Validation4" required>
-<label class="custom-control-label" for="Validation4">Cumplir cabalmente con el perfil del puesto publicado en Somos Intercorp-Crece.
+<input type="checkbox" class="custom-control-input " id="Validation4" required>
+<label class="custom-control-label font-sz-1_1" for="Validation4">Cumplir cabalmente con el perfil del puesto publicado en Somos Intercorp-Crece.
 </label>
 
 </div>
 <div class="custom-control custom-checkbox mb-3">
 <input type="checkbox" class="custom-control-input" id="Validation5" required>
-<label class="custom-control-label" for="Validation5">Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.
+<label class="custom-control-label font-sz-1_1" for="Validation5">Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.
 </label>
 
 </div></div>
 <div class="modal-footer pd-mobile d-flex  justify-content-between ">
 <button type="button" class="container_pill bg-gray_pill  montserrat-b border-0" id="backward2"> <i class="fa fa-arrow-left"></i>Regresar
 </button>
-<button type="submit" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 " id="forward2">Acepto
+<button type="submit" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 hoverPulse" id="forward2">Acepto
 </button>
 </div> 
     
@@ -221,7 +221,7 @@ form1.addEventListener("submit", (e) => {
     values[6] = InputJob.value;
     values[7] = InputJobBoss.value;
     values[8] = inputPositionBoss.value;
-    values[9] = inputsalary.value;
+    values[9] = Number(inputsalary.value);
     values[10] = currencyTypeVal;
 
     if (values[1].toString().length != 8) {
@@ -244,7 +244,7 @@ DECLARACION JURADA DEL POSTULANTE
 <div class="d-flex"><button type="button " class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true ">×</span>
 </button>
-<button type="button" class="close">
+<button type="button" class="close" id="btnPrint">
 <i class="fa fa-print"></i>
                     </button>
 </div>
@@ -252,7 +252,7 @@ DECLARACION JURADA DEL POSTULANTE
 <div class="modal-body pd-mobile">
 
 
-<p class="montserrat-r">
+<p class="montserrat-r" id="printPage3">
 Yo,<span class="montserrat-sb">${values[0].toUpperCase()}</span>  de Nacionalidad <span class="montserrat-sb">${values[3].toUpperCase()}</span> con documento de identidad <span class="montserrat-sb"> ${values[2].toUpperCase()} </span> N° <span class="montserrat-sb">${values[1]}</span> Que actualmente cubro el puesto de <span class="montserrat-sb"> ${values[6].toUpperCase()}</span> en el área <span class="montserrat-sb"> ${values[5].toUpperCase()}</span> de la empresa <span class="montserrat-sb"> ${values[4].toUpperCase()} </span>Teniendo como Jefe/Gerente directo a   <span class="montserrat-sb">${values[7].toUpperCase()}</span> con cargo   <span class="montserrat-sb">${values[8].toUpperCase()}</span>
 </p>
 <p class="montserrat-r">Declaro bajo juramento que: </p>
@@ -263,15 +263,14 @@ Yo,<span class="montserrat-sb">${values[0].toUpperCase()}</span>  de Nacionalida
 <li class="montserrat-r font-sz-1_1">No excedo el número de postulaciones permitidas (máximo 2 postulaciones en el periodo de un año).</li>
 <li class="montserrat-r font-sz-1_1">Cumplo con el perfil del puesto publicado en Crece con Intercorp.</li>
 <li class="montserrat-r font-sz-1_1">Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.</li>
-<li class="montserrat-r font-sz-1_1">Mi último salario corresponde al monto de:  <span class="montserrat-sb">${values[10]} ${values[9].toUpperCase()}</span> </li>
-</ol>
-<p class="montserrat-r">Me afirmo y me ratifico en lo expresado, en señal de lo cual firmo el presente documento el dia ${day} de ${month} del año ${year}
+<li class="montserrat-r font-sz-1_1">Mi último salario corresponde al monto de: <span class="montserrat-sb font-sz-1_1">${values[10]}${String(values[9])}</span>.</li></ol>
+<p class="montserrat-r" id="printPage32">Me afirmo y me ratifico en lo expresado, en señal de lo cual firmo el presente documento el dia ${day} de ${month} del año ${year}
  </p>
 </div>
 <div class="modal-footer pd-mobile d-flex   ">
 <button type="button" class="container_pill bg-gray_pill  montserrat-b border-0" id="backward3">   <i class="fa fa-arrow-left"></i> Regresar
 </button>
-<button type="button" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 " id="forward3">Postular
+<button type="button" data-dismiss="modal" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 hoverPulse" id="forward3">Postular
 </button>
 </div> `;
     //pagina 3
@@ -305,8 +304,69 @@ Yo,<span class="montserrat-sb">${values[0].toUpperCase()}</span>  de Nacionalida
 
         })
 
-        adelante3.addEventListener("click", () => {
+        function ClickPrint() {
+            const pdf = new jsPDF('p', 'pt', 'a4');
+            margins = {
+                top: 80,
+                bottom: 60,
+                left: 60,
+                width: 522
+            };
 
+            const title = `DECLARACION JURADA DEL POSTULANTE`;
+            const juramento = "Declaro bajo juramento que:";
+            const li1 = "Cumplo con el tiempo de permanencia de 1 año en mi posicion actual en el Grupo.";
+
+            const li2 = `Presento un desempeño igual o superior a la calificación "bueno"en mi ultima evaluación.`;
+
+            const li3 = "No presento sanciones disciplinarias(memorándums,amonestaciones escritas, suspensiones,etc) en el último año.";
+
+            const li4 = "No excedo el número de postulaciones permitidas (máximo 2 postulaciones en el periodo de un año).";
+            const li5 = "Cumplo con el perfil del puesto publicado en Crece con Intercorp."
+
+            const li6 = "Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.";
+
+            const li7 = `Mi último salario corresponde al monto de:${values[10]}${String(values[9])}`
+
+            pdf.text(60, 70, title);
+            pdf.setFontSize(10)
+            pdf.text(60, 150, juramento);
+            pdf.setFontSize(9)
+
+            pdf.text(70, 170, li1);
+            pdf.text(70, 185, li2);
+            pdf.text(70, 200, li3);
+            pdf.text(70, 215, li4);
+            pdf.text(70, 230, li5);
+            pdf.text(70, 245, li6);
+            pdf.text(70, 260, li7);
+            pdf.setFontSize(12)
+
+            pdf.fromHTML(document.getElementById("printPage3"),
+                margins.left,
+                margins.top, {
+                    'width': margins.width,
+                    'elementHandlers': elementHandler
+                }, margins);
+
+            pdf.fromHTML(document.getElementById("printPage32"),
+                margins.left,
+                275, {
+                    'width': margins.width,
+                    'elementHandlers': elementHandler
+                }, margins);
+
+            pdf.save('Declaracion-jurada.pdf');
+        };
+
+        const btnPrint = document.getElementById("btnPrint");
+        btnPrint.addEventListener("click", () => {
+            ClickPrint()
+        });
+
+        //btn pagina 3 postular
+        adelante3.addEventListener("click", () => {
+            alert("gracias por su interés")
         })
 
     })

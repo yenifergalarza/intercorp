@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+.close {
+    font-size: 5.5rem;
+}
+
 .modal-content {
     .bootstrap-select>.dropdown-toggle.bs-placeholder,
     .bootstrap-select>.dropdown-toggle.bs-placeholder:hover,
@@ -39,41 +43,6 @@
 .custom-control-input.is-valid:checked~.custom-control-label::before {
     border-color: $blue2;
     background-color: $blue2;
-}
-
-.badge {
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    overflow: hidden;
-}
-
-.badge::before {
-    content: "new";
-    background: #052cb9;
-    color: #fff;
-    font-weight: bold;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: .9rem;
-    position: relative;
-    width: 6rem;
-    height: 1.5rem;
-    line-height: 1;
-    text-align: center;
-    cursor: default;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.badge.badge-top-left:before {
-    top: 0rem;
-    left: -2.5rem;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
 }
 
 .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
@@ -692,6 +661,9 @@ section.grow_content-noMainNav {
 }
 
 @media(min-width:576px) {
+    .close {
+        font-size: 3.5rem;
+    }
     .margin-top_grow-pill .container_pill {
         padding: 2rem;
     }
@@ -811,6 +783,9 @@ section.grow_content-noMainNav {
                     comienzocrece detalle */
 
 @media (min-width:768px) {
+    .close {
+        font-size: 2.5rem;
+    }
     .container-orderByPills {
         width: 50%;
         margin-left: auto;
@@ -1136,6 +1111,41 @@ section.grow_content-noMainNav {
 }
 
 @media (min-width: 992px) {
+    .badge {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        overflow: hidden;
+    }
+    .badge::before {
+        content: "new";
+        background: #052cb9;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: .9rem;
+        position: relative;
+        width: 6rem;
+        height: 1.5rem;
+        line-height: 1;
+        text-align: center;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .badge.badge-top-left:before {
+        top: 0rem;
+        left: -2.5rem;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .close {
+        font-size: 1.5rem;
+    }
     #showFilters {
         margin-top: 0rem;
     }
@@ -1621,6 +1631,38 @@ section.grow_content-noMainNav {
 }
 
 @media(max-width:991px) {
+    .badge {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        overflow: hidden;
+    }
+    .badge::before {
+        content: "new";
+        background: #052cb9;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: .9rem;
+        position: relative;
+        width: 6rem;
+        height: 1.5rem;
+        line-height: 1;
+        text-align: center;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .badge.badge-top-left:before {
+        top: 0rem;
+        left: -2.5rem;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
     .modal-content {
         .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
             font-size: 1.125rem;
@@ -1701,7 +1743,36 @@ section.grow_content-noMainNav {
     }
 }
 
+@media(max-width:768px) {
+    .custom-control-label::before {
+        top: 1.25rem;
+        left: -4.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .custom-control-label::after {
+        top: 1.25rem;
+        left: -4.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
 @media(max-width:767px) {
+    .badge {
+        width: 10rem;
+        height: 10rem;
+    }
+    .badge::before {
+        font-size: 1.9rem;
+        width: 13rem;
+        height: 3rem;
+        line-height: 1;
+    }
+    .badge.badge-top-left:before {
+        top: 0rem;
+        left: -5.5rem;
+    }
     .modal-content {
         .bootstrap-select>.dropdown-toggle:after {
             margin-top: 0rem;
@@ -1737,7 +1808,49 @@ section.grow_content-noMainNav {
     }
 }
 
+@media(max-width:650px) {
+    .badge {
+        width: 11.5rem;
+        height: 11.5rem;
+    }
+    .badge::before {
+        font-size: 1.9rem;
+        width: 13rem;
+        height: 3rem;
+        line-height: 1;
+    }
+    .badge.badge-top-left:before {
+        top: 0rem;
+        left: -5.5rem;
+    }
+}
+
 @media(max-width: 576px) {
+    .badge {
+        width: 13rem;
+        height: 13rem;
+    }
+    .badge::before {
+        content: "new";
+        font-size: 2.9rem;
+        width: 13rem;
+        height: 4rem;
+        line-height: 1;
+    }
+    .badge.badge-top-left:before {
+        top: 0rem;
+        left: -5.5rem;
+    }
+    .custom-control-label::before {
+        left: -4.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    .custom-control-label::after {
+        left: -4.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
     .modal-content {
         .bootstrap-select>.dropdown-toggle:after {
             margin-top: .5rem;
