@@ -12,6 +12,10 @@
     font-size: 5.5rem;
 }
 
+//primer hijo badge sino d-block
+// tbody tr:first-child .badge:first-child {
+//     display: block !important;
+// }
 .modal-content {
     .bootstrap-select>.dropdown-toggle.bs-placeholder,
     .bootstrap-select>.dropdown-toggle.bs-placeholder:hover,
