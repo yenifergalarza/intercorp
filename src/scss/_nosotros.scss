@@ -1,11 +1,8 @@
 .third-article-3 {
-
-
     .roundBorder {
         @include btn($white);
     }
 }
-
 
 .first-article-3,
 .second-article-3 {
@@ -20,7 +17,6 @@
         text-align: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
-
     }
 }
 
@@ -30,28 +26,15 @@
 }
 
 .lq-body {
-
     .container-text-homeColor.container-text__ThirdPage {
         @include background-hero($blue1, "../assets/fondo-enterate.png", 83%, -1rem, 6rem);
         background-blend-mode: initial;
-
         .groupTitle {
             padding: 0% 16% 0% 0%;
-
-
             .title {
-
-
-
-
                 font-size: 4.5rem;
-
                 padding: 0% 16% 0% 0%;
-
-
-
             }
-
             .subtitle {
                 font-size: 1.1rem;
                 margin-bottom: 1.5rem;
@@ -59,7 +42,6 @@
         }
     }
 }
-
 
 footer.bg-dark {
     border-top: 0px;
@@ -86,10 +68,7 @@ footer.bg-dark {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-
     .row {
-
-
         .col-12.groupTitle {
             a.container_pill {
                 width: 16.3125rem;
@@ -99,22 +78,16 @@ footer.bg-dark {
                 padding-bottom: 1.4625rem;
             }
         }
-
         position: relative;
         top: -4rem;
-
         //mixin faltacrear
         .row-pride__img-1,
         .row-pride__img-2,
         .row-pride__img-3 {
             .groupTitle {
-
                 -webkit-box-orient: vertical;
-
                 -webkit-box-direction: normal;
-
                 -ms-flex-direction: column;
-
                 flex-direction: column;
                 -webkit-box-align: end;
                 -ms-flex-align: end;
@@ -126,7 +99,6 @@ footer.bg-dark {
                 justify-content: flex-end;
             }
         }
-
         .row-pride__img-1 {
             background-image: url("../assets/12.jpg");
             height: 25.3125rem;
@@ -134,9 +106,7 @@ footer.bg-dark {
             -o-object-fit: contain;
             object-fit: contain;
             width: 21.875rem;
-
         }
-
         .row-pride__img-2 {
             background-image: url("../assets/Bitmap-3.png");
             height: 25.3125rem;
@@ -145,7 +115,6 @@ footer.bg-dark {
             object-fit: contain;
             width: 21.875rem;
         }
-
         .row-pride__img-3 {
             background-image: url("../assets/14.jpg");
             height: 25.3125rem;
@@ -154,12 +123,7 @@ footer.bg-dark {
             object-fit: contain;
             width: 21.875rem;
         }
-
     }
-
-
-
-
 }
 
 .margin-page {
@@ -187,42 +151,32 @@ footer.bg-dark {
 .second-article-3.background-pink {
     height: 37.5rem;
     border-radius: 0 4rem 0 0;
-
-
     .carousel-pink {
         margin: 0 auto;
-
         .carousel-inner {
             height: 28.9375rem;
             width: 57.5rem;
             margin: auto;
         }
-
         .carousel-control-prev {
             left: -9rem;
         }
-
         .carousel-control-next {
             right: -9rem;
         }
-
         .carousel-indicators-pink {
             bottom: -4rem;
-
             li {
                 height: .4rem;
                 border-radius: .2rem;
                 border: none;
                 background-color: $blue4;
             }
-
             .active {
                 background-color: $pink;
             }
         }
     }
-
-
 }
 
 .lead_position {
@@ -243,21 +197,19 @@ footer.bg-dark {
     height: 33.4375rem;
 }
 
-
 @media (max-width:991px) {
-
-
     .lq-body {
-
         .container-text-homeColor.container-text__ThirdPage {
-            @include background-hero($blue1, "../assets/fondo-enterate.png", 83%, -1rem, 6rem);
+            @include background-hero($blue1,
+            "../assets/fondo-enterate.png",
+            83%,
+            -1rem,
+            6rem);
             padding: 5rem 6% 0% 8%;
-
             .groupTitle .title {
                 font-size: 3.5rem;
                 padding: 0% 16% 0% 0%;
             }
-
         }
     }
 }

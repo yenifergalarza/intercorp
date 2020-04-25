@@ -366,21 +366,23 @@ button.navbar-toggler {
             }
         }
     }
-    .hero_detalle .hero-content {
-        top: -85vw;
+    .hero_detalle {
+        .hero-content.goBack_details {
+            top: -119vh;
+        }
+        .hero-content {
+            position: absolute;
+        }
+        .d-flex .news_details1 {
+            display: initial;
+            width: 80%;
+            height: 50vw;
+            margin: 0 10%;
+            top: 10vh;
+        }
     }
     .hero_novedades .hero-content {
         top: -90vh;
-    }
-    .hero_detalle .hero-content.goBack_details {
-        top: -146vw;
-    }
-    .hero_detalle .d-flex .news_details1 {
-        display: initial;
-        width: 80%;
-        height: 50vw;
-        margin: 0 10%;
-        top: 16vw;
     }
     .flex-details {
         justify-content: center;
@@ -1003,8 +1005,7 @@ button.navbar-toggler {
     }
     .hero_detalle {
         .hero-content {
-            top: 73vw;
-            position: absolute;
+            top: calc(50vw + 12vh);
         }
         .hero-content.goBack_details {
             top: 6vw;
