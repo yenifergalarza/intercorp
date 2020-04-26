@@ -250,18 +250,12 @@
             const imgT1 = document.getElementById("imgT1");
 
             const container = document.getElementById("allContainerBackground");
-
-            const contentGrowthHeight1 = contentGrowth1.offsetHeight;
-            const contentGrowthHeight2 = contentGrowth2.offsetHeight;
-            const contentGrowthHeightImg1 = imgT1.offsetHeight;
-            const navGrowthHeight = navHeight.offsetHeight;
-
-            if (window.innerWidth < 769) {
-                console.log(contentGrowthHeight1);
-
-
-                const cards = document.querySelectorAll(".card.border-shadow");
-                const imagesHtml = document.querySelectorAll(".second-hero__image");
+            const imagesHtml = document.querySelectorAll(".second-hero__image");
+            let contentGrowthHeight1 = contentGrowth1.offsetHeight;
+            let contentGrowthHeight2 = contentGrowth2.offsetHeight;
+            let contentGrowthHeightImg1 = imgT1.offsetHeight;
+            let navGrowthHeight = navHeight.offsetHeight;
+            const addingTop = () => {
                 let multImg;
                 imagesHtml.forEach(
                     (eachImg) => {
@@ -287,6 +281,39 @@
                     `height: calc(${contentGrowthHeight1}px + ${contentGrowthHeight2}px + ${contentGrowthHeightImg1}px  +  19vh) !important`
                 );
             }
+            if (window.innerWidth < 769) {
+                console.log(contentGrowthHeight1);
+
+                addingTop();
+            };
+
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 769) {
+                    contentGrowth1.removeAttribute("style");
+                    contentGrowth2.removeAttribute("style");
+                    container.removeAttribute("style");
+                    imagesHtml.forEach(
+                        (eachImg) => {
+                            eachImg.removeAttribute("style");
+                        });
+                } else if (window.innerWidth < 769) {
+                    console.log(contentGrowthHeight1);
+
+                    addingTop();
+
+                    contentGrowthHeight1 = contentGrowth1.offsetHeight;
+                    contentGrowthHeight2 = contentGrowth2.offsetHeight;
+                    contentGrowthHeightImg1 = imgT1.offsetHeight;
+                    navGrowthHeight = navHeight.offsetHeight;
+                    addingTop();
+
+                    ;
+                }
+            });
+
+
+
         });
     </script>
 </body>
