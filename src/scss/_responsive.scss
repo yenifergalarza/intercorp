@@ -403,16 +403,6 @@ button.navbar-toggler {
             }
         }
     }
-    .header_lg {
-        .container {
-            .navbar.navbar-expand-md {
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end;
-                .navbar-toggler {}
-            }
-        }
-    }
     * {
         font-size: 4vh;
     }
@@ -719,9 +709,6 @@ button.navbar-toggler {
         margin-right: 49%;
     }
     .hero_Double.hero70 {
-        .first-hero__Text {
-            // width: 100vw;
-        }
         .hero-content {
             .title_hero,
             .subTitle_hero {
@@ -1074,7 +1061,6 @@ button.navbar-toggler {
             .card {
                 .p-3 {
                     padding: 3rem !important;
-                    .d-flex {}
                     .card-text {
                         font-size: .6em;
                     }
@@ -1320,7 +1306,6 @@ button.navbar-toggler {
                     overflow: scroll;
                     flex-wrap: nowrap;
                     justify-content: normal;
-                    .col-md-4 {}
                 }
             }
         }

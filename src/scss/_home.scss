@@ -2,13 +2,6 @@ html {
     font-size: .98vw;
 }
 
-.header_lg {
-    position: absolute;
-    z-index: 40;
-    margin: 0 auto;
-    width: 100%;
-}
-
 .logo_header {
     padding-top: 1.875rem;
     width: 11.5rem;
@@ -149,11 +142,7 @@ html {
     }
 }
 
-@media (max-width:1441px) {
-    .hero_Double {
-        .hero-content {}
-    }
-}
+@media (max-width:1441px) {}
 
 @media (max-width:1024px) {}
 
