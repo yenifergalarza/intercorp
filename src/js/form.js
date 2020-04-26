@@ -5,7 +5,7 @@ const month = months[today.getMonth()];
 const year = today.getFullYear();
 
 //pagina 1
-const values = ["", "", "", "", "", "", "", "", "", "", ""];
+const values = ["", "", "", "", "", "", "", "", "", "", ""]; //donde se almacena la info del usario
 const popUp = document.getElementById("contentAplicant");
 const popdiv = document.createElement('div');
 popdiv.classList.add('modal-content');
@@ -117,7 +117,7 @@ const content = `
         </div>
 </div>
 <div class="modal-footer pd-mobile ">
-    <button type="submit" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 hoverPulse" id="getData">Siguiente<i class="fa fa-arrow-right"></i>
+    <button type="submit" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0" id="getData">Siguiente<i class="fa fa-arrow-right"></i>
     </button>
 </div>
 </form>`;
@@ -133,7 +133,7 @@ const content2 = `
 <h5 class="modal-title text-center mobileTilePopUp montserrat-b color-darkish-blue" id="exampleModalScrollableTitle">
     Requisitos para postular
 </h5>
-<button type="button " class="close" data-dismiss="modal" aria-label="Close">
+<button type="button"  class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true ">×</span>
                     </button>
 </div>
@@ -196,6 +196,7 @@ const page2 = () => {
     return popdiv2
 };
 
+
 form1.addEventListener("submit", (e) => {
     e.preventDefault();
     const InputName = document.getElementById("name");
@@ -228,11 +229,8 @@ form1.addEventListener("submit", (e) => {
         Inputdoc.focus();
         return false
     }
-
-    console.log(values);
-
     //pagina 3
-    let popdiv3 = document.createElement('div');
+    let popdiv3 = document.createElement('form');
     popdiv3.classList.add('modal-content');
     popdiv3.setAttribute("id", "popUpContent3");
     popdiv3.innerHTML = ``;
@@ -252,25 +250,25 @@ DECLARACION JURADA DEL POSTULANTE
 <div class="modal-body pd-mobile">
 
 
-<p class="montserrat-r" id="printPage3">
-Yo,<span class="montserrat-sb">${values[0].toUpperCase()}</span>  de Nacionalidad <span class="montserrat-sb">${values[3].toUpperCase()}</span> con documento de identidad <span class="montserrat-sb"> ${values[2].toUpperCase()} </span> N° <span class="montserrat-sb">${values[1]}</span> Que actualmente cubro el puesto de <span class="montserrat-sb"> ${values[6].toUpperCase()}</span> en el área <span class="montserrat-sb"> ${values[5].toUpperCase()}</span> de la empresa <span class="montserrat-sb"> ${values[4].toUpperCase()} </span>Teniendo como Jefe/Gerente directo a   <span class="montserrat-sb">${values[7].toUpperCase()}</span> con cargo   <span class="montserrat-sb">${values[8].toUpperCase()}</span>
+<p class="montserrat-r font-sz-1_1" id="printPage3">
+Yo,<span class="montserrat-sb font-sz-1_1">${values[0].toUpperCase()}</span>  de Nacionalidad <span class="montserrat-sb font-sz-1_1">${values[3].toUpperCase()}</span> con documento de identidad <span class="montserrat-sb font-sz-1_1"> ${values[2].toUpperCase()} </span> N° <span class="montserrat-sb font-sz-1_1">${values[1]}</span> Que actualmente cubro el puesto de <span class="montserrat-sb font-sz-1_1"> ${values[6].toUpperCase()}</span> en el área <span class="montserrat-sb font-sz-1_1"> ${values[5].toUpperCase()}</span> de la empresa <span class="montserrat-sb font-sz-1_1"> ${values[4].toUpperCase()} </span>Teniendo como Jefe/Gerente directo a   <span class="montserrat-sb font-sz-1_1">${values[7].toUpperCase()}</span> con cargo   <span class="montserrat-sb font-sz-1_1">${values[8].toUpperCase()}</span>
 </p>
-<p class="montserrat-r">Declaro bajo juramento que: </p>
+<p class="montserrat-r font-sz-1_1">Declaro bajo juramento que: </p>
 <ol style="list-style-type: lower-alpha;">
 <li class="montserrat-r font-sz-1_1">Cumplo con el tiempo de permanencia de 1 año en mi posicion actual en el Grupo.</li>
 <li class="montserrat-r font-sz-1_1">Presento un desempeño igual o superior a la calificación "bueno"en mi ultima evaluación.</li>
-<li class="montserrat-r font-sz-1_1">No presento sanciones disciplinarias(memorándums,amonestaciones escritas, suspensiones,etc) en el último año.</li>
+<li class="montserrat-r font-sz-1_1">No presento sanciones disciplinarias( memorándums, amonestaciones escritas, suspensiones, etc) en el último año.</li>
 <li class="montserrat-r font-sz-1_1">No excedo el número de postulaciones permitidas (máximo 2 postulaciones en el periodo de un año).</li>
 <li class="montserrat-r font-sz-1_1">Cumplo con el perfil del puesto publicado en Crece con Intercorp.</li>
 <li class="montserrat-r font-sz-1_1">Informar a su Jefe/Supervisor inmediato de su interés por participar en la convocatoria, antes de remitir su CV.</li>
 <li class="montserrat-r font-sz-1_1">Mi último salario corresponde al monto de: <span class="montserrat-sb font-sz-1_1">${values[10]}${String(values[9])}</span>.</li></ol>
-<p class="montserrat-r" id="printPage32">Me afirmo y me ratifico en lo expresado, en señal de lo cual firmo el presente documento el dia ${day} de ${month} del año ${year}
+<p class="montserrat-r font-sz-1_1" id="printPage32">Me afirmo y me ratifico en lo expresado, en señal de lo cual firmo el presente documento el dia ${day} de ${month} del año ${year}
  </p>
 </div>
-<div class="modal-footer pd-mobile d-flex   ">
-<button type="button" class="container_pill bg-gray_pill  montserrat-b border-0" id="backward3">   <i class="fa fa-arrow-left"></i> Regresar
+<div class="modal-footer pd-mobile d-flex  justify-content-sm-between  justify-content-lg-end ">
+<button type="button" class="container_pill bg-gray_pill  montserrat-b border-0 font-sz-1_1" id="backward3">   <i class="fa fa-arrow-left"></i> Regresar
 </button>
-<button type="button" data-dismiss="modal" class="container_pill b_blue4 color-darkish-blue montserrat-b border-0 hoverPulse" id="forward3">Postular
+<button type="submit"  class="font-sz-1_1 container_pill b_blue4 color-darkish-blue montserrat-b border-0 hoverPulse" id="forward3">Postular
 </button>
 </div> `;
     //pagina 3
@@ -289,17 +287,27 @@ Yo,<span class="montserrat-sb">${values[0].toUpperCase()}</span>  de Nacionalida
     const form2 = document.getElementById("form2");
 
     form2.addEventListener("submit", (e) => {
+
         e.preventDefault();
         const antPage2 = document.getElementById("popUpContent2");
         popUp.removeChild(antPage2);
         page3();
 
         const atras3 = document.getElementById("backward3");
+        const form3 = document.getElementById("popUpContent3");
         const adelante3 = document.getElementById("forward3");
 
+        form3.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            //funcion respectiva cuando se envie el form!!
+
+            alert("gracias por registrarse"); //
+            adelante3.setAttribute("disabled", "disabled");
+        })
         atras3.addEventListener("click", () => {
-            const antPage3 = document.getElementById("popUpContent3");
-            popUp.removeChild(antPage3);
+
+            popUp.removeChild(form3);
             page2();
 
         })
@@ -363,9 +371,7 @@ Yo,<span class="montserrat-sb">${values[0].toUpperCase()}</span>  de Nacionalida
         });
 
         //btn pagina 3 postular
-        adelante3.addEventListener("click", () => {
-            alert("gracias por su interés")
-        })
+
 
     })
 

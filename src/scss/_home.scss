@@ -158,8 +158,12 @@ html {
 @media (max-width:1024px) {}
 
 @media (max-width:767px) {
+    .justify-content-sm-between {
+        justify-content: space-between;
+    }
     .modal-footer {
         .container_pill {
+            padding: 1rem 5rem;
             font-size: 2rem;
         }
     }
@@ -175,6 +179,7 @@ html {
     .modal-footer {
         .container_pill {
             font-size: 3.7rem;
+            padding: 2rem 8rem;
         }
     }
 }
@@ -249,4 +254,8 @@ input:focus {
 
 #goBack {
     cursor: pointer;
+}
+
+.justify-content-lg-end {
+    justify-content: end;
 }

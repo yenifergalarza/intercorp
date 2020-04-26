@@ -16,6 +16,11 @@
 // tbody tr:first-child .badge:first-child {
 //     display: block !important;
 // }
+:disabled {
+    background: $grey !important;
+    color: $white !important;
+}
+
 .modal-content {
     .bootstrap-select>.dropdown-toggle.bs-placeholder,
     .bootstrap-select>.dropdown-toggle.bs-placeholder:hover,
