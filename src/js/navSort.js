@@ -280,6 +280,15 @@ btnFilterDesktop.addEventListener("click", () => {
         searchMobile.remove();
         hideCaptionFiltered.remove();
     }
+
+
+    while (showFilters.firstChild) {
+        showFilters.removeChild(showFilters.firstChild);
+    };
     showFilters.appendChild(makeDiv(arrOfCategory));
+
+
+    $('.selectpicker').val('0');
+    $('.selectpicker').selectpicker('refresh');
 
 });
