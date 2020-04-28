@@ -23,10 +23,10 @@ const verifying = (e) => {
           
       </div>
       <div class="modal-body">
-    <h5 class="text-center mobileTilePopUp"> xxxxxxxxxx@intercorp.com.pe   
+    <h5 class="text-center mobileTilePopUp font-sz-1_1"> xxxxxxxxxx@intercorp.com.pe   
  </h5>
- <h5 class="text-center mobileTilePopUp ">   Xxx xxx 987</h5>
-      <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" for="">Token : </label><input class="inputHeight montserrat-r" id="token" type="text"></div>
+ <h5 class="text-center mobileTilePopUp font-sz-1_1 ">   Xxx xxx 987</h5>
+      <div class="d-flex justify-content-between  mobile-col"><label class="font-sz-1_1  montserrat-r" for="">Token : </label><input class="inputHeight montserrat-r font-sz-1_1" id="token" type="text"></div>
       </div>
       <div class="modal-footer">
           <button type="button" class="container_pill b_blue4 color-darkish-blue border-0 font-sz-1_1  montserrat-b " data-dismiss="modal" id="pass">Ingresar

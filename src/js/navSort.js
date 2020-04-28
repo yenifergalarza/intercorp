@@ -27,7 +27,7 @@ nav.innerHTML = `<div class="w-100">
 
         <p class="montserrat-b ">Explora los retos profesionales por:</p>
 
-        <select id="select1" class="border-select  montserrat-r selectpicker" data-selected-text-format="count" data-width="100%" data-size="5" data-live-search="true" data-actions-box="true" multiple title="Nuestras Empresas">
+        <select id="select1" class="border-select  montserrat-r selectpicker" data-selected-text-format="count" data-width="100%" data-size="4" data-live-search="true" data-actions-box="true" multiple title="Nuestras Empresas">
             <option class="o1">Interbank</option>
             <option class="o1">Intelligo</option>
             <option class="o1">Interfondos</option>
@@ -67,7 +67,7 @@ nav.innerHTML = `<div class="w-100">
         </select>
 
 
-        <select id="select2" class=" border-select selectpicker  montserrat-r" data-selected-text-format="count" data-width="100%" data-size="5" data-live-search="true" data-actions-box="true" multiple title="Nuestras Áreas de Trabajo">
+        <select id="select2" class=" border-select selectpicker  montserrat-r" data-selected-text-format="count" data-width="100%" data-size="3" data-live-search="true" data-actions-box="true" multiple title="Nuestras Áreas de Trabajo">
             <option>Aduanas y Comercio Exterior</option>
             <option>Almacén </option>
             <option>Atención al Cliente</option>
