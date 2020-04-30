@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg header_growth header_growth_blue header_growth-details">
+    <nav class="navbar navbar-expand-lg header_growth header_growth_blue header_growth-details" id="navHeight">
         <div class="d-flex container">
             <a href="#"><img src="./assets/logo-intercorp.png" class="logo_header p-0 logo-toWhite" alt="Intercorp logo"></a>
 
@@ -85,11 +85,11 @@
 
         <div class="hero_Double hero_leads grow_content-noMainNav" id="allContainerBackground">
             <div class="d-flex container_rev-growth">
-                <div class="first-hero__Text  hero-first">
+                <div class="first-hero__Text  hero-first" id="backText">
 
                 </div>
 
-                <div class="second-hero__image br-hero_img b_blue1">
+                <div class="second-hero__image br-hero_img b_blue1" id="backSolid">
 
                 </div>
             </div>
@@ -509,19 +509,88 @@
 
     <script>
         $(window).on("load ", () => {
-            const contentGrowth = document.getElementById("contentDetail");
+            const navHeight = document.getElementById("navHeight");
+            const contentGrowth1 = document.getElementById("contentDetail");
             const container = document.getElementById("allContainerBackground");
+            const imagesHtml = document.querySelectorAll(".second-hero__image");
+            let contentGrowthHeight1 = contentGrowth1.offsetHeight;
+            let navGrowthHeight = navHeight.offsetHeight;
+            const backText = document.getElementById("backText");
+            const backSolid = document.getElementById("backSolid");
+            const ArrowD = document.querySelector(".arrow-down");
 
-            const contentGrowthHeight = contentGrowth.offsetHeight;
+            const addingTop = () => {
 
 
-            if (window.innerWidth < 768) {
-                console.log(contentGrowthHeight);
 
-                container.setAttribute('style', `height: calc(${contentGrowthHeight}px + 15vh) !important`);
-                console.log(container.clientHeight);
+                contentGrowth1.setAttribute(
+                    "style",
+                    `top:calc(${navGrowthHeight}px / 4) !important ; left: 0`);
+
+                container.setAttribute(
+                    "style",
+                    `height: calc(${contentGrowthHeight1}px  +  10vh) !important`
+                );
             }
-        })
+
+            const heightDesktop = () => {
+                ArrowD.setAttribute(
+                    "style",
+                    `margin: ${contentGrowthHeight1}px  0 0 0 !important`
+                );
+                contentGrowthHeight1 = contentGrowth1.offsetHeight;
+
+                container.setAttribute(
+                    "style",
+                    `height: calc(${contentGrowthHeight1}px  + 20rem) !important`
+                );
+                backText.setAttribute(
+                    "style",
+                    `height: 90% !important`
+                );
+
+                backSolid.setAttribute(
+                    "style",
+                    `height: 100% !important`
+                );
+            }
+            if (window.innerWidth < 769) {
+                console.log(contentGrowthHeight1);
+                backText.removeAttribute("style");
+                backSolid.removeAttribute("style");
+                addingTop();
+            } else {
+                heightDesktop();
+            }
+
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 769) {
+                    contentGrowth1.removeAttribute("style");
+                    container.removeAttribute("style");
+                    heightDesktop();
+
+
+                } else if (window.innerWidth < 769) {
+                    backText.removeAttribute("style");
+                    backSolid.removeAttribute("style");
+                    console.log(contentGrowthHeight1);
+
+                    addingTop();
+
+                    contentGrowthHeight1 = contentGrowth1.offsetHeight;
+
+
+                    navGrowthHeight = navHeight.offsetHeight;
+                    addingTop();
+
+                    ;
+                }
+            });
+
+
+
+        });
     </script>
 
 </body>

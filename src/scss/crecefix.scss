@@ -984,10 +984,7 @@ section.grow_content-noMainNav {
     }
     .arrow-down {
         width: 100%;
-        margin: 0 auto;
         text-align: center;
-    }
-    .arrow-down::after {
         content: "";
         width: 4rem;
         height: 4rem;
@@ -1294,8 +1291,7 @@ section.grow_content-noMainNav {
     #showFilters {
         margin-top: 0rem;
     }
-    .arrow-down::after {
-        left: 25vw;
+    .arrow-down {
         margin: 70vh 0 0 0;
     }
     .navbar-expand-lg.navbar-light.bg-white.header_growth.sidenav_desktop {
