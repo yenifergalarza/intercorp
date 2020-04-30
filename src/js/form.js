@@ -5,14 +5,15 @@ const today = new Date();
 const day = today.getDate();
 const month = months[today.getMonth()];
 const year = today.getFullYear();
-
-//pagina 1
+const btnsPopOver = document.querySelectorAll(".btnPopOver")
+    //pagina 1
 const values = ["", "", "", "", "", "", "", "", "", "", ""]; //donde se almacena la info del usario
 const popUp = document.getElementById("contentAplicant");
 const popdiv = document.createElement('div');
 popdiv.classList.add('modal-content');
 popdiv.setAttribute("id", "popUpContent");
 popdiv.innerHTML = ``;
+const modalPopOver = document.getElementById("popOver");
 const content = `
 <div class="modal-header  pd-mobile justify-content-center border-0 ">
     <h5 class="modal-title text-center mobileTilePopUp montserrat-b color-darkish-blue"
@@ -346,12 +347,37 @@ form1.addEventListener("submit", (e) => {
 
         form3.addEventListener("submit", (e) => {
             e.preventDefault();
-
             //funcion respectiva cuando se envie el form!!
 
-            alert("gracias por registrarse"); //
+
             adelante3.setAttribute("disabled", "disabled");
-        })
+
+            btnsPopOver.forEach(
+                (eachBtn) => {
+                    eachBtn.removeAttribute('data-toggle');
+                    eachBtn.setAttribute("data-toggle", "popover");
+                    eachBtn.removeAttribute('data-target');
+                    eachBtn.setAttribute("data-trigger", "focus");
+
+                    eachBtn.setAttribute("data-original-title", "¡ Gracias por aceptar los términos y condiciones!");
+
+                    eachBtn.setAttribute("data-content", "<div> <div>  <i></i></div> <div class='popWrap d-flex'><p class='montserrat-sb mb-0'>Envía tu CV al siguiente correo :</p> <a class='montserrat-r color-darkish-blue' href='mailto:correo@correo.com.pe'>correo@correo.com</a><p class='montserrat-sb mb-0'>Coloca en el asunto  </p><p class='montserrat-r'>“Crece - Nombre de la Posición”</p></div></div>");
+                    if (window.innerWidth < 768) {
+                        eachBtn.setAttribute("data-placement", "bottom");
+                    }
+                })
+            $('.btnPopOver').popover('show')
+            $('#popOver').modal('hide');
+            $('body').removeClass('modal-open');
+            $('body').css('padding-right', '0px');
+            $('.modal-backdrop').remove();
+
+
+        });
+
+
+
+
         atras3.addEventListener("click", () => {
 
             popUp.removeChild(form3);
@@ -401,9 +427,9 @@ form1.addEventListener("submit", (e) => {
             wrappedText(text2, 0, 15);
             wrappedText(splitTitle, 0, 25);
             wrappedText(text3, 0, 15);
-
-
             pdf.save('Declaracion-jurada.pdf');
+
+
         };
 
         const btnPrint = document.getElementById("btnPrint");
@@ -412,7 +438,6 @@ form1.addEventListener("submit", (e) => {
         });
 
         //btn pagina 3 postular
-
 
     })
 

@@ -16,6 +16,89 @@
 // tbody tr:first-child .badge:first-child {
 //     display: block !important;
 // }
+.popover.fade {
+    max-width: 98%;
+    top: 50rem !important;
+    -webkit-box-shadow: 3px 12px 60px -34px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 12px 60px -34px rgba(0, 0, 0, 0.35);
+}
+
+.popover-header {
+    text-align: center;
+    padding: 1.5rem 2.75rem;
+    font-size: 6rem;
+    background-color: $blue4;
+    color: $blue2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.popover-body {
+    padding: 1.5rem 6.75rem;
+    div {
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        i,
+        i:before {
+            color: $blue2;
+            font-size: 19rem;
+            content: '\e804';
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            text-align: center;
+            /* opacity: .8; */
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1em;
+            /* font-size: 120%; */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+        }
+        p,
+        a {
+            overflow: auto;
+            font-size: 5.5rem;
+        }
+    }
+}
+
+.demo-icon,
+.popover-body div i {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 :disabled {
     background: $grey !important;
     color: $white !important;
@@ -795,6 +878,56 @@ section.grow_content-noMainNav {
                     comienzocrece detalle */
 
 @media (min-width:768px) {
+    .popover.fade {
+        max-width: 40%;
+        top: 0rem !important;
+    }
+    .popover-header {
+        font-size: 2rem;
+    }
+    .popover-header,
+    .popover-body {
+        padding: .5rem .75rem;
+    }
+    .popover-body {
+        div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            justify-content: center;
+            i,
+            i:before {
+                font-size: 7rem;
+                content: '\e804';
+                font-family: "fontello";
+                font-style: normal;
+                font-weight: normal;
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1em;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            p,
+            a {
+                overflow: auto;
+                font-size: 1.5rem;
+            }
+            .popWrap {
+                justify-content: left;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
     .close {
         font-size: 2.5rem;
     }
